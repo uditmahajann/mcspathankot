@@ -1,6 +1,3 @@
-// CurriculumOverview.tsx
-"use client";
-
 import React from "react";
 import { BookOpen, Hash, Activity, Users, Music, TreePalm } from "lucide-react";
 

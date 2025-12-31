@@ -36,12 +36,12 @@ const events = await client.fetch(eventsQuery);
   pubDate={new Date()}
   >
   <main>
-    <CampusLifeHero client:load />
-    <EventsActivities events={events} client:only />
-    <BoardingExperience client:load />
-    <DayBoardingExperience client:load />
-    <OutreachPrograms client:load />
-    <Exhibitions client:load />
-    <ToursExcursions client:load />
+    <CampusLifeHero />
+    <EventsActivities events={events} client:load/>
+    <BoardingExperience />
+    <DayBoardingExperience />
+    <OutreachPrograms />
+    <Exhibitions client:load/>
+    <ToursExcursions client:load/>
   </main>
 </Layout>

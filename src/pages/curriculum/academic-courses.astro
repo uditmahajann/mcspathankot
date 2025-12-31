@@ -29,8 +29,8 @@ const courseGroups = await client.fetch(`
   
   <main>
 
-    <AcademicCoursesHero client:load />
-    <CoursesSection courseGroups={courseGroups} client:only />
+    <AcademicCoursesHero />
+    <CoursesSection courseGroups={courseGroups} client:load/>
 
   </main>
   </Layout>

@@ -1,5 +1,3 @@
-"use client";
-
 import { Clock, ArrowLeft, Share2 } from "lucide-react";
 
 export default function NewsDetail() {

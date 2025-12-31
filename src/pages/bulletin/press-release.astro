@@ -33,11 +33,11 @@ const printMedia = await client.fetch(`
   pubDate={new Date()}
 >
   <main>
-    <PressReleaseHero client:load />
+    <PressReleaseHero />
     <PressReleaseSection
       pressReleases={pressReleases}
       printMedia={printMedia}
-      client:only
+      client:load
     />
   </main>
 </Layout>

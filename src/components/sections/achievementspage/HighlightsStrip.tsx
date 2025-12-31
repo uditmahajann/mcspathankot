@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { Trophy, BookOpen, Users, Palette, Globe } from "lucide-react";
 

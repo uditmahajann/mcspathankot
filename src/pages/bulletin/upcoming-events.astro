@@ -15,7 +15,7 @@ const news = await client.fetch(newsListingQuery);
   pubDate={new Date()}
   >
   <main>
-    <EventsHero client:load />
-    <Events news={news} client:load client:load />
+    <EventsHero />
+    <Events news={news} client:load/>
   </main>
 </Layout>

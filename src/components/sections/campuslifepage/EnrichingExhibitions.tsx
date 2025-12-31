@@ -1,5 +1,3 @@
-"use client"
-
 import React from "react"
 import { Lightbulb, Atom, Palette, Leaf, FlaskRoundIcon as Flask } from "lucide-react"
 

@@ -1,6 +1,3 @@
-// CurriculumOverview.tsx
-"use client";
-
 import React from "react";
 import { GraduationCap, Briefcase, Target, Users, MessageSquare, HeartPulse } from "lucide-react";
 

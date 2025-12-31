@@ -50,21 +50,20 @@ const normalize = (items: any[]) =>
 	pubDate={new Date()}
 >
 	<main class="w-full">
-		<Hero client:load />
-		<News news={news} client:load />
-		<InstaReels reels={instaReels} client:load />
+		<Hero client:load/>
+		<News news={news} />
+		<InstaReels reels={instaReels} client:load/>
 		<Achievements
 			classXII={normalize(classXIIBanners)}
 			classX={normalize(classXBanners)}
 			students={normalize(studentBanners)}
-			client:load
 		/>
-		<Awards awards={awards} client:load />
-		<EduLevels client:load />
-		<Admission client:load />
-		<FutureTrends client:load />
+		<Awards awards={awards} client:load/>
+		<EduLevels client:load/>
+		<Admission/>
+		<FutureTrends client:load/>
 		<!-- <McsLife client:load /> -->
-		<Alumni client:only />
-		<Partnerships client:load />
+		<Alumni/>
+		<Partnerships/>
 	</main>
 </Layout>

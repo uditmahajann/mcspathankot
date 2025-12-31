@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import type React from "react"
 import { Send, CheckCircle, ArrowRight, Info } from "lucide-react"

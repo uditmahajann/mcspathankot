@@ -1,6 +1,3 @@
-// CurriculumOverview.tsx
-"use client";
-
 import React from "react";
 import { BookOpen, Calculator, Leaf, Palette, Dumbbell, Heart } from "lucide-react";
 

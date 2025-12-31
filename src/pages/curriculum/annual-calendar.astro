@@ -26,8 +26,8 @@ const calendarEvents = await client.fetch(`
   >
   
   <main>
-    <AnnualCalendarHero client:load />
-    <AnnualCalendarSection events={calendarEvents} client:only />
+    <AnnualCalendarHero />
+    <AnnualCalendarSection events={calendarEvents} client:load/>
 
   </main>
   </Layout>

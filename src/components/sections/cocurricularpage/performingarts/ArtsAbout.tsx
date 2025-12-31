@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Trophy, Flame, Target, Users } from "lucide-react";
 

@@ -1,5 +1,3 @@
-"use client";
-
 import type React from "react";
 import { Sun, Play, Users, HeartHandshake, BookOpen } from "lucide-react";
 

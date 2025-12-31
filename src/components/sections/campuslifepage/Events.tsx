@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { Calendar, Music, BookOpen, Users, Trophy, Clock } from "lucide-react"
 

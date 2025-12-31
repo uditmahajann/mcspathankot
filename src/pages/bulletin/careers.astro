@@ -26,8 +26,8 @@ const careers = await client.fetch(`
   pubDate={new Date()}
   >
   <main>
-    <CareersHero client:load />
-    <CareersSection careers={careers} client:only />
+    <CareersHero />
+    <CareersSection careers={careers} client:load/>
 
   </main>
 </Layout>

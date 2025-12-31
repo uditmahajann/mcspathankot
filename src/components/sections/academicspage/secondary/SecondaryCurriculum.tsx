@@ -1,6 +1,3 @@
-// CurriculumOverview.tsx
-"use client";
-
 import React from "react";
 import { BookOpen, FlaskConical, Dumbbell, Briefcase, Laptop, HeartHandshake } from "lucide-react";
 

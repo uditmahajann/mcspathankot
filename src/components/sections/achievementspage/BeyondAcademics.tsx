@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { Trophy, Palette, Globe2, Users2, Music } from "lucide-react";
 

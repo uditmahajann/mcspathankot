@@ -1,5 +1,3 @@
-"use client"
-
 import React from "react"
 import { HeartHandshake, Leaf, Users, BookOpen, HelpingHand } from "lucide-react"
 

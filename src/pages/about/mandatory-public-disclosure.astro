@@ -16,7 +16,7 @@ const data = await client.fetch(mandatoryDisclosureQuery);
   pubDate={new Date()}
   >
 	<main class="w-full">
-    <DisclosureHero client:load/>
+    <DisclosureHero/>
 
     <section class="pt-4 sm:pt-10 mt-10 mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 max-w-7xl bg-white text-center">
       <div class="max-w-4xl mx-auto font-inter">
@@ -33,6 +33,6 @@ const data = await client.fetch(mandatoryDisclosureQuery);
       </div>
     </section>
     
-    <MandatoryDisclosure data={data} client:load/>
+    <MandatoryDisclosure data={data}/>
 
 </Layout>

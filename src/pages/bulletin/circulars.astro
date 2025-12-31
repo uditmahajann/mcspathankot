@@ -23,7 +23,7 @@ const circulars = await client.fetch(`
   pubDate={new Date()}
   >
   <main>
-    <CircularsHero client:load />
-    <CircularsSection circulars={circulars} client:only />
+    <CircularsHero />
+    <CircularsSection circulars={circulars} client:load/>
   </main>
 </Layout>

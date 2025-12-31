@@ -1,6 +1,3 @@
-// ParentPartnership.tsx
-"use client";
-
 import React from "react";
 import { MessageCircle, Users, CalendarDays, Smartphone } from "lucide-react";
 
