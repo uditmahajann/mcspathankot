@@ -86,15 +86,15 @@ const Infrastructure: React.FC = () => {
 
   return (
     <section id="our-infrastructure" className="py-4 sm:py-10 my-10 bg-white">
-      <div className="mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 max-w-7xl">
+      <div className="mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 lg:px-20 xl:px-0">
 
         {/* Heading */}
-        <div className="text-center mb-8 sm:mb-10 lg:mb-16">
-          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium inline-block relative leading-normal">
-            Our
-            <span className="relative z-10 inline-block pl-5 pr-1">
+        <div className="text-center mb-8 lg:mb-16">
+          <h2 className="text-2xl min-[540px]:text-3xl text-gray-900 font-playpen font-medium inline-block relative leading-normal">
+            Our {" "}
+            <span className="relative z-10 inline-block pl-3 pr-1">
               World-Class
-              <span className="absolute inset-0 -z-10 -top-6 md:-top-9">
+              <span className="absolute inset-0 -z-10 -top-6">
                 <img
                   src="/Images/Doodles/CircleGreen.png"
                   alt="Circle Doodle"
@@ -104,7 +104,7 @@ const Infrastructure: React.FC = () => {
             </span>{" "}
             Infrastructure
           </h2>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             Our modern facilities empower every learner with the tools, spaces and environment needed to thrive academically, creatively, and personally.
           </p>
         </div>
@@ -112,14 +112,14 @@ const Infrastructure: React.FC = () => {
         {/* Banner Image */}
         <div className="relative overflow-hidden rounded-xl sm:rounded-2xl mb-8 sm:mb-12 lg:mb-20 shadow-2xl">
           <img
-            src="/Images/Heros/samplehero.JPG"
+            src="/Images/About/campus.JPG"
             alt="MCS Campus Overview"
-            className="h-100 sm:h-120 w-full object-cover"
+            className="h-100 sm:h-140 w-full object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-black/95 via-blue-900/1 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 p-6 sm:p-8">
+          <div className="absolute inset-0 bg-linear-to-t from-black/90 via-transparent to-transparent"></div>
+          <div className="absolute bottom-0 left-0 p-6 sm:p-8 xl:p-12">
             <h3 className="text-2xl sm:text-3xl font-bold text-white">Modern Campus</h3>
-            <p className="hidden md:block mt-2 max-w-2xl text-blue-100">
+            <p className="hidden md:block mt-2 max-w-2xl text-blue-100 text-lg">
               Our sprawling campus features modern architecture, green spaces, and purpose-built facilities designed to create an optimal learning environment away from the dins of the city.
             </p>
           </div>

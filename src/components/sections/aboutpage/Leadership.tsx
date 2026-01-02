@@ -6,28 +6,28 @@ const Leadership: React.FC = () => {
     {
       name: "Mr. Vinod Kumar",
       position: "Chairperson",
-      image: "/Images/Heros/samplehero.JPG",
+      image: "/Images/About/vinod.jpeg",
       bio: "The school owes its inception to the profound vision of its esteemed Founder and Chairperson – Mr. Vinod Kumar – whose strenuous efforts, selfless devotion, dynamic philosophy and passion for providing quality education – has not only given the city the most reliable, desirable and preferred school but surpassing countless challenges with unfailing diligence to evolve the school holistically in all the spheres. His mission is to cater school education as a powerful weapon to bring changes in the nationwide social and economic milieu. The school has discerned marvelous growth through the years in contemplation and nostalgia with every stone and foundation laid under the direction of Mr. Kumar. The entire school fraternity owes to the hardships and inexhaustible promising attitude of our founder chairperson.",
     },
     {
       name: "Mr. Akash Mahajan",
       position: "Vice Chairperson",
-      image: "/Images/Heros/samplehero.JPG",
+      image: "/Images/About/akash.jpeg",
       bio: "Under the unique endeavor of honourable Vice-Chairperson – Mr. Akash Mahajan – the school has taken a bounce from traditional methods of teaching – to – modern methods of digital pedagogy. From re-structuring and planning of several different spheres of academic and non-academic departments, ranging from the 21st Century Classrooms, Play-Areas, Accommodation to Modernization of Workmanship, Maturing of Internal and External, Financial and Non-Financial School Affairs and bringing the school to the forefront, accessible to thousands of people pan India via technology integration. Prudent, precise and a person of few words, he has contributed immensely to the development of school into an outstanding institution with an established focus on inculcation of discipline and professionalism.",
     },
     {
       name: "Mrs. Rashmi Ahluwalia",
       position: "Principal/Director",
-      image: "/Images/Heros/samplehero.JPG",
+      image: "/Images/About/rashmi.jpeg",
       bio: "With the truly assiduous and meticulous enlightenment of highly revered School Principal – Mrs. Rashmi Ahluwalia, the school in all horizons has caught the sight of enormous development. As an educationist, she sees her goal as the overall development of child and adaptability to the challenges of modern era. She provides a balanced emphasis on academics, extra-curricular activities and also training for competitive examinations with a view to make the students intellectually competent, physically sound and socially mindful individuals. She creates an ideal atmosphere for learners including teachers, non-academic staff and students to acquire and imbibe skills necessary for their physical, mental, social and intellectual development. In recognition of her outstanding contribution towards the cause of education, Mrs. Ahluwalia was honoured with National Award – 2015 by the President of India. She has also been conferred with Best Principal Award, Best Educationist Award and several other noteworthy recognitions at both State and National level for last ten consecutive years.",
     },
   ]
 
   return (
     <section id="our-leadership" className="py-4 sm:py-10 my-10 bg-white">
-      <div className="mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 max-w-7xl">
-        <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
+      <div className="mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 lg:px-20 xl:px-0">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl min-[540px]:text-3xl text-gray-900 font-playpen font-medium leading-normal">
             Our Visionary{" "}
             <span className="relative inline-block">
               Leadership
@@ -35,17 +35,17 @@ const Leadership: React.FC = () => {
               <img
                 src="/Images/Doodles/SparkPurple.png"
                 alt="Spark"
-                className="absolute w-10 sm:w-12 md:w-14 -top-6 md:-top-8 -right-12 md:-right-15"
+                className="absolute w-8 sm:w-12 -top-6 -right-8 sm:-right-12"
               />
             </span>
           </h2>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             Meet the dedicated leaders & visionary educators shaping the future of Montessori Cambridge School.
           </p>
         </div>
 
 
-        <div className="mb-8 sm:mb-12 lg:mb-16 bg-blue-50 p-6 sm:p-8 lg:p-12 rounded-2xl shadow-sm font-inter text-base sm:text-lg">
+        <div className="mb-8 min-[540px]:mb-12 lg:mb-16 bg-blue-50 p-6 min-[540px]:p-8 lg:p-16 rounded-2xl shadow-sm font-inter text-base sm:text-lg">
           <p className="text-gray-700">
             Montessori Cambridge School, Pathankot is overseen by our leaders who are heavily invested in the school.
             Coming from a range of backgrounds with all being very successful in their fields, our leaders comprise of
@@ -74,7 +74,7 @@ const Leadership: React.FC = () => {
             <div
               key={index}
               className={`flex flex-col ${index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
-                } gap-12 xl:gap-8 items-center bg-white rounded-2xl shadow-xl p-6 sm:p-8 lg:p-12 transition-all duration-300 hover:shadow-2xl`}
+                } gap-12 xl:gap-8 items-center bg-white rounded-2xl lg:rounded-3xl shadow-xl p-6 min-[540px]:p-8 lg:p-12 transition-all duration-300 hover:shadow-2xl`}
             >
               <div className="lg:w-1/3 flex justify-center">
                 <div className="relative">

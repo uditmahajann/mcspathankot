@@ -24,14 +24,14 @@ const News = ({ news }: Props) => {
 
         {/* Section Header */}
         <div className="text-center mb-6">
-          <h2 className="text-2xl min-[540px]:text-3xl text-gray-900 font-playpen font-medium inline-block relative leading-normal">
+          <h2 className="text-2xl min-[540px]:text-3xl text-gray-900 font-playpen font-medium leading-normal">
             School Highlights &{" "}
             <span className="relative inline-block">
               News
               <img
                 src="/Images/Doodles/SparkYellow.png"
                 alt="Spark"
-                className="absolute w-10 sm:w-12 -top-6 -right-10 sm:-right-12"
+                className="absolute w-8 sm:w-12 -top-6 -right-8 sm:-right-12"
               />
             </span>
           </h2>

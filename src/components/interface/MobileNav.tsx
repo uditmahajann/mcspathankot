@@ -1,5 +1,3 @@
-"use client"
-
 import type React from "react"
 import { useState, useEffect, useRef } from "react"
 import {
@@ -18,15 +16,18 @@ import {
   Users,
 } from "lucide-react"
 
+
 interface NavigationItem {
   name: string
-  href: string
+  href?: string
   dropdown: boolean
+  basePath?: string
   items?: {
     name: string
     href: string
   }[]
 }
+
 
 interface MobileNavProps {
   navigation: NavigationItem[]
@@ -103,6 +104,18 @@ const MobileNav: React.FC<MobileNavProps> = ({ navigation, currentPath, contactI
     }))
   }
 
+  const isItemActive = (item: NavigationItem) => {
+    if (!item.dropdown && item.href) {
+      return currentPath === item.href
+    }
+
+    if (item.dropdown && item.basePath) {
+      return currentPath.startsWith(item.basePath + "/")
+    }
+
+    return false
+  }
+
   return (
     <>
       {/* Mobile Menu Button */}
@@ -135,41 +148,39 @@ const MobileNav: React.FC<MobileNavProps> = ({ navigation, currentPath, contactI
                   {!item.dropdown ? (
                     <a
                       href={item.href}
-                      className={`block px-3 py-2 rounded-md text-base font-medium ${
-                        currentPath === item.href
+                      className={`block px-3 py-2 rounded-md text-base font-medium ${currentPath === item.href
                           ? "bg-blue-50 text-blue-700"
                           : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                      }`}
+                        }`}
                     >
                       {item.name}
                     </a>
                   ) : (
                     <div className="mobile-dropdown">
                       <button
+                        type="button"
                         onClick={() => toggleDropdown(item.name)}
-                        className={`w-full flex items-center justify-between px-3 py-2 rounded-md text-base font-medium ${
-                          currentPath.startsWith(item.href)
+                        className={`w-full flex items-center justify-between px-3 py-2 rounded-md text-base font-medium ${isItemActive(item)
                             ? "bg-blue-50 text-blue-700"
                             : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                        }`}
+                          }`}
                       >
                         {item.name}
                         <ChevronDown
-                          className={`h-5 w-5 transform transition-transform duration-200 ${
-                            openDropdowns[item.name] ? "rotate-180" : ""
-                          }`}
+                          className={`h-5 w-5 transform transition-transform duration-200 ${openDropdowns[item.name] ? "rotate-180" : ""
+                            }`}
                         />
                       </button>
+
                       <div className={`pl-4 space-y-1 mt-1 ${openDropdowns[item.name] ? "" : "hidden"}`}>
                         {item.items?.map((subItem, subIndex) => (
                           <a
                             key={subIndex}
                             href={subItem.href}
-                            className={`block px-3 py-2 rounded-md text-sm font-medium ${
-                              currentPath === subItem.href
+                            className={`block px-3 py-2 rounded-md text-sm font-medium ${currentPath === subItem.href
                                 ? "bg-blue-50 text-blue-700"
                                 : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
-                            }`}
+                              }`}
                           >
                             {subItem.name}
                           </a>

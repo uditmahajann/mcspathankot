@@ -3,12 +3,12 @@ import type React from "react"
 const History: React.FC = () => {
   return (
     <section id="our-story" className="py-4 sm:py-10 my-10 bg-white">
-      <div className="mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 max-w-7xl">
-        <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2">
+      <div className="">
+        <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2 mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 xl:px-0 max-w-7xl">
 
           <div className="space-y-6 font-inter text-base sm:text-lg">
 
-            <h3 className="text-xl sm:text-2xl max-w-5xl font-playpen font-semibold text-primarydark italic">
+            <h3 className="text-xl sm:text-2xl max-w-5xl font-playpen font-semibold text-primary">
               "With your first step in MCS campus, there is immediately a sense that it is more than just a school"
             </h3>
 
@@ -42,9 +42,9 @@ const History: React.FC = () => {
 
           </div>
 
-          <div className="sticky top-50 w-full max-h-fit overflow-hidden rounded-2xl shadow-xl">
+          <div className="sticky top-50 w-full max-h-fit overflow-hidden rounded-xl sm:rounded-2xl shadow-xl">
             <img
-              src=""
+              src="/Images/Heros/abouthero.JPG"
               alt="MCS School Building"
               className="w-full object-cover"
             />
@@ -53,22 +53,21 @@ const History: React.FC = () => {
 
         <div className="w-full my-8 sm:my-12 lg:my-20">
           <video
-            className="w-full h-full rounded-xl shadow-lg"
+            className="w-full h-full shadow-lg"
             autoPlay
             loop
             muted
             playsInline
           >
             <source src="/Videos/Mcs2023.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2 mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 xl:px-0 max-w-7xl">
 
           <div className="hidden lg:block lg:sticky top-40 w-full max-h-fit overflow-hidden rounded-2xl shadow-xl">
             <img
-              src="/Images/Heros/samplehero.JPG"
+              src="/Images/About/beauty0.JPG"
               alt="MCS School Building"
               className="w-full object-cover"
             />
@@ -76,7 +75,7 @@ const History: React.FC = () => {
 
           <div className="space-y-6 font-inter text-base sm:text-lg">
 
-            <h3 className="text-xl sm:text-2xl max-w-5xl font-playpen font-semibold text-primarydark italic">
+            <h3 className="text-xl sm:text-2xl max-w-5xl font-playpen font-semibold text-primary">
               "An environment where every learning experience is surrounded by Beauty, Peace, and Inspiration"
             </h3>
 
@@ -100,10 +99,10 @@ const History: React.FC = () => {
 
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 my-8 sm:my-12 lg:my-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 my-8 sm:my-12 lg:my-20 mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 xl:px-0 max-w-7xl">
           <div className="relative overflow-hidden group rounded-xl shadow-lg">
             <img
-              src="/Images/Heros/samplehero.JPG"
+              src="/Images/About/beauty1.JPG"
               alt="Interactive digital whiteboard in classroom"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -115,7 +114,7 @@ const History: React.FC = () => {
 
           <div className="relative overflow-hidden group rounded-xl shadow-lg">
             <img
-              src="/Images/Heros/samplehero.JPG"
+              src="/Images/About/beauty2.JPG"
               alt="Students using tablets in classroom"
               className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -126,7 +125,7 @@ const History: React.FC = () => {
 
           <div className="relative overflow-hidden group rounded-xl shadow-lg">
             <img
-              src="/Images/Heros/samplehero.JPG"
+              src="/Images/About/beauty3.JPG"
               alt="Virtual reality learning session"
               className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -136,11 +135,11 @@ const History: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2 mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 xl:px-0 max-w-7xl">
 
           <div className="space-y-6 font-inter text-base sm:text-lg">
 
-            <h3 className="text-xl sm:text-2xl max-w-5xl font-playpen font-semibold text-primarydark italic">
+            <h3 className="text-xl sm:text-2xl max-w-5xl font-playpen font-semibold text-primary">
               "Where young minds take shape—with strong values, joyful learning, and a spark of curiosity that lasts a lifetime."
             </h3>
 
@@ -167,7 +166,7 @@ const History: React.FC = () => {
 
           <div className="sticky top-40 w-full max-h-fit overflow-hidden rounded-2xl shadow-xl">
             <img
-              src="/Images/Heros/samplehero.JPG"
+              src="/Images/About/beauty4.JPG"
               alt="MCS School Building"
               className="w-full object-cover"
             />

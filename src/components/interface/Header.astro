@@ -4,7 +4,6 @@ import { ChevronDown } from "lucide-react";
 import TopBar from "./TopBar";
 import MobileNav from "./MobileNav";
 
-
 // Define navigation structure with dropdowns
 const navigation = [
   {
@@ -14,8 +13,8 @@ const navigation = [
   },
   {
     name: "About",
-    href: "/about",
     dropdown: true,
+    basePath: "/about",
     items: [
       { name: "Our History", href: "/about/history" },
       { name: "Vision & Mission", href: "/about/vision-&-mission" },
@@ -44,8 +43,8 @@ const navigation = [
   },
   {
     name: "Academics",
-    href: "/academics",
     dropdown: true,
+    basePath: "/academics",
     items: [
       { name: "Kindergarten", href: "/academics/kindergarten" },
       { name: "Primary School", href: "/academics/primary-school" },
@@ -57,21 +56,26 @@ const navigation = [
       },
     ],
   },
- {
+  {
     name: "Co-curriculars",
-    href: "/academics",
     dropdown: true,
+    basePath: "/co-curriculars",
     items: [
       { name: "Performative Arts", href: "/co-curriculars/performing-arts" },
-      { name: "Research & Innovation", href: "/co-curriculars/research-&-innovation" },
-      { name: "Sports & Athletics", href: "/co-curriculars/sports-&-athletics" },
-      // { name: "NCC & NDA", href: "/co-curriculars/ncc-&-nda" },
+      {
+        name: "Research & Innovation",
+        href: "/co-curriculars/research-&-innovation",
+      },
+      {
+        name: "Sports & Athletics",
+        href: "/co-curriculars/sports-&-athletics",
+      },
     ],
   },
   {
     name: "Curriculum",
-    href: "/curriculum",
     dropdown: true,
+    basePath: "/curriculum",
     items: [
       { name: "Annual Calendar", href: "/curriculum/annual-calendar" },
       { name: "Academic Courses", href: "/curriculum/academic-courses" },
@@ -85,8 +89,8 @@ const navigation = [
 
   {
     name: "Admission",
-    href: "#",
     dropdown: true,
+    basePath: "/admission",
     items: [
       { name: "Why Choose MCS?", href: "/admission/why-choose-MCS" },
       { name: "Admission Process", href: "/admission/admission-process" },
@@ -100,8 +104,8 @@ const navigation = [
   },
   {
     name: "Bulletin",
-    href: "#",
     dropdown: true,
+    basePath: "/bulletin",
     items: [
       { name: "Circulars", href: "/bulletin/circulars" },
       { name: "News & Events", href: "/bulletin/upcoming-events" },
@@ -153,10 +157,11 @@ const currentPath = Astro.url.pathname;
     id="sticky-header"
     class="headerwrap transition-all duration-500 ease-in-out"
   >
-
     <!-- NavBar -->
     <div class="w-full">
-      <div class="flex items-center justify-between w-full mx-auto px-5 sm:px-6">
+      <div
+        class="flex items-center justify-between w-full mx-auto px-5 sm:px-6"
+      >
         <div class="flex items-center justify-between w-full py-2 gap-x-5">
           <a
             href="/"
@@ -172,49 +177,65 @@ const currentPath = Astro.url.pathname;
           </a>
           <!-- Desktop Navigation -->
           <nav
-            class="hidden lg:flex flex-wrap justify-center gap-x-2 gap-y-5 flex-1 py-3"
+            class="hidden lg:flex flex-wrap justify-center items-center gap-x-2 gap-y-5 flex-1 py-3"
             role="navigation"
             aria-label="Main navigation"
           >
             {
-              navigation.map((item) => (
-                <div class="relative group">
-                  <a
-                    href={item.href}
-                    class={`navlink px-2 py-2 hover:bg-primarylight hover:text-primarydark rounded-md text-base font-inter font-medium hover:font-semibold transition-colors ${
-                      currentPath === item.href ||
-                      (item.href !== "/" &&
-                        currentPath.startsWith(item.href + "/"))
-                        ? "text-primarydark font-semibold"
-                        : "text-gray-800"
-                    }`}
-                  >
-                    {item.name}
-                    {item.dropdown && (
-                      <ChevronDown
-                        client:load
-                        className="h-4.5 w-4.5 inline-block"
-                      />
-                    )}
-                  </a>
+              navigation.map((item) => {
+                const isActive =
+                  (!item.dropdown && currentPath === item.href) ||
+                  (item.dropdown &&
+                    item.basePath &&
+                    currentPath.startsWith(item.basePath + "/"));
 
-                  {item.dropdown && (
-                    <div class="absolute left-0 mt-3 w-52 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                      <div class="py-2" role="menu" aria-orientation="vertical">
-                        {item.items?.map((subItem) => (
-                          <a
-                            href={subItem.href}
-                            class="block px-4 py-2 font-inter text-base text-gray-900 hover:bg-secondarylight hover:text-secondarydark"
-                            role="menuitem"
-                          >
-                            {subItem.name}
-                          </a>
-                        ))}
+                return (
+                  <div class="relative group">
+                    {item.dropdown ? (
+                      <button
+                        type="button"
+                        class={`navlink px-2 py-2 rounded-md text-base font-inter font-medium hover:bg-primarylight hover:text-primarydark hover:font-semibold transition-colors ${
+                          isActive
+                            ? "text-primarydark font-semibold"
+                            : "text-gray-800"
+                        }`}
+                      >
+                        {item.name}
+                        <ChevronDown
+                          client:load
+                          className="h-4.5 w-4.5 inline-block"
+                        />
+                      </button>
+                    ) : (
+                      <a
+                        href={item.href}
+                        class={`navlink px-2 py-2 rounded-md text-base font-inter font-medium hover:bg-primarylight hover:text-primarydark hover:font-semibold transition-colors ${
+                          isActive
+                            ? "text-primarydark font-semibold"
+                            : "text-gray-800"
+                        }`}
+                      >
+                        {item.name}
+                      </a>
+                    )}
+
+                    {item.dropdown && (
+                      <div class="absolute left-0 mt-3 w-52 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="py-2">
+                          {item.items?.map((subItem) => (
+                            <a
+                              href={subItem.href}
+                              class="block px-4 py-2 font-inter text-base text-gray-900 hover:bg-secondarylight hover:text-secondarydark"
+                            >
+                              {subItem.name}
+                            </a>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  )}
-                </div>
-              ))
+                    )}
+                  </div>
+                );
+              })
             }
           </nav>
 
@@ -225,7 +246,7 @@ const currentPath = Astro.url.pathname;
               class="shrink-0 group inline-flex items-center justify-center py-2 px-5 sm:py-2.5 text-outfit font-medium text-white bg-primarydark rounded-full transition-all duration-300 ease-in-out hover:font-semibold hover:text-white hover:bg-secondarydark hover:scale-105 active:scale-95 cursor-pointer text-sm"
             >
               PAY FEES
-          </a>
+            </a>
             <MobileNav
               client:load
               navigation={navigation}
@@ -297,5 +318,3 @@ const currentPath = Astro.url.pathname;
     window.addEventListener("load", onScroll);
   }
 </script>
-
-
