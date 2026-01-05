@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NccNdaHero from "../../components/sections/campuslifepage/NccNdaHero";
+import NccNdaSection from "../../components/sections/campuslifepage/NccNda";
+import NccNdaVideo from "../../components/sections/campuslifepage/NccNdaVideo";
+import NccNdaValues from "../../components/sections/campuslifepage/NccNdaValues";
+
+---
+
+<Layout
+  title="NCC & NDA Training | MCS Pathankot | Montessori Cambridge School | Top Boarding School in Pathankot, Punjab, North India"
+  description="MCS Pathankot offers NCC training and NDA preparation, instilling discipline, leadership, and patriotism in students."
+  pubDate={new Date()}
+  >
+  <main>
+    <NccNdaHero />
+    <NccNdaSection client:load/>
+    <NccNdaVideo client:load/>
+    <NccNdaValues client:load/>
+  </main>
+</Layout>

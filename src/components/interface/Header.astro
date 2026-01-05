@@ -38,8 +38,18 @@ const navigation = [
   },
   {
     name: "Campus Life",
-    href: "/campus-life",
-    dropdown: false,
+    dropdown: true,
+    basePath: "/campus-life",
+    items: [
+      { name: "Boarding Experience", href: "/campus-life/boarding-experience" },
+      { name: "Day-Boarding Experience", href: "/campus-life/day-boarding-experience" },
+      { name: "Events & Activities", href: "/campus-life/events-&-activities" },
+      { name: "Tours & Excursions", href: "/campus-life/tours-&-excursions" },
+      { name: "Enriching Exhibitions", href: "/campus-life/enriching-exhibitions" },
+      { name: "Outreach Programs", href: "/campus-life/outreach-programs" },
+      { name: "NCC & NDA", href: "/campus-life/ncc-&-nda" },
+      
+    ],
   },
   {
     name: "Academics",

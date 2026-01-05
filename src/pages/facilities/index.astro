@@ -6,10 +6,11 @@ import CompetitiveCoaching from "../../components/sections/facilitiespage/Compet
 import SmartClasses from "../../components/sections/facilitiespage/SmartClasses";
 import ProfessionalLabs from "../../components/sections/facilitiespage/ProfessionalLabs";
 import SportsGym from "../../components/sections/facilitiespage/SportsGym";
+import SportsExcellence from "../../components/sections/facilitiespage/SportsExcellence";
 import BoardingFacility from "../../components/sections/facilitiespage/BoardingFacility";
 import DayBoardingFacility from "../../components/sections/facilitiespage/DayBoardingFacility";
 import TransportFacility from "../../components/sections/facilitiespage/TransportFacility";
-import { Trophy, Timer, Users, Dumbbell, Target } from "lucide-react";
+
 ---
 
 <Layout
@@ -38,9 +39,25 @@ import { Trophy, Timer, Users, Dumbbell, Target } from "lucide-react";
     <CompetitiveCoaching />
     <SmartClasses />
     <SportsGym />
+    <SportsExcellence />
     <ProfessionalLabs />
     <TransportFacility />
     <BoardingFacility />
+    <section class="relative w-full md:h-145 my-8 sm:my-12 lg:my-20">
+      <video
+        class="w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="metadata"
+      >
+        <source
+          src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767603795/refectory_nyb3jq.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </section>
     <DayBoardingFacility />
   </main>
 </Layout>

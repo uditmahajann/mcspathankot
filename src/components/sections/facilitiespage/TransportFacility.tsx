@@ -35,83 +35,62 @@ const TransportFacility = () => {
   ]
 
   return (
-    <section id="transport-facility" className="py-4 sm:py-10 my-10 bg-white">
-      <div className="container mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 max-w-7xl">
-        <div className="text-center mb-8 sm:mb-10">
-          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
-            {" "}
-            <span className="relative inline-block">
-              Transport Facilities
-              {/* Spark Doodle */}
-              <img
-                src="/Images/Doodles/SparkPurple.png"
-                alt="Spark"
-                className="absolute w-10 sm:w-12 md:w-14 -top-6 md:-top-8 -right-12 md:-right-15"
-              />
-            </span>
-          </h2>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
-            Safe and reliable school commute with real-time tracking, route updates, and modern fleet monitoring systems.
-          </p>
-        </div>
-
-        <div className="bg-slate-800 text-white rounded-2xl overflow-hidden">
-          <div className="flex flex-col lg:flex-row">
-            <div className="lg:w-1/2 p-8 sm:p-12 lg:p-14">
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-poppins font-bold mb-4 tracking-wide leading-normal">Transport with Live GPS</h3>
-              <p className="text-blue-100 font-inter mb-8">
-                Our transport system ensures a safe and reliable commute for students through a fleet of GPS-enabled school buses.
+    <section id="transport-facility" className="bg-linear-to-r from-blue-950 via-blue-900 to-blue-950 my-10 py-12 md:py-20 overflow-hidden">
+      <div className="container mx-auto max-w-7xl px-6 min-[540px]:px-12 sm:px-16 xl:px-0">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+            <div className="lg:w-1/2">
+              <h3 className="text-2xl min-[540px]:text-3xl font-playpen font-medium text-yellow-400 leading-normal">Transport Facilities</h3>
+              <p className="mt-6 text-gray-100 font-inter">
+                Our transport system ensures a safe and reliable school commute for students through a fleet of GPS-enabled school buses with real-time tracking, route updates, and modern fleet monitoring systems.
               </p>
 
-              <div className="space-y-3 sm:space-y-5">
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-50 p-3 rounded-full">
-                    <LocateFixed className="w-6 h-6 text-primarydark" />
+              <div className="mt-10 space-y-3 sm:space-y-6">
+                <div className="flex items-center gap-3">
+                  <div className="bg-white/20 p-3 sm:p-4 rounded-full">
+                    <LocateFixed className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-inter font-semibold mb-1">Live GPS Tracking</h4>
-                    <p className="text-blue-100 font-inter">
-                      Our GPS-enabled transport system provides real-time bus location ensuring timely and safe travel.
+                    <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Live GPS Tracking</h4>
+                    <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">
+                     Real-time bus location ensuring timely and safe travel.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-400 p-3 rounded-full">
-                    <ShieldCheck className="w-6 h-6 text-blue-100" />
+                <div className="flex items-center gap-3">
+                  <div className="bg-white/20 p-3 sm:p-4 rounded-full">
+                    <ShieldCheck className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-inter font-semibold mb-1">Safety & Security</h4>
-                    <p className="text-blue-100 font-inter">
-                      All drivers and attendants undergo regular training and background checks to ensure the highest safety standards.
+                    <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Safety & Security</h4>
+                    <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">
+                      All drivers & attendants undergo regular training and background checks.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-900 p-3 rounded-full">
-                    <Route className="w-6 h-6 text-blue-100" />
+                <div className="flex items-center gap-3">
+                  <div className="bg-white/20 p-3 sm:p-4 rounded-full">
+                    <Route className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-inter font-semibold mb-1">Extensive Route Coverage</h4>
-                    <p className="text-blue-100 font-inter">
-                      Our transport service covers a wide network across the city with well-planned routes.
+                    <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Extensive Route Coverage</h4>
+                    <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">
+                     We cover a wide network across the city with well-planned routes.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="lg:w-1/2 relative">
-              <img
-                src="/Images/Heros/samplehero.JPG"
-                alt="Students in sports training"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-linear-to-r from-slate-800 to-transparent lg:block hidden"></div>
+            <div className="lg:w-1/2">
+            <div className="relative h-full rounded-lg sm:rounded-2xl overflow-hidden">
+              <video className="w-full h-full object-cover" autoPlay loop muted playsInline preload="metadata">
+                <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767545220/smartclassclip_cpwl0r.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
-        </div>
+          </div>
       </div>
     </section>
   )

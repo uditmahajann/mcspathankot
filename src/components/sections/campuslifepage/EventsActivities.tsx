@@ -92,22 +92,22 @@ export default function EventsActivities({ events }: { events: Event[] }) {
   }
 
   return (
-    <section id="events-activities" className="py-4 sm:py-10 my-10 bg-white">
-      <div className="container mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 max-w-7xl">
+    <section id="events-activities" className="relative bg-white py-4 sm:py-10 my-10">
+      <div className="container mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 xl:px-0">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-16">
-          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
+          <h2 className="text-2xl min-[540px]:text-3xl text-gray-900 font-playpen font-medium leading-normal">
             School Events{" "}
             <span className="relative inline-block">
               & Activities
               <img
                 src="/Images/Doodles/LineYellow.png"
                 alt="Underline"
-                className="absolute w-[80%] left-12 -bottom-4 sm:-bottom-6"
+                className="absolute -bottom-5"
               />
             </span>
           </h2>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             Our vibrant campus life is enriched by diverse events and
             activities that foster holistic development, teamwork, and
             creative expression.
@@ -192,7 +192,7 @@ export default function EventsActivities({ events }: { events: Event[] }) {
         </div>
 
         {/* 🎥 Other Events (Videos) */}
-        <section className="mx-auto lg:pt-20 pb-8 sm:pb-12 lg:pb-20 bg-no-repeat bg-cover bg-center sm:bg-[url('/Svg/PaperTorn.svg')] bg-[url('/Svg/PaperTornM.svg')]">
+        <section className="mx-auto lg:py-12 py-8 bg-no-repeat bg-cover bg-center sm:bg-[url('/Svg/PaperTorn.svg')] bg-[url('/Svg/PaperTornM.svg')]">
           <div className="mt-10 xl:mt-16 space-y-16">
             {paginatedEvents.map((event, index) => {
               const actualIndex = (currentPage - 1) * eventsPerPage + index

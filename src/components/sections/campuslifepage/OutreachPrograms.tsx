@@ -17,7 +17,7 @@ const programs = [
     title: "Environmental Stewardship Program",
     description:
       "Through sustainability clubs and ‘Go Green’ initiatives, our learners engage in eco-projects like composting, waste segregation, and creating school gardens — nurturing a lifelong respect for nature.",
-    image: "/Images/Heros/samplehero.JPG",
+    image: "/Images/CampusLife/environment.jpeg",
     tag: "Eco Initiative",
     icon: <Leaf className="w-6 h-6 text-green-600" />,
     bg: "bg-green-100",
@@ -46,21 +46,21 @@ const programs = [
 
 const OutreachPrograms = () => {
   return (
-    <section id="outreach-programs" className="py-4 sm:py-10 my-10 bg-white">
-      <div className="mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 max-w-7xl">
+    <section id="outreach-programs" className="relative bg-white py-4 sm:py-10 my-10">
+      <div className="mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 xl:px-0">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-16">
-          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
+          <h2 className="text-2xl min-[540px]:text-3xl text-gray-900 font-playpen font-medium leading-normal">
             Outreach <span className="relative inline-block">
               Programs
               <img
                 src="/Images/Doodles/LineYellow.png"
                 alt="Underline"
-                className="absolute w-[90%] left-12 -bottom-4 sm:-bottom-6"
+                className="absolute -bottom-5"
               />
             </span>
           </h2>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             At Montessori Cambridge School, we believe education extends beyond academics — it’s about shaping kind, aware, and socially responsible citizens.
           </p>
         </div>
@@ -70,14 +70,14 @@ const OutreachPrograms = () => {
           {programs.map((program, index) => (
             <div
               key={program.id}
-              className={`flex flex-col md:flex-row ${index % 2 === 1 ? "md:flex-row-reverse" : ""} items-stretch gap-3 sm:gap-6 lg:gap-10 rounded-2xl lg:rounded-3xl shadow-sm overflow-hidden ${program.bg}`}
+              className={`flex flex-col md:flex-row ${index % 2 === 1 ? "md:flex-row-reverse" : ""} items-stretch rounded-2xl lg:rounded-3xl shadow-sm overflow-hidden ${program.bg}`}
             >
               {/* Image */}
               <div className="md:w-1/2">
                 <img
                   src={program.image}
                   alt={program.title}
-                  className="w-full h-80 md:h-full object-cover"
+                  className="w-full h-80 md:h-120 object-cover"
                   loading="lazy"
                 />
               </div>

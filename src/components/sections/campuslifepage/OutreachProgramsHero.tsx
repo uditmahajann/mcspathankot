@@ -1,12 +1,12 @@
 import type React from "react";
 
-const CampusLifeHero: React.FC = () => {
+const OutreachProgramsHero: React.FC = () => {
   return (
     <section className="relative text-white">
       <div
         className="relative min-h-[60vh] md:min-h-[65vh] flex items-center"
         style={{
-          backgroundImage: `url('/Images/Campus/EntryFront.JPG')`,
+          backgroundImage: `url('/Images/Heros/outreachhero.jpeg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed", // parallax-like
@@ -18,13 +18,13 @@ const CampusLifeHero: React.FC = () => {
         <div className="relative z-10 w-full">
           <div className="mx-auto max-w-7xl px-6 min-[540px]:px-10 sm:px-12 lg:px-20 xl:px-10">
             <div className="max-w-md md:max-w-xl lg:max-w-2xl">
-              <span className="text-xs md:text-sm tracking-widest uppercase font-semibold text-white/80">Life @MCS</span>
+              <span className="text-xs md:text-sm tracking-widest uppercase font-semibold text-white/80">Impacting Lives</span>
               <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-poppins font-semibold leading-tight">
-                <span className="text-purple-400">Moments</span> that create <br className="" />
-                Memories
+                Creating <span className="text-orange-400">Impact </span><br className="" />
+                through Outreach
               </h1>
               <p className="mt-3 sm:mt-4 text-base md:text-lg text-white/85">
-                Experience our vibrant, enriching, and holistic environment where students thrive academically, socially, and personally.
+                Our outreach programs encourage students to engage with communities, develop empathy, and understand social responsibility.
               </p>
             </div>
           </div>
@@ -34,4 +34,4 @@ const CampusLifeHero: React.FC = () => {
   );
 };
 
-export default CampusLifeHero;
+export default OutreachProgramsHero;

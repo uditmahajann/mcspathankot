@@ -3,6 +3,7 @@ import achievement from "./achievement";
 import award from "./award";
 import news from "./news";
 import event from "./event";
+import tourExcursion from "./tourExcursion";
 import circular from "./circular";
 import pressRelease from "./pressRelease";
 import printMedia from "./printMedia";
@@ -22,10 +23,13 @@ import mandatoryDisclosure from "./mandatoryDisclosure";
 
 export const schemaTypes = [
     pageSettings,
-    event,
+    instaReel,
+    banner,
     award,
     achievement,
     news,
+    event,
+    tourExcursion,
     circular,
     pressRelease,
     printMedia,
@@ -37,7 +41,5 @@ export const schemaTypes = [
     course,
     courseGroup,
     annualCalendar,
-    instaReel,
-    banner,
     mandatoryDisclosure,
 ]

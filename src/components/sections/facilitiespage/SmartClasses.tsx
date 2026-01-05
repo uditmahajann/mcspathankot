@@ -12,7 +12,7 @@ const SmartClasses = () => {
               create an immersive and interactive learning environment enhancing student engagement and comprehension
             </p>
 
-            <div className="mt-8 space-y-3 sm:space-y-6">
+            <div className="mt-10 space-y-3 sm:space-y-6">
               <div className="flex items-center gap-3">
                 <div className="bg-white/20 p-3 sm:p-4 rounded-full">
                   <Monitor className="w-5 h-5 text-white" />

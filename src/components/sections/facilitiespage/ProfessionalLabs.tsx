@@ -1,111 +1,48 @@
-import React from "react";
-import CtaButton from "../..//interface/CtaButton";
-import {
-  Atom,
-  FlaskConical,
-  Microscope,
-  Calculator,
-  Laptop,
-  Bot,
-  ArrowRight,
-} from "lucide-react";
+import CtaButton from "../../interface/CtaButton";
+import { ArrowRight } from "lucide-react";
 
 const labs = [
   {
     id: "physics",
-    icon: Atom,
     title: "Physics Lab",
-    image: "/Images/Heros/samplehero.JPG",
+    image: "/Images/Facility/physicslab.JPG",
     desc:
       "A hands-on environment for learning mechanics, motion, electricity, optics, and energy.",
-    features: [
-      "Laser and light experiments",
-      "Electric circuits and electromagnetism setups",
-      "Precision measurement and timing systems",
-      "Board-exam aligned lab workbooks",
-    ],
-    outcome:
-      "Students verify theories, analyze real data, and strengthen scientific reasoning.",
   },
   {
     id: "chemistry",
-    icon: FlaskConical,
     title: "Chemistry Lab",
-    image: "/Images/Heros/samplehero.JPG",
+    image: "/Images/Facility/chemistrylab.JPG",
     desc:
       "A fully equipped space designed for safe exploration of reactions, compounds, and chemical behaviour.",
-    features: [
-      "Fume hood and ventilation systems",
-      "Digital pH meters and titration instruments",
-      "Reagent-safe storage and safety cabinets",
-      "Mandatory protective equipment",
-    ],
-    outcome:
-      "Learners master lab safety, accurate measurement, and analytical methods.",
   },
   {
     id: "biology",
-    icon: Microscope,
     title: "Biology Lab",
-    image: "/Images/Heros/samplehero.JPG",
+    image: "/Images/Facility/biolab.JPG",
     desc:
       "A discovery-based learning space to study life systems from cells to ecosystems.",
-    features: [
-      "High-resolution microscopes",
-      "Prepared slides and lab specimens",
-      "DNA model kits and dissection tools",
-      "Research corner for advanced study",
-    ],
-    outcome:
-      "Students strengthen observation, classification, and scientific documentation skills.",
   },
   {
     id: "math",
-    icon: Calculator,
     title: "Mathematics Lab",
-    image: "/Images/Heros/samplehero.JPG",
+    image: "/Images/Facility/mathslab.png",
     desc:
       "A space for hands-on mathematical thinking through puzzles, models, and logic activities.",
-    features: [
-      "Geometry kits & 3D models",
-      "Logical reasoning and olympiad modules",
-      "Hands-on measurement tools",
-      "Interactive learning corners",
-    ],
-    outcome:
-      "Math becomes visual, memorable, and enjoyable — strengthening reasoning and problem-solving.",
   },
   {
     id: "computer",
-    icon: Laptop,
     title: "Computers Lab",
-    image: "/Images/Heros/samplehero.JPG",
+    image: "/Images/Facility/computerlab.jpeg",
     desc:
       "A modern digital workspace where students build foundational and advanced computing skills.",
-    features: [
-      "Python and web development modules",
-      "Cyber safety protocols",
-      "Project-based coding and design learning",
-      "Productivity and digital fluency tools",
-    ],
-    outcome:
-      "Students become confident digital creators — not just technology users.",
   },
   {
-    id: "robotics",
-    icon: Bot,
-    title: "Robotics & AI Lab",
-    image: "/Images/Heros/samplehero.JPG",
+    id: "geography",
+    title: "Geography Lab",
+    image: "/Images/Facility/geolab.JPG",
     desc:
-      "A hub for hands-on engineering using robotics, electronics, and programming.",
-    features: [
-      "Arduino, sensors & servo motors",
-      "Block and text-based coding",
-      "Prototype building and testing",
-      "3D printing and engineering design",
-    ],
-    outcome:
-      "Students learn to design, build, and automate — bringing imagination to life.",
+      "An interactive learning space where students explore maps, globes & geography.",
   },
 ];
 
@@ -131,47 +68,24 @@ const ProfessionalLabs = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-10">
-          {labs.map((lab) => {
-            const Icon = lab.icon;
-            return (
-              <div
-                key={lab.id}
-                className="rounded-xl sm:rounded-2xl xl:rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all bg-white"
-              >
-                <img
-                  src={lab.image}
-                  alt={lab.title}
-                  className="w-full h-56 object-cover"
-                />
-
-                <div className="p-5 xl:p-6 text-left">
-                  <div className="flex items-center gap-3 mb-2">
-                    <Icon className="w-6 h-6 text-sky-500" />
-                    <h3 className="text-lg xl:text-xl font-poppins tracking-wide font-semibold text-gray-900">
-                      {lab.title}
-                    </h3>
-                  </div>
-
-                  <p className="font-inter text-gray-700 text-sm xl:text-base mb-4">{lab.desc}</p>
-
-                  <ul className="text-gray-600 text-sm space-y-1 list-disc list-inside mb-4 font-inter">
-                    {lab.features.map((f, i) => (
-                      <li key={i}>{f}</li>
-                    ))}
-                  </ul>
-
-                  <p className="font-inter text-sm text-gray-800 font-medium">
-                    <span className="text-green-500 font-inter font-semibold">Outcome:</span>{" "}
-                    {lab.outcome}
-                  </p>
-                </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-8 lg:mb-12">
+          {labs.map((lab, index) => (
+            <div key={index} className="group relative overflow-hidden rounded-xl shadow-lg h-80">
+              <img
+                src={lab.image}
+                alt={lab.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-black via-black/25 to-transparent flex flex-col justify-end p-5 lg:p-6 group-hover:hidden">
+                <h3 className="text-white text-lg md:text-xl font-poppins font-semibold tracking-wider mb-1">{lab.title}</h3>
+                <p className="text-blue-100 text-sm font-inter">{lab.desc}</p>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
+
         {/* CTA Button */}
-        <div className="mt-8 lg:mt-12 xl:mt-16 text-center">
+        <div className="mt-8 lg:mt-12 text-center">
           <CtaButton text="View More Details" href="/co-curriculars/research-&-innovation" icon={ArrowRight} />
         </div>
       </div>

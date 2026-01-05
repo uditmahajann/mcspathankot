@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import EnrichingExhibitionsHero from "../../components/sections/campuslifepage/EnrichingExhibitionsHero";
+import Exhibitions from "../../components/sections/campuslifepage/EnrichingExhibitions";
+
+---
+
+<Layout
+  title="Enriching Exhibitions | MCS Pathankot | Montessori Cambridge School | Top Boarding School in Pathankot, Punjab, North India"
+  description="MCS Pathankot hosts science fairs, art exhibitions, and cultural showcases, giving students opportunities to explore, innovate, and express."
+  pubDate={new Date()}
+  >
+  <main>
+    <EnrichingExhibitionsHero />
+    <Exhibitions client:load/>
+  </main>
+</Layout>

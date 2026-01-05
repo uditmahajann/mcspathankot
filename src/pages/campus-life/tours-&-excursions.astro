@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ToursExcursionsHero from "../../components/sections/campuslifepage/ToursExcursionsHero";
+import ToursExcursionsSection from '../../components/sections/campuslifepage/ToursExcursions';
+
+import { client } from "../../lib/sanity";
+import { toursQuery } from "../../lib/queries/tours";
+
+const tours = await client.fetch(toursQuery);
+---
+
+<Layout
+  title="Tours & Excursions | MCS Pathankot | Montessori Cambridge School | Top Boarding School in Pathankot, Punjab, North India"
+  description="Educational tours and excursions at MCS Pathankot broaden horizons, offering students real-world experiences beyond the classroom."
+  pubDate={new Date()}
+  >
+  <main>
+    <ToursExcursionsHero />
+    <ToursExcursionsSection tours={tours} client:load/>
+  </main>
+</Layout>

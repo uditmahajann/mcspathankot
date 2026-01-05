@@ -2,26 +2,26 @@ import { Clock, Home, Utensils, Book, Users, Moon, Sun, Heart, Award, Music } fr
 
 const BoardingExperience = () => {
   return (
-    <section id="boarding-experience" className="py-4 sm:pb-10 my-10 bg-white">
-      <div className="container mx-auto px-6 min-[540px]:px-12 sm:px-16 md:px-12 lg:px-20 max-w-7xl">
+    <section id="boarding-experience" className="relative bg-white py-4 sm:py-10 my-10">
+      <div className="container mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 xl:px-0">
         <div className="text-center mb-8 sm:mb-16">
-          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
+          <h2 className="text-2xl min-[540px]:text-3xl text-gray-900 font-playpen font-medium leading-normal">
             Boarding School <span className="relative inline-block">Experience
               <img
                 src="/Images/Doodles/LineYellow.png"
                 alt="Underline"
-                className="absolute w-[90%] left-6 -bottom-4 sm:-bottom-6"
+                className="absolute -bottom-5"
               />
             </span>
           </h2>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             Our boarding program offers students a home away from home, fostering independence, responsibility, and
             lifelong friendships in a safe and nurturing environment.
           </p>
         </div>
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-10 mb-8 md:mb-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 md:mb-12 items-center">
           {/* Left Column - Description and Features */}
           <div>
             <div className="bg-blue-50 rounded-xl p-8 mb-8">
@@ -33,12 +33,12 @@ const BoardingExperience = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 {[
-                  { icon: <Home size={22} />, text: "Modern dormitories" },
-                  { icon: <Utensils size={22} />, text: "Nutritious meals" },
-                  { icon: <Users size={22} />, text: "24/7 supervision" },
-                  { icon: <Heart size={22} />, text: "Healthcare services" },
-                  { icon: <Book size={22} />, text: "Study facilities" },
-                  { icon: <Award size={22} />, text: "Character development" },
+                  { icon: <Home size={22} />, text: "Modern Dormitories" },
+                  { icon: <Utensils size={22} />, text: "Nutritious Meals" },
+                  { icon: <Users size={22} />, text: "24/7 Supervision" },
+                  { icon: <Heart size={22} />, text: "Healthcare Services" },
+                  { icon: <Book size={22} />, text: "Study Facilities" },
+                  { icon: <Award size={22} />, text: "Personality Development" },
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="p-3 bg-blue-100 rounded-full text-primarydark">{item.icon}</div>
@@ -58,12 +58,12 @@ const BoardingExperience = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  "Movie nights",
-                  "Sports tournaments",
-                  "Cultural outings",
-                  "Community service",
-                  "Hobby clubs",
-                  "Special workshops",
+                  "Movie Nights",
+                  "Sports Tournaments",
+                  "Cultural Outings",
+                  "Community Service",
+                  "Hobby Clubs",
+                  "Special Workshops",
                 ].map((activity, index) => (
                   <div key={index} className="flex items-center gap-2 font-inter text-white font-medium">
                     <div className="w-2 h-2 rounded-full bg-blue-300"></div>
@@ -78,12 +78,12 @@ const BoardingExperience = () => {
           <div className="bg-gray-50 rounded-xl sm:p-6 lg:p-8">
             <div className="grid grid-cols-2 gap-4">
               {[
-                "/Images/Heros/samplehero.JPG",
-                "/Images/Heros/samplehero.JPG",
-                "/Images/Heros/samplehero.JPG",
-                "/Images/Heros/samplehero.JPG",
-                "/Images/Heros/samplehero.JPG",
-                "/Images/Heros/samplehero.JPG",
+                "/Images/Facility/hostel.JPG",
+                "/Images/Facility/refectory.JPG",
+                "/Images/Facility/moviehall.JPG",
+                "/Images/Facility/competitive.JPG",
+                "/Images/Facility/competitive.JPG",
+                "/Images/Facility/gym.JPG",
               ].map((src, idx) => (
                 <div key={idx} className="overflow-hidden rounded-lg shadow-md group">
                   <img

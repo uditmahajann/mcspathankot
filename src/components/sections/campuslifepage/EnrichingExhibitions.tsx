@@ -112,20 +112,10 @@ const EnrichingExhibitions = () => {
   return (
     <section
       id="exhibitions"
-      className="relative my-10 md:my-20 py-15 md:py-20 bg-linear-to-br from-violet-950 via-blue-900 to-indigo-950"
+      className="relative bg-white py-4 sm:py-10 my-10"
     >
-      <div className="mx-auto max-w-7xl px-6 min-[540px]:px-12 sm:px-16 lg:px-20">
-        {/* Header */}
-        <div className="text-center mb-10">
-          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-yellow-400 font-playpen font-medium leading-normal">
-            Enriching Exhibitions
-          </h2>
-          <p className="mt-4 sm:mt-7 text-base sm:text-lg text-gray-200 max-w-3xl mx-auto">
-            Each exhibition at Montessori Cambridge School is a celebration of discovery — 
-            where curiosity transforms into creativity and innovation takes shape through student projects.
-          </p>
-        </div>
-
+      <div className="mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 xl:px-0">
+       
         {/* Exhibitions */}
         <div className="space-y-12 lg:space-y-16">
           {exhibitions.map((exhibit, index) => (
