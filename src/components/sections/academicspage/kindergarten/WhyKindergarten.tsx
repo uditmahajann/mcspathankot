@@ -61,24 +61,21 @@ const PILLARS: Pillar[] = [
 const WhyKindergarten: React.FC = () => {
   return (
     <section
-      id="why-kindergarten"
-      className="relative py-30 bg-amber-100"
+      className="relative py-25 sm:py-30 bg-amber-100"
     >
       {/* Monkey image positioned absolutely */}
       <img
-        src="/Images/Academics/Monkey.png"
-        alt="Cute monkey illustration"
-        className="absolute -bottom-25 right-0 w-95 sm:w-115 lg:w-135 z-20 pointer-events-none select-none"
+        src="/Images/Academics/monkey.png"
+        className="absolute -bottom-20 sm:-bottom-15 lg:-bottom-25 right-0 w-80 sm:w-100 xl:w-135 z-20 pointer-events-none select-none"
       />
       <img
-        src="/Images/Academics/Bird.png"
-        alt="Cute monkey illustration"
-        className="absolute w-90 -left-7.5 top-5 z-20 pointer-events-none select-none"
+        src="/Images/Academics/bird.png"
+        className="absolute w-50 lg:w-60 xl:w-90 -left-7.5 -top-15 sm:top-5 z-20 pointer-events-none select-none"
       />
 
-      <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-20 mx-auto max-w-7xl px-6 min-[540px]:px-12">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-12 lg:mb-16 max-w-4xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 xl:mb-16 max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
             Why Our Kindergarten?
           </h2>

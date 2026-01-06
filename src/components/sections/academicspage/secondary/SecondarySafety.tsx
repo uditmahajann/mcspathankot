@@ -47,16 +47,16 @@ const SafetyCareCreative: React.FC = () => {
   return (
     <section
       id="safety-care"
-      className="relative bg-cover bg-center bg-no-repeat flex items-center"
+      className="relative bg-cover bg-center bg-no-repeat flex items-center overflow-hidden"
       style={{
-        backgroundImage: `url('/Images/Academics/Ssafety.jpg')`, // replace with your image path
+        backgroundImage: `url('/Images/Academics/secondaryhighlights.png')`, // replace with your image path
       }}
     >
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-35">
+      <div className="relative mx-auto max-w-7xl px-6 min-[540px]:px-12 py-15 sm:py-25 lg:py-35">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
+        <div className="text-center mb-6 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
             Focus & Resilience for{" "}
             <span className="relative inline-block">
               Teen Learners
@@ -64,11 +64,11 @@ const SafetyCareCreative: React.FC = () => {
               <img
                 src="/Images/Doodles/SparkGreen.png"
                 alt="Spark"
-                className="absolute w-10 sm:w-12 md:w-14 -top-8 -right-16"
+                className="absolute w-8 sm:w-12 -top-6 -right-9 sm:-right-12"
               />
             </span>
           </h2>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 max-w-2xl mx-auto">
+          <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             A balanced ecosystem of care, discipline, and motivation — preparing students for board exams and beyond.
           </p>
         </div>
@@ -76,19 +76,19 @@ const SafetyCareCreative: React.FC = () => {
           {/* LEFT STRIPE */}
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl shadow-2xl bg-pink-200 overflow-hidden">
-              <div className="p-8 sm:p-12 lg:p-16"> 
-  <h2 className="text-3xl sm:text-4xl font-poppins font-semibold text-gray-900 leading-tight tracking-wide">
-    Where Discipline Meets Determination
-  </h2>
+              <div className="p-8 sm:p-12 lg:p-16">
+                <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 tracking-wide leading-normal">
+                  Where Discipline Meets Determination
+                </h2>
 
-  <p className="mt-6 font-inter text-lg text-gray-700">
-    At the Secondary level, our focus shifts to balance — fostering discipline, focus, and emotional strength in an environment of trust and guidance. Classrooms are calm yet dynamic, encouraging students to stay motivated, organized, and mindful.
-  </p>
+                <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
+                  At the Secondary level, our focus shifts to balance — fostering discipline, focus, and emotional strength in an environment of trust and guidance. Classrooms are calm yet dynamic, encouraging students to stay motivated, organized, and mindful.
+                </p>
 
-  <p className="mt-4 font-inter text-lg text-gray-700">
-    With study support, counselling, and mentorship programs, we help every student handle challenges with composure. Our safe, respectful campus culture ensures that learning happens in an atmosphere of mutual care and confidence.
-  </p>
-</div>
+                <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
+                  With study support, counselling, and mentorship programs, we help every student handle challenges with composure. Our safe, respectful campus culture ensures that learning happens in an atmosphere of mutual care and confidence.
+                </p>
+              </div>
 
             </div>
           </div>
@@ -116,9 +116,9 @@ const SafetyCareCreative: React.FC = () => {
               ))}
             </div>
           </div>
-          
+
         </div>
-        
+
       </div>
     </section>
   );

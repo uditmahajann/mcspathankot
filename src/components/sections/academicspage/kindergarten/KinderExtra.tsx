@@ -6,7 +6,7 @@ const ENRICHMENTS = [
     title: "Sports Education & Gym Activities",
     description:
       "Fun fitness sessions designed to build coordination, teamwork, and confidence through movement.",
-    image: "/Images/Sample/Kidsplay.jpg",
+    image: "/Images/Heros/abouthero.JPG",
     bg: "",
   },
   {
@@ -22,7 +22,7 @@ const ENRICHMENTS = [
     title: "Gardening & Nature Study",
     description:
       "Our tiny botanists water plants, dig soil, and discover how nature grows — learning care and patience.",
-    image: "/Images/Sample/Kidsplay.jpg",
+    image: "/Images/Heros/abouthero.JPG",
     bg: "",
   },
   {
@@ -38,7 +38,7 @@ const ENRICHMENTS = [
     title: "Mindfulness & Circle Time",
     description:
       "Calm reflection, gratitude, and gentle breathing help little ones build emotional balance and focus.",
-    image: "/Images/Sample/Kidsplay.jpg",
+    image: "/Images/Heros/abouthero.JPG",
     bg: "",
   },
   {
@@ -63,7 +63,7 @@ const EnrichmentExtras: React.FC = () => {
               key={item.id}
               className={`relative group ${
                 index % 2 === 0 ? "" : item.bg
-              } flex flex-col justify-center items-center text-center p-0 transition-all hover:scale-[1.02]`}
+              } flex flex-col justify-center items-center text-center h-75 sm:h-80  p-0 transition-all hover:scale-[1.02]`}
             >
               {index % 2 === 0 ? (
                 <img
@@ -74,7 +74,7 @@ const EnrichmentExtras: React.FC = () => {
                 />
               ) : (
                 <>
-                  <h3 className="text-lg sm:text-2xl font-poppins font-semibold tracking-wide text-gray-900 mb-3">
+                  <h3 className="text-xl md:text-2xl font-poppins font-semibold tracking-wide text-gray-900 mb-3 px-5">
                     {item.title}
                   </h3>
                   <p className="text-gray-700 font-inter text-lg leading-relaxed max-w-md mx-auto px-5">

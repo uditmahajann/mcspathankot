@@ -1,5 +1,5 @@
 import React from "react";
-import { MessageCircle, Users, CalendarDays, Smartphone } from "lucide-react";
+import { MessageCircle, Users, CalendarDays } from "lucide-react";
 
 const features = [
   {
@@ -24,19 +24,16 @@ const features = [
 
 const ParentPartnership: React.FC = () => {
   return (  
-    <section
-      id="why-kindergarten"
-      className="relative py-25 pb-55 bg-orange-100 overflow-hidden"
-    >
+    <section className="relative py-15 sm:py-25 pb-20 md:pb-40 lg:pb-55 bg-orange-100 overflow-hidden">
       <img
-        src="/Images/Academics/Sfooter.png"
+        src="/Images/Academics/seniorfooter.png"
         alt="Cute monkey illustration"
         className="absolute w-full bottom-0 pointer-events-none select-none"
       />
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 min-[540px]:px-12">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
             Parent Partnership & Communication
           </h2>
@@ -47,13 +44,13 @@ const ParentPartnership: React.FC = () => {
         </div>
 
         {/* Feature Blocks */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-15">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 sm:mb-15">
           {features.map((f, i) => {
             const Icon = f.icon;
             return (
               <div
                 key={i}
-                className={`rounded-3xl shadow-md p-8 transition-transform duration-300 hover:-translate-y-2 ${f.color}`}
+                className={`rounded-3xl shadow-md p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2 ${f.color}`}
               >
                 <div className="flex flex-col items-start gap-4">
                   <div className="p-3 bg-white/70 rounded-full shadow-sm">

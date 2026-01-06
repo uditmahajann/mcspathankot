@@ -76,8 +76,8 @@ const DOMAINS: Domain[] = [
 
 const CurriculumOverview: React.FC = () => {
   return (
-    <section id="curriculum-overview" className="py-30 bg-purple-200 -mt-5">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="curriculum-overview" className="py-25 sm:py-30 bg-pink-200 -mt-5">
+      <div className="mx-auto max-w-7xl px-6 min-[540px]:px-12">
         {/* header */}
         <div className="max-w-7xl mx-auto text-center mb-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
@@ -141,16 +141,16 @@ const CurriculumOverview: React.FC = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-12 text-center font-outfit text-lg">
+        <div className="mt-12 text-center font-outfit text-sm sm:text-base lg:text-lg">
           <div className="flex items-center justify-center gap-4">
             <a
-              href="/docs/sample-kindergarten-curriculum.pdf"
+              href="/curriculum/annual-calendar"
               className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-medium shadow"
             >
               Academic Calendar
             </a>
             <a
-              href="/admissions/schedule-visit"
+              href="/curriculum/booklist"
               className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-medium shadow"
             >
               Check Booklist

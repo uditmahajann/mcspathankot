@@ -36,27 +36,20 @@ const tiles = [
   },
 ];
 
-const timeline = [
-  { id: "drill", title: "Monthly drills & practice", Icon: CheckCircle },
-  { id: "training", title: "Quarterly staff training", Icon: Users },
-  { id: "meals", title: "Daily hygiene routines", Icon: Clock },
-  { id: "transport", title: "Transport & driver checks", Icon: Truck },
-];
-
 const SafetyCareCreative: React.FC = () => {
   return (
     <section
       id="safety-care"
-      className="relative bg-cover bg-center bg-no-repeat flex items-center"
+      className="relative bg-cover bg-center bg-no-repeat flex items-center overflow-hidden"
       style={{
-        backgroundImage: `url('/Images/Academics/Psafety.png')`, // replace with your image path
+        backgroundImage: `url('/Images/Academics/primarysafety.png')`, // replace with your image path
       }}
     >
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-35">
+      <div className="rrelative mx-auto max-w-7xl px-6 min-[540px]:px-12 py-15 sm:py-25 lg:py-35">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
+        <div className="text-center mb-6 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
             Where Learning Meets{" "}
             <span className="relative inline-block">
               Creativity
@@ -64,11 +57,11 @@ const SafetyCareCreative: React.FC = () => {
               <img
                 src="/Images/Doodles/SparkGreen.png"
                 alt="Spark"
-                className="absolute w-10 sm:w-12 md:w-14 -top-8 -right-16"
+                className="absolute w-8 sm:w-12 -top-6 -right-9 sm:-right-12"
               />
             </span>
           </h2>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             A nurturing environment where children feel safe to explore, express, and grow — blending care with creativity.
           </p>
         </div>
@@ -76,19 +69,19 @@ const SafetyCareCreative: React.FC = () => {
           {/* LEFT STRIPE */}
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl shadow-2xl bg-fuchsia-100 overflow-hidden">
-              <div className="p-8 sm:p-12 lg:p-16"> 
-  <h2 className="text-3xl sm:text-4xl font-poppins font-semibold text-gray-900 leading-tight tracking-wide">
-    Confidence & Curiosity in Every Classroom
-  </h2>
+              <div className="p-8 sm:p-12 lg:p-16">
+                <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 tracking-wide leading-normal">
+                  Confidence & Curiosity in Every Classroom
+                </h2>
 
-  <p className="mt-6 font-inter text-lg text-gray-700">
-    In the Primary Wing, we create an environment where safety and creativity go hand in hand. Our classrooms are warm, structured, and inclusive — spaces where children feel comfortable expressing themselves and exploring new ideas freely.
-  </p>
+                <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
+                  In the Primary Wing, we create an environment where safety and creativity go hand in hand. Our classrooms are warm, structured, and inclusive — spaces where children feel comfortable expressing themselves and exploring new ideas freely.
+                </p>
 
-  <p className="mt-4 font-inter text-lg text-gray-700">
-    Teachers act as mentors, guiding both academic and emotional growth. From active learning corners to thoughtful routines, every detail helps young learners build curiosity, confidence, and a deep sense of belonging.
-  </p>
-</div>
+                <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
+                  Teachers act as mentors, guiding both academic and emotional growth. From active learning corners to thoughtful routines, every detail helps young learners build curiosity, confidence, and a deep sense of belonging.
+                </p>
+              </div>
 
             </div>
           </div>
@@ -116,9 +109,9 @@ const SafetyCareCreative: React.FC = () => {
               ))}
             </div>
           </div>
-          
+
         </div>
-        
+
       </div>
     </section>
   );

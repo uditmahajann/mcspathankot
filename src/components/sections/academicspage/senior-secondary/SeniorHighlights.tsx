@@ -60,22 +60,22 @@ const KindergartenCarousel: React.FC = () => {
   return (
     <section
       id="why-kindergarten"
-      className="relative pb-35 overflow-hidden bg-sky-200"
+      className="relative py-20 lg:py-0 lg:pb-35 overflow-hidden bg-sky-200"
     >
       <img
-        src="/Images/Academics/SRhighlights.png"
+        src="/Images/Academics/seniorright.png"
         alt="Cute monkey illustration"
-        className="absolute -bottom-18 right-25 w-90 pointer-events-none select-none z-20"
+        className="absolute -bottom-18 -right-27 xl:right-30 w-90 pointer-events-none select-none z-20 hidden lg:block"
       />
       <img
-        src="/Images/Academics/SLhighlights.png"
+        src="/Images/Academics/seniorleft.png"
         alt="Cute monkey illustration"
-        className="absolute -bottom-20 left-15 w-90 pointer-events-none select-none z-20"
+        className="absolute -bottom-20 -left-37 xl:left-20 w-90 pointer-events-none select-none z-20 hidden lg:block"
       />
        
 
 
-      <div className="relative w-full sm:px-4 mt-25">
+      <div className="relative w-full px-5 min-[540px]:px-8 lg:px-12 lg:pt-25">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
@@ -87,18 +87,18 @@ const KindergartenCarousel: React.FC = () => {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative mx-auto max-w-[95%] sm:max-w-[90%] lg:max-w-[60%] rounded-t-2xl shadow-2xl overflow-hidden">
+        <div className="relative mx-auto max-w-[95%] sm:max-w-[90%] xl:max-w-[60%] rounded-2xl lg:rounded-t-2xl lg:rounded-b-none shadow-2xl overflow-hidden">
           {/* Left arrow */}
           <button
             aria-label="Previous slide"
             onClick={prev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-white/90 transition cursor-pointer"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-white/90 transition cursor-pointer"
           >
             <ChevronLeft className="w-6 h-6 text-black" />
           </button>
 
           {/* Slides */}
-          <div className="relative w-full min-h-95 md:min-h-137.5 ">
+          <div className="relative w-full min-h-95 md:min-h-135">
             {slides.map((s, i) => (
               <div
                 key={i}
@@ -122,7 +122,7 @@ const KindergartenCarousel: React.FC = () => {
           <button
             aria-label="Next slide"
             onClick={next}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-white/90 transition cursor-pointer"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-white/90 transition cursor-pointer"
           >
             <ChevronRight className="w-6 h-6 text-black" />
           </button>

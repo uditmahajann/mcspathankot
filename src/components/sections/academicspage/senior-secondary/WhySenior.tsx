@@ -61,19 +61,18 @@ const PILLARS: Pillar[] = [
 const WhyKindergarten: React.FC = () => {
   return (
     <section
-      id="why-kindergarten"
-      className="relative py-25 bg-purple-200"
+      className="relative py-20 sm:py-25 bg-purple-200"
     >
       
       <img
-        src="/Images/Academics/Seniorwhy.png"
+        src="/Images/Academics/microscope.png"
         alt="Cute monkey illustration"
-        className="absolute -bottom-30 right-0 w-95 sm:w-115 lg:w-130 z-20 pointer-events-none select-none"
+        className="absolute -bottom-15 sm:-bottom-5 right-5 sm:right-15 xl:right-25 w-40 sm:w-90 xl:w-115 z-30 pointer-events-none select-none"
       />
 
-      <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-20 mx-auto max-w-7xl px-6 min-[540px]:px-12">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-12 lg:mb-16 max-w-4xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 xl:mb-16 max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
             Why Our Senior-Secondary Wing?
           </h2>

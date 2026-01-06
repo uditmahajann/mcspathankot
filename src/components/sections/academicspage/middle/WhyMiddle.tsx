@@ -61,19 +61,17 @@ const PILLARS: Pillar[] = [
 const WhyKindergarten: React.FC = () => {
   return (
     <section
-      id="why-kindergarten"
-      className="relative py-25 bg-fuchsia-200 overflow-hidden"
+      className="relative py-20 sm:py-25 bg-fuchsia-200"
     >
       {/* Monkey image positioned absolutely */}
       <img
-        src="/Images/Academics/Mwhy.png"
-        alt="Cute monkey illustration"
-        className="absolute h-full top-0 right-0 z-20 pointer-events-none select-none"
+        src="/Images/Academics/middlewhy.png"
+        className=" absolute w-full lg:w-[80%] bottom-0 right-0 z-20 pointer-events-none select-none"
       />
 
-      <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-20 mx-auto max-w-7xl px-6 min-[540px]:px-12">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-12 lg:mb-16 max-w-4xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 xl:mb-16 max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
             Why Our Middle Wing?
           </h2>

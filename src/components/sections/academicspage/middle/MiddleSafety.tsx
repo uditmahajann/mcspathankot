@@ -47,16 +47,16 @@ const SafetyCareCreative: React.FC = () => {
   return (
     <section
       id="safety-care"
-      className="relative bg-cover bg-center bg-no-repeat flex items-center"
+      className="relative bg-cover bg-center bg-no-repeat flex items-center overflow-hidden"
       style={{
-        backgroundImage: `url('/Images/Academics/Msafety.png')`, // replace with your image path
+        backgroundImage: `url('/Images/Academics/middlesafety.png')`, // replace with your image path
       }}
     >
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-35">
+      <div className="relative mx-auto max-w-7xl px-6 min-[540px]:px-12 py-15 sm:py-25 lg:py-35">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
+        <div className="text-center mb-6 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
             Personal Guidance &{" "}
             <span className="relative inline-block">
               Growth
@@ -64,11 +64,11 @@ const SafetyCareCreative: React.FC = () => {
               <img
                 src="/Images/Doodles/SparkGreen.png"
                 alt="Spark"
-                className="absolute w-10 sm:w-12 md:w-14 -top-8 -right-16"
+                className="absolute w-8 sm:w-12 -top-6 -right-9 sm:-right-12"
               />
             </span>
           </h2>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 max-w-2xl mx-auto">
+          <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             A supportive environment where pre-teens gain confidence, responsibility, and a deeper love for learning.
           </p>
         </div>
@@ -76,19 +76,19 @@ const SafetyCareCreative: React.FC = () => {
           {/* LEFT STRIPE */}
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl shadow-2xl bg-pink-200 overflow-hidden">
-              <div className="p-8 sm:p-12 lg:p-16"> 
-  <h2 className="text-3xl sm:text-4xl font-poppins font-semibold text-gray-900 leading-tight tracking-wide">
-    A Sense of Belonging in Growing Years
-  </h2>
+              <div className="p-8 sm:p-12 lg:p-16">
+                <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 tracking-wide leading-normal">
+                  A Sense of Belonging in Growing Years
+                </h2>
 
-  <p className="mt-6 font-inter text-lg text-gray-700">
-    The Middle Wing provides a caring environment where students transition smoothly into adolescence with confidence. Our teachers and mentors work closely with every learner, offering academic guidance and personal support when it matters most.
-  </p>
+                <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
+                  The Middle Wing provides a caring environment where students transition smoothly into adolescence with confidence. Our teachers and mentors work closely with every learner, offering academic guidance and personal support when it matters most.
+                </p>
 
-  <p className="mt-4 font-inter text-lg text-gray-700">
-    Safety extends beyond the classroom — from digital awareness sessions to emotional wellness programs, we nurture responsibility, balance, and empathy in every student as they discover who they are and what they can become.
-  </p>
-</div>
+                <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
+                  Safety extends beyond the classroom — from digital awareness sessions to emotional wellness programs, we nurture responsibility, balance, and empathy in every student as they discover who they are and what they can become.
+                </p>
+              </div>
 
             </div>
           </div>
@@ -116,9 +116,9 @@ const SafetyCareCreative: React.FC = () => {
               ))}
             </div>
           </div>
-          
+
         </div>
-        
+
       </div>
     </section>
   );
