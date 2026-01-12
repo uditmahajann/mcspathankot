@@ -1,5 +1,49 @@
+<!-- ---
+import Layout from "../../layouts/Layout.astro";
+import { searchIndex } from "./searchIndex";
+
+const query = Astro.url.searchParams.get("q")?.toLowerCase() || "";
+
+const results = searchIndex.filter((item) =>
+  item.title.toLowerCase().includes(query) ||
+  item.description.toLowerCase().includes(query)
+);
 ---
-export const prerender = false;
+
+<Layout title={`Search results for "${query}"`} description="Search results">
+  <main class="container px-6 py-16">
+    <h1 class="text-3xl font-bold mb-6">
+      Search results for “{query}”
+    </h1>
+
+    {query === "" && (
+      <p class="text-gray-600">Please enter a search term.</p>
+    )}
+
+    {query && results.length === 0 && (
+      <p class="text-gray-600">No results found.</p>
+    )}
+
+    <ul class="space-y-6">
+      {results.map((item) => (
+        <li class="border-b pb-4">
+          <a
+            href={item.url}
+            class="text-xl font-semibold text-primarydark hover:underline"
+          >
+            {item.title}
+          </a>
+          <p class="text-gray-600 mt-1">{item.description}</p>
+        </li>
+      ))}
+    </ul>
+  </main>
+</Layout> -->
+
+
+
+
+<!-- ---
 import Layout from "../../layouts/Layout.astro"
 
 // Read query safely
@@ -437,99 +481,4 @@ const highlight = (text: string) =>
       ))}
     </ul>
   </section>
-</Layout>
-
-
-
-
-
-<!-- ---
-export const prerender = false;
-import Layout from "../../layouts/Layout.astro"
-
-// Read query from URL
-const query = Astro.url.searchParams.get("q")?.trim() || ""
-
-// Example searchable data (REPLACE with CMS later)
-const pages = [
-  {
-    title: "Admissions",
-    description: "Admission process, eligibility, and important dates.",
-    url: "/admission",
-    keywords: ["apply", "admission", "enroll"]
-  },
-  {
-    title: "Fee Structure",
-    description: "Detailed fee structure for all classes.",
-    url: "/fees",
-    keywords: ["fees", "payment", "charges"]
-  },
-  {
-    title: "Curriculum",
-    description: "Academic curriculum and learning framework.",
-    url: "/curriculum",
-    keywords: ["subjects", "syllabus", "curriculum"]
-  },
-  {
-    title: "Results",
-    description: "Academic results and achievements.",
-    url: "/results",
-    keywords: ["results", "marks", "scores"]
-  },
-]
-
-// Search logic
-const results =
-  query.length > 0
-    ? pages.filter((page) =>
-        (
-          page.title +
-          page.description +
-          page.keywords.join(" ")
-        )
-          .toLowerCase()
-          .includes(query.toLowerCase())
-      )
-    : []
----
-<Layout title={`Search results for "${query}"`}>
-  <section class="max-w-4xl mx-auto px-5 py-14 font-inter">
-    <h1 class="text-2xl font-semibold mb-2">
-      Search Results
-    </h1>
-
-    {query ? (
-      <p class="text-gray-600 mb-8">
-        Showing results for <span class="font-medium">"{query}"</span>
-      </p>
-    ) : (
-      <p class="text-gray-600 mb-8">
-        Please enter a search term.
-      </p>
-    )}
-
-    {query && results.length === 0 && (
-      <div class="rounded-lg border border-gray-200 p-6 text-gray-600">
-        No results found. Try a different keyword.
-      </div>
-    )}
-
-    <ul class="space-y-6">
-      {results.map((item) => (
-        <li class="border-b pb-4">
-          <a
-            href={item.url}
-            class="text-lg font-medium text-blue-700 hover:underline"
-          >
-            {item.title}
-          </a>
-          <p class="text-gray-600 mt-1">
-            {item.description}
-          </p>
-        </li>
-      ))}
-    </ul>
-  </section>
 </Layout> -->
-
-
