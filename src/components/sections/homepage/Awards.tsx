@@ -37,7 +37,7 @@ const INTERVAL = 3000; // 5 seconds (calm, premium)
 
       <picture>
           <img
-            src="/Images/Sample/awardsbg.png"
+            src="/Images/Doodles/awardsbg.png"
             alt="MCS"
             className="hidden lg:block absolute -top-20 right-0"
           />
@@ -45,7 +45,7 @@ const INTERVAL = 3000; // 5 seconds (calm, premium)
 
         <picture>
           <img
-            src="/Images/Sample/awardsbg.png"
+            src="/Images/Doodles/awardsbg.png"
             alt="MCS"
             className="hidden lg:block absolute -bottom-20 right-0 scale-y-[-1]"
           />

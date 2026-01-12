@@ -181,7 +181,7 @@ const CurriculumOverview: React.FC = () => {
               Check Booklist
             </a>
             <a
-              href="/admissions/schedule-visit"
+              href="/curriculum/syllabus"
               className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-medium shadow"
             >
               Check Syllabus

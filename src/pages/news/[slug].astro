@@ -49,50 +49,51 @@ if (!news) {
   description={news.description}
   pubDate={new Date(news.date)}
 >
-  <article class="max-w-4xl mx-auto px-6 py-10">
+  <article class="relative bg-white py-4 my-10 mx-auto max-w-7xl px-6 min-[540px]:px-12 md:px-16 xl:px-10">
+
+    <!-- Meta -->
+    <p class="text-primary font-semibold font-inter mb-4">
+      {new Date(news.date).toLocaleDateString("en-IN", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      })}
+    </p>
+
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-inter font-semibold mb-2">
+      {news.title}
+    </h1>
+
+    <p class="text-base sm:text-lg text-gray-700 mb-6 font-inter font-medium">
+      {news.description}
+    </p>
 
     <!-- Cover Image -->
     {news.coverImage && (
       <img
         src={urlFor(news.coverImage).width(1200).url()}
         alt={news.title}
-        class="w-full h-105 object-cover rounded-2xl mb-8"
+        class="w-full h-90 md:h-120 object-cover rounded-xl sm:rounded-2xl mb-6 sm:mb-8"
       />
     )}
 
-    <!-- Meta -->
-    <p class="text-sm text-blue-700 font-inter mb-2">
-      {new Date(news.date).toLocaleDateString("en-IN", {
-        month: "long",
-        year: "numeric",
-      })}
-    </p>
-
-    <h1 class="text-3xl md:text-4xl font-playpen font-bold mb-4">
-      {news.title}
-    </h1>
-
-    <p class="text-lg text-gray-700 mb-10 font-inter">
-      {news.description}
-    </p>
-
     <!-- Article Content -->
-    <div class="prose prose-lg max-w-none">
+    <div class="prose prose-lg max-w-none font-inter md:text-lg space-y-6">
       <PortableText value={news.content} />
     </div>
 
     {news.highlightsGallery?.length > 0 && (
-  <section class="mt-14">
-    <h2 class="text-2xl font-playpen font-semibold mb-6">
+  <section class="mt-16">
+    <h2 class="text-xl sm:text-2xl font-poppins font-semibold mb-4 tracking-wide">
       Event Highlights
     </h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
       {news.highlightsGallery.map((img: { asset: { url: string | null | undefined; }; }, i: number) => (
         <img
           src={img.asset.url}
           alt={`${news.title} highlight ${i + 1}`}
-          class="w-full h-64 object-cover rounded-xl shadow-sm hover:scale-[1.02] transition"
+          class="w-full h-64 sm:72 object-cover rounded-xl shadow-sm hover:scale-[1.02] transition"
           loading="lazy"
         />
       ))}

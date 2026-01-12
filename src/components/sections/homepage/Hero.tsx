@@ -101,7 +101,7 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/admissions"
+                href="admission/admission-process"
                 className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white shadow-lg hover:bg-blue-700"
               >
                 Apply for Admissions
@@ -110,10 +110,10 @@ const Hero = () => {
 
               <motion.a
                 whileHover={{ scale: 1.05 }}
-                href="/campus"
+                href="/facilities"
                 className="rounded-lg border border-white/40 px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white hover:bg-white/10"
               >
-                Explore Campus
+                Explore Facilities
               </motion.a>
             </div>
 

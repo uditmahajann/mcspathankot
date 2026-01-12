@@ -1,5 +1,5 @@
 ---
-import { Phone, MapPin, Mail, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Phone, MapPin, Mail, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 
 const currentYear = new Date().getFullYear();
 
@@ -7,32 +7,32 @@ const schoolName = "Montessori Cambridge School";
 
 const contact = {
   address: "Defence Road (Pangoli), Pathankot – 145001",
-  phone: "+9198765-70911",
-  email: "mcs_pathankot@yahoo.co.in"
+  phone: "+91 98765-70911, +91 98765-70912 ",
+  email: "mcspathankot1@gmail.com"
 };
 
 const academics = [
-  { name: "Pre-Primary School", href: "/curriculum" },
-  { name: "Primary School", href: "/faculty" },
-  { name: "Middle School", href: "/library" },
-  { name: "Secondary School", href: "/research" },
-  { name: "Senior Secondary School", href: "/calendar" }
+  { name: "Kindergarten School", href: "/academics/kindergarten" },
+  { name: "Primary School", href: "/academics/primary-school" },
+  { name: "Middle School", href: "/academics/middle-school" },
+  { name: "Secondary School", href: "/academics/secondary-school" },
+  { name: "Senior Secondary School", href: "/academics/senior-secondary-school" }
 ];
 
 const admissions = [
-  { name: "Admission Procedure", href: "/apply" },
-  { name: "Apply Online", href: "/tuition" },
-  { name: "Fee Structure", href: "/scholarships" },
-  { name: "Withdrawals", href: "/visit" },
-  { name: "Transfer Certificates", href: "/international" }
+  { name: "Admission Procedure", href: "/admission/admission-process" },
+  { name: "Apply Online", href: "/admission/admission-process#apply-online" },
+  { name: "Fee Structure", href: "/admission/fee-structure" },
+  { name: "Withdrawals", href: "/admission/withdrawals" },
+  { name: "Transfer Certificates", href: "/admission/transfer-certificate" }
 ];
 
 const curriculum = [
-  { name: "Annual Calendar", href: "/athletics" },
-  { name: "Syllabus", href: "/arts" },
-  { name: "Booklists", href: "/clubs" },
-  { name: "Examinations", href: "/wellness" },
-  { name: "Results", href: "/safety" }
+  { name: "Annual Calendar", href: "/curriculum/annual-calendar" },
+  { name: "Syllabus", href: "/curriculum/syllabus" },
+  { name: "Booklists", href: "/curriculum/booklist" },
+  { name: "Examinations", href: "/curriculum/examinations" },
+  { name: "Results", href: "/curriculum/results" }
 ];
 ---
 
@@ -42,7 +42,7 @@ const curriculum = [
       <!-- Contact Section -->
       <div class="space-y-6 lg:col-span-2">
         <div class="flex items-start gap-4">
-          <img src="/Images/Logos/McsLogoB.png" alt="MCS Logo" class="w-20 invert mb-2" loading="lazy" />
+          <img src="/Images/Logos/mcslogo-white.png" alt="MCS Logo" class="w-25 invert mb-2" loading="lazy" />
           <h2 class="text-2xl font-bold text-white mt-2">Montessori<br />Cambridge School</h2>
         </div>
 
@@ -64,21 +64,21 @@ const curriculum = [
         </div>
 
         <div class="flex space-x-4 pt-2">
-          <a href="#" class="rounded-full bg-slate-700 p-2 text-slate-300 transition-colors hover:bg-sky-500 hover:text-white">
+          <a href="https://www.facebook.com/mcspathankot1997" class="rounded-full bg-slate-700 p-2 text-slate-300 transition-colors hover:bg-sky-500 hover:text-white">
             <span class="sr-only">Facebook</span>
             <Facebook className="w-6 h-6" />
           </a>
-          <a href="#" class="rounded-full bg-slate-700 p-2 text-slate-300 transition-colors hover:bg-sky-500 hover:text-white">
+          <a href="https://www.instagram.com/mcspathankot1997" class="rounded-full bg-slate-700 p-2 text-slate-300 transition-colors hover:bg-sky-500 hover:text-white">
             <span class="sr-only">Instagram</span>
             <Instagram className="w-6 h-6" />
           </a>
-          <a href="#" class="rounded-full bg-slate-700 p-2 text-slate-300 transition-colors hover:bg-sky-500 hover:text-white">
+          <a href="https://www.youtube.com/@mcspathankot1997" class="rounded-full bg-slate-700 p-2 text-slate-300 transition-colors hover:bg-sky-500 hover:text-white">
             <span class="sr-only">YouTube</span>
             <Youtube className="w-6 h-6" />
           </a>
-          <a href="#" class="rounded-full bg-slate-700 p-2 text-slate-300 transition-colors hover:bg-sky-500 hover:text-white">
-            <span class="sr-only">LinkedIn</span>
-            <Linkedin className="w-6 h-6" />
+          <a href="https://x.com/mcspathankot97" class="rounded-full bg-slate-700 p-2 text-slate-300 transition-colors hover:bg-sky-500 hover:text-white">
+            <span class="sr-only">Twitter</span>
+            <Twitter className="w-6 h-6" />
           </a>
         </div>
       </div>
@@ -118,12 +118,12 @@ const curriculum = [
     <div class="mt-12 border-t border-slate-700 pt-8">
       <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
         <p class="text-sm text-slate-400">
-          &copy; {currentYear} {schoolName}. All rights reserved.
+          &copy; {currentYear} {schoolName}
         </p>
         <nav class="flex flex-wrap gap-x-6 text-sm text-slate-400">
-          <a href="/privacy" class="hover:text-sky-500">Privacy Policy</a>
-          <a href="/terms" class="hover:text-sky-500">Terms of Service</a>
-          <a href="/accessibility" class="hover:text-sky-500">Accessibility</a>
+          <a href="/attributions" class="hover:text-sky-500">Attributions</a>
+          <a href="/privacy-policy" class="hover:text-sky-500">Privacy Policy</a>
+          <a href="/terms-and-conditions" class="hover:text-sky-500">Terms & Conditions</a>
         </nav>
       </div>
     </div>

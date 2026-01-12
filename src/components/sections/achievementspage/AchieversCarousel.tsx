@@ -63,7 +63,7 @@ const StudentAchieversGrid = ({ achievements }: Props) => {
 
   return (
     <section
-      id="achievers"
+      id="student-achievers"
       className="relative bg-white py-4 sm:py-10 my-10"
     >
       <div className="mx-auto max-w-7xl px-6 min-[540px]:px-12 sm:px-16 xl:px-0">

@@ -48,7 +48,7 @@ const labs = [
 
 const ProfessionalLabs = () => {
   return (
-    <section className="relative py-4 sm:py-10 lg:py-16 my-10 bg-white">
+    <section id="professional-labs" className="relative py-4 sm:py-10 lg:py-16 my-10 bg-white">
       <div className="container mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 xl:px-0">
         <div className="text-center mb-8 sm:mb-16">
           <h2 className="text-2xl min-[540px]:text-3xl text-gray-900 font-playpen font-medium leading-normal">

@@ -12,12 +12,12 @@ import seniorSecondaryAnimation from "../../../../public/animations/SeniorSec.js
 const educationalLevels = [
   {
     id: 1,
-    title: "Pre-Primary School",
+    title: "Kindergarten School",
     description:
       "Building a strong foundation through play-based learning, developing social skills and curiosity in a nurturing environment.",
     icon: Users,
     color: "#FF6B6B",
-    link: "/pre-primary",
+    link: "/academics/kindergarten",
     animation: prePrimaryAnimation,
   },
   {
@@ -27,7 +27,7 @@ const educationalLevels = [
       "Fostering fundamental literacy, numeracy, and critical thinking skills while encouraging creativity and self-expression.",
     icon: BookOpen,
     color: "#4ECDC4",
-    link: "/primary",
+    link: "/academics/primary-school",
     animation: primaryAnimation,
   },
   {
@@ -37,7 +37,7 @@ const educationalLevels = [
       "Guiding students through the transition years with specialized subject learning and developing independent study habits.",
     icon: Backpack,
     color: "#FFD166",
-    link: "/middle",
+    link: "/academics/middle-school",
     animation: middleAnimation,
   },
   {
@@ -47,7 +47,7 @@ const educationalLevels = [
       "Preparing students for academic excellence with comprehensive curriculum and opportunities for personal growth.",
     icon: School,
     color: "#6A0572",
-    link: "/secondary",
+    link: "/academics/secondary-school",
     animation: secondaryAnimation,
   },
   {
@@ -57,7 +57,7 @@ const educationalLevels = [
       "Specialized education pathways preparing students for higher education and future careers with advanced coursework.",
     icon: GraduationCap,
     color: "#1A535C",
-    link: "/senior-secondary",
+    link: "/academics/senior-secondary-school",
     animation: seniorSecondaryAnimation,
   },
 ]

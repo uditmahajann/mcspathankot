@@ -85,7 +85,7 @@ const Achievements: React.FC<Props> = ({
 
         {/* CTA */}
         <div className="mt-8 sm:mt-12 flex items-center justify-center">
-          <CtaButton text="View All Achievements" href="" />
+          <CtaButton text="View All Achievements" href="/achievements" />
         </div>
       </div>
     </section>

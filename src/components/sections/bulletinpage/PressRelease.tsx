@@ -247,7 +247,7 @@ const PressRelease = ({
           For media inquiries, press releases, interview requests, event coverage or any other additional information, please contact our Media Desk.
         </p>
         <a
-          href="/contact"
+          href={`tel:${9876570913}`}
           className="inline-block bg-orange-500 hover:bg-orange-400 text-white font-medium py-3 px-6 rounded-full transition"
         >
           Contact Media Desk

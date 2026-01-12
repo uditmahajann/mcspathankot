@@ -302,6 +302,16 @@ const ApplyOnline: React.FC = () => {
                       </div>
                     </div>
 
+                    <div className="mt-8 text-center font-inter text-gray-600 text-sm">
+                <p className="mt-2">
+                  By submitting this form, you agree to our{" "}
+                  <a href="/privacy-policy" className="text-blue-600 hover:underline font-medium">
+                    Privacy Policy
+                  </a>{" "}
+                  and consent to be contacted regarding your inquiry.
+                </p>
+              </div>
+
                     <div className="flex justify-end mt-8">
                       <button
                         type="button"

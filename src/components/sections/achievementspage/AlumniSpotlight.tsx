@@ -37,7 +37,7 @@ const AlumniSpotlight: React.FC<Props> = ({ alumni }) => {
   const alum = items[index];
 
   return (
-    <section id="alumni-spotlight" className="relative bg-linear-to-r from-blue-950 via-blue-900 to-blue-950 my-10 py-12 md:py-16 overflow-hidden">
+    <section id="alumni-success" className="relative bg-linear-to-r from-blue-950 via-blue-900 to-blue-950 my-10 py-12 md:py-16 overflow-hidden">
     <div className="container mx-auto max-w-7xl px-6 min-[540px]:px-12 sm:px-16 lg:px-20">
       <div className="mb-8 md:mb-12 flex flex-col items-center">
         <h2 className="text-2xl min-[540px]:text-3xl font-playpen font-medium text-yellow-400 leading-normal">

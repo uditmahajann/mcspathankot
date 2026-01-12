@@ -27,49 +27,49 @@ const iconMap: Record<string, LucideIcon> = {
 const Infrastructure: React.FC = () => {
   const facilities = [
     {
-      name: "Modern Classrooms",
+      name: "Boarding Facilities",
+      description:
+        "Comfortable and secure boarding facilities with modern amenities, nutritious meals, and a homely atmosphere for residential students.",
+      icon: "BedDouble",
+      url: "/facilities#boarding-facilities",
+    },
+    {
+      name: "Smart Classrooms",
       description:
         "Smart classrooms equipped with interactive whiteboards, projectors, and ergonomic furniture for an optimal learning environment.",
       icon: "School",
-      url: "/facilities/modern-classrooms",
-    },
-    {
-      name: "Science Laboratories",
-      description:
-        "State-of-the-art physics, chemistry, and biology labs with advanced equipment for hands-on learning and experimentation.",
-      icon: "FlaskConical",
-      url: "/facilities/science-laboratories",
+      url: "/facilities#smart-classes",
     },
     {
       name: "Computer Labs",
       description:
         "Cutting-edge computer labs with the latest hardware and software to develop digital literacy and programming skills.",
       icon: "Monitor",
-      url: "/facilities/computer-labs",
+      url: "/facilities#professional-labs",
     },
     {
-      name: "Library & Resource Center",
+      name: "Professional Labs",
       description:
-        "Extensive collection of books, digital resources, and collaborative study spaces to foster a love for reading and research.",
-      icon: "LibraryBig",
-      url: "/facilities/library",
+        "State-of-the-art physics, chemistry, and biology labs with advanced equipment for hands-on learning and experimentation.",
+      icon: "FlaskConical",
+      url: "/facilities#professional-labs",
     },
     {
       name: "Sports Facilities",
       description:
         "Comprehensive sports infrastructure including cricket ground, basketball courts, swimming pool, and indoor sports complex.",
       icon: "Volleyball",
-      url: "/o-curriculars/sports-&-athletics",
+      url: "/co-curriculars/sports-&-athletics",
     },
     {
-      name: "Boarding Facilities",
+      name: "Library & Research Centers",
       description:
-        "Comfortable and secure boarding facilities with modern amenities, nutritious meals, and a homely atmosphere for residential students.",
-      icon: "BedDouble",
-      url: "/facilities/boarding",
+        "Extensive collection of books, digital resources, and collaborative study spaces to foster a love for reading and research.",
+      icon: "LibraryBig",
+      url: "/co-curriculars/research-&-innovation",
     },
     {
-      name: "Performing Arts Center",
+      name: "Performing Arts Centers",
       description:
         "Dedicated spaces for music, dance, drama, and other performing arts with professional equipment and training.",
       icon: "MicVocal",
@@ -80,7 +80,7 @@ const Infrastructure: React.FC = () => {
       description:
         "Fleet of school buses covering all major routes with GPS tracking and trained staff for safe transportation.",
       icon: "BusFront",
-      url: "/facilities/transport-facility",
+      url: "/facilities#transport-facility",
     },
   ];
 
@@ -149,7 +149,7 @@ const Infrastructure: React.FC = () => {
 
         {/* CTA Button */}
         <div className="mt-8 sm:mt-12 lg:mt-16 text-center">
-          <CtaButton text="Take a Virtual Tour" href="/preview" icon={Video} />
+          <CtaButton text="Take a Virtual Tour" href="https://youtu.be/18iMwPGPLxI?si=GeANbPFqoMtW5ojs" icon={Video} />
         </div>
       </div>
     </section>

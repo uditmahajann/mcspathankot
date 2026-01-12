@@ -13,7 +13,7 @@ interface CareerOpening {
   responsibilities?: string[];
 }
 
-const HR_EMAIL = "hr@mcs.example.com";
+const HR_EMAIL = "mcspathankot1@gmail.com";
 
 const development = [
   {
@@ -214,7 +214,7 @@ const Careers = ({ careers }: { careers: CareerOpening[] }) => {
             {development.map((item, i) => (
               <div
                 key={i}
-                className="bg-linear-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-xl p-6 hover:shadow-md transition-all"
+                className="bg-white rounded-xl p-6 hover:shadow-md transition-all"
               >
                 <item.icon className="w-8 h-8 text-blue-600 mb-3" />
                 <h4 className="text-lg font-poppins tracking-wide font-semibold text-gray-900 mb-3">{item.title}</h4>

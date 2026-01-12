@@ -109,7 +109,7 @@ const McsImpact = () => {
 
           <div className="mt-8 text-center">
             <a
-              href="/testimonials"
+              href="/contact#enquiry"
               className="group inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-outfit text-base font-medium rounded-full transition-all duration-300 ease-in-out hover:font-semibold hover:scale-105 active:scale-95 shadow-md cursor-pointer border border-transparent bg-primarydark text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-300"
             >
               Enquire Now for Admissions

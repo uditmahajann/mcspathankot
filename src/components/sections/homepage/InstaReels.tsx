@@ -101,7 +101,7 @@ const InstaReels = ({ reels }: Props) => {
           </h2>
 
           <a
-            href="https://instagram.com/montessoricambridge"
+            href="https://www.instagram.com/mcspathankot1997"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center shrink-0 gap-2 rounded-md bg-linear-to-r from-purple-600 to-pink-600 px-4 py-2 font-medium text-white hover:opacity-90"

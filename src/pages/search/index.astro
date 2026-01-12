@@ -1,27 +1,517 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import { searchIndex } from "./searchIndex";
+export const prerender = false;
+import Layout from "../../layouts/Layout.astro"
 
-const query = Astro.url.searchParams.get("q")?.toLowerCase() || "";
+// Read query safely
+const query = Astro.url.searchParams.get("q")?.trim() || ""
 
-const results = searchIndex.filter((item) =>
-  item.title.toLowerCase().includes(query) ||
-  item.description.toLowerCase().includes(query)
-);
+const siteContent = [
+  // Home
+  {
+    title: "Home",
+    description: "Montessori Cambridge School, Pathankot official homepage.",
+    url: "/",
+  },
+
+  {
+  title: "School Community Engagements",
+  description:
+    "Our strong community partnerships extend learning beyond the classroom through meaningful collaborations with educational, social, and cultural organizations.",
+  url: "/community-engagements",
+},
+{
+  title: "Future Learning Trends",
+  description:
+    "Insights and perspectives on future learning trends, modern education practices, and innovative approaches shaping student learning.",
+  url: "/future-learning",
+},
+  // About
+  {
+    title: "Our History",
+    description: "About History and Foundation of Montessori Cambridge School, Pathankot.",
+    url: "/about/history",
+  },
+  {
+    title: "Vision & Mission",
+    description: "About Vision, mission, core principles and values of Montessori Cambridge School, Pathankot.",
+    url: "/about/vision-&-mission",
+  },
+  {
+    title: "Our Leadership",
+    description: "About School leadership, management, and administration.",
+    url: "/about/leadership",
+  },
+  {
+    title: "Infrastructure",
+    description: "About Campus infrastructure, classrooms, labs, and other facilities.",
+    url: "/about/infrastructure",
+  },
+  {
+    title: "Mandatory Public Disclosure",
+    description: "About Mandatory public disclosure as per CBSE guidelines.",
+    url: "/about/mandatory-public-disclosure",
+  },
+
+  // Achievements
+  {
+    title: "Awards & Achievements",
+    description: "Awards, recognitions, and honors received by the students of Montessori Cambridge School",
+    url: "/achievements",
+  },
+  {
+  title: "Student Achievers",
+  description: "Showcasing student achievements in academics, sports, cultural activities, and leadership at school, state, and national levels.",
+  url: "/achievements#student-achievers",
+},
+{
+  title: "Alumni Success",
+  description: "Celebrating the achievements and success stories of MCS alumni across academics, careers, sports, and leadership roles.",
+  url: "/achievements#alumni-success",
+},
+
+{
+  title: "Achievement Showcase",
+  description: "A visual showcase highlighting outstanding achievements, awards, and milestones of MCS students.",
+  url: "/achievements#achievers-showcase",
+},
+{
+  title: "School Journey & Timeline",
+  description: "A timeline capturing the journey, milestones, growth, and legacy of MCS since its establishment.",
+  url: "/about/mcs-journey",
+},
+
+
+  // Facilities
+  {
+    title: "School Facilities",
+    description: "Discover School facilities including labs, library, transport, and hostel.",
+    url: "/facilities",
+  },
+
+  {
+  title: "Foundation Coaching",
+  description: "A structured foundation coaching facility designed to strengthen core concepts, critical thinking, and problem-solving skills from an early stage.",
+  url: "/facilities#foundation-coaching",
+},
+{
+  title: "Competitive Coaching",
+  description: "Dedicated competitive coaching facility to prepare students for national and international level competitive examinations and academic challenges.",
+  url: "/facilities#competitive-coaching",
+},
+{
+  title: "Smart Classes",
+  description: "Technology-enabled smart classrooms facility with digital learning tools to enhance interactive teaching, conceptual clarity, and student engagement.",
+  url: "/facilities#smart-classes",
+},
+{
+  title: "Sports & Gym Facility",
+  description: "Well-equipped sports and gym facilities promoting physical fitness, teamwork, discipline, and overall student well-being.",
+  url: "/facilities#sports-gym",
+},
+{
+  title: "Computer & Science Labs",
+  description: "Advanced computer and science laboratories providing hands-on practical learning, experimentation, and technological skill development.",
+  url: "/facilities#professional-labs",
+},
+{
+  title: "Transport Facility",
+  description: "Safe and reliable school transport facility with GPS-enabled vehicles ensuring secure and comfortable travel for students.",
+  url: "/facilities#transport-facility",
+},
+{
+  title: "Boarding Facility",
+  description: "A secure and nurturing boarding facility offering a structured residential environment that supports academic focus and personal growth.",
+  url: "/facilities#boarding-facility",
+},
+{
+  title: "Day-Boarding Facility",
+  description: "Comprehensive day-boarding facility providing extended academic support, supervised activities, and a balanced daily routine.",
+  url: "/facilities#day-boarding-facility",
+},
+
+
+  // Campus Life
+  {
+  title: "Boarding Experience",
+  description:
+    "A safe, structured, and nurturing residential boarding life experience offered by the school campus.",
+  url: "/campus-life/boarding-experience",
+},
+{
+  title: "Day Boarding Experience",
+  description:
+    "A well-planned day-boarding experience for day=boarders ensuring over-all learning and growth on campus.",
+  url: "/campus-life/day-boarding-experience",
+},
+{
+  title: "Events & Activities",
+  description:
+    "Explore vibrant school events, cultural celebrations & activities happening in campus throughout the academic year.",
+  url: "/campus-life/events-&-activities",
+},
+{
+  title: "Tours & Excursions",
+  description:
+    "Carefully planned educational tours and excursions that provide experiential learning beyond the school campus.",
+  url: "/campus-life/tours-&-excursions",
+},
+{
+  title: "Enriching Exhibitions",
+  description:
+    "Interactive student exhibitions conducted on campus highlighting innovation through projects and collaborative academic displays.",
+  url: "/campus-life/enriching-exhibitions",
+},
+{
+  title: "Outreach Programs",
+  description:
+    "Community outreach initiatives and social responsibility programs conducted by school encouraging students to contribute positively to society.",
+  url: "/campus-life/outreach-programs",
+},
+{
+  title: "NCC & NDA",
+  description:
+    "Structured NCC training and NDA preparation programs offered by school for students aspiring for careers in defence and uniformed services.",
+  url: "/campus-life/ncc-&-nda",
+},
+
+
+  // Academics
+  // Academics
+{
+  title: "Kindergarten (Pre-Primary School)",
+  description:
+    "A Montessori-based kindergarten program focused on early learning, creativity, motor skills, and a strong foundation through play-based and experiential education.",
+  url: "/academics/kindergarten",
+},
+{
+  title: "Primary School",
+  description:
+    "A structured primary school curriculum that builds strong academic fundamentals, communication skills, curiosity, and independent thinking.",
+  url: "/academics/primary-school",
+},
+{
+  title: "Middle School",
+  description:
+    "A comprehensive middle school program emphasizing conceptual understanding, critical thinking, and a balanced approach to academics and activities.",
+  url: "/academics/middle-school",
+},
+{
+  title: "Secondary School",
+  description:
+    "A focused secondary school academic structure preparing students with subject depth, assessment readiness, and essential life skills.",
+  url: "/academics/secondary-school",
+},
+{
+  title: "Senior Secondary School",
+  description:
+    "A senior secondary education program offering diverse subject streams and academic guidance to prepare students for higher education and career pathways.",
+  url: "/academics/senior-secondary-school",
+},
+
+
+  // Co-curriculars
+  // Co-curriculars
+{
+  title: "Performing Arts",
+  description:
+    "A creative performing arts program including music, dance, drama, and cultural activities that build confidence, expression, and artistic skills.",
+  url: "/co-curriculars/performing-arts",
+},
+{
+  title: "Sports & Athletics",
+  description:
+    "A comprehensive sports and athletics program promoting physical fitness, teamwork, discipline, and overall physical development.",
+  url: "/co-curriculars/sports-&-athletics",
+},
+{
+  title: "Research & Innovation",
+  description:
+    "Hands-on research and innovation initiatives that encourage critical thinking, creativity, problem-solving, and practical learning through projects and labs.",
+  url: "/co-curriculars/research-&-innovation",
+},
+
+// Curriculum
+{
+  title: "Annual Calendar",
+  description:
+    "A detailed academic calendar outlining important school dates, holidays, examinations, events, and academic milestones throughout the year.",
+  url: "/curriculum/annual-calendar",
+},
+{
+  title: "Academic Courses",
+  description:
+    "A comprehensive overview of academic courses offered across different grade levels, aligned with the Montessori and Cambridge curriculum framework.",
+  url: "/curriculum/academic-courses",
+},
+{
+  title: "Syllabus",
+  description:
+    "Class-wise syllabus providing clear learning objectives, subject details, and academic expectations for students and parents.",
+  url: "/curriculum/syllabus",
+},
+{
+  title: "Book List",
+  description:
+    "Prescribed book lists and study materials for each class to support structured learning and academic preparedness.",
+  url: "/curriculum/booklist",
+},
+{
+  title: "Uniform",
+  description:
+    "School uniform guidelines and dress code ensuring discipline, identity, and consistency across all grade levels.",
+  url: "/curriculum/uniform",
+},
+{
+  title: "Examinations",
+  description:
+    "Information on examination schedules, assessment patterns, grading systems, and student evaluation processes.",
+  url: "/curriculum/examinations",
+},
+{
+  title: "Results",
+  description:
+    "Academic results and performance records reflecting student progress, assessment outcomes, and scholastic achievements.",
+  url: "/curriculum/results",
+},
+
+// Admission
+{
+  title: "Why Choose MCS?",
+  description:
+    "Key reasons to choose Mount Carmel School, highlighting academic excellence, holistic development, and a nurturing learning environment.",
+  url: "/admission/why-choose-MCS",
+},
+{
+  title: "Admission Process",
+  description:
+    "Step-by-step admission process including application guidelines, eligibility criteria, and important admission timelines.",
+  url: "/admission/admission-process",
+},
+{
+  title: "Apply Online for Admission",
+  description:
+    "Step-by-step admission process including application guidelines, eligibility criteria, and important admission timelines.",
+  url: "/admission#apply-online",
+},
+{
+  title: "Fee Structure",
+  description:
+    "Transparent school fee structure with details on tuition fees, payment schedules, and applicable charges.",
+  url: "/admission/fee-structure",
+},
+{
+  title: "Withdrawals",
+  description:
+    "Guidelines and policies related to student withdrawals, refunds, and formal exit procedures.",
+  url: "/admission/withdrawals",
+},
+{
+  title: "Transfer Certificate",
+  description:
+    "Information on transfer certificate application, documentation requirements, and issuance process.",
+  url: "/admission/transfer-certificate",
+},
+
+// Bulletin
+{
+  title: "Circulars",
+  description:
+    "Official school circulars and important notices keeping parents and students informed about academic and administrative updates.",
+  url: "/bulletin/circulars",
+},
+{
+  title: "News & Events",
+  description:
+    "Latest school news, announcements, upcoming events, and highlights from campus activities.",
+  url: "/bulletin/upcoming-events",
+},
+{
+  title: "Media & Press Release",
+  description:
+    "Media coverage, press releases, and public announcements featuring school achievements and initiatives.",
+  url: "/bulletin/press-release",
+},
+{
+  title: "Careers",
+  description:
+    "Career opportunities and job openings for teaching and non-teaching roles at Mount Carmel School.",
+  url: "/bulletin/careers",
+},
+
+// Contact
+{
+  title: "Contact Us",
+  description:
+    "Contact information, enquiry form, campus address, and communication details for parents, students, and visitors.",
+  url: "/contact",
+},
+{
+  title: "School Location & Map",
+  description:
+    "Detailed school location with an embedded Google Map, directions, and nearby landmarks to help parents and visitors easily reach the campus.",
+  url: "/contact#location",
+},
+{
+  title: "Enquiry & Contact Form",
+  description:
+    "An easy-to-use enquiry and contact form for parents to submit questions, requests, and admission-related enquiries directly to the school.",
+  url: "/contact#enquiry",
+},
+{
+  title: "Frequently Asked Questions",
+  description:
+    "Answers to commonly asked questions related to admissions, academics, facilities, policies, and school procedures.",
+  url: "/contact#frequently-asked-questions",
+},
+
+
+// Quick Actions
+{
+  title: "Pay Fees",
+  description:
+    "Secure and convenient online fee payment facility for parents and guardians.",
+  url: "/pay-fee",
+},
+{
+  title: "Alumni Connect",
+  description:
+    "A dedicated platform for alumni to stay connected, share experiences, and engage with the school community.",
+  url: "/alumni",
+},
+
+]
+
+
+// Search logic
+const q = query.toLowerCase()
+
+const results =
+  q.length > 0
+    ? siteContent.filter(item =>
+        `${item.title} ${item.description}`
+          .toLowerCase()
+          .includes(q)
+      )
+    : []
+
+// Highlight matched text
+const highlight = (text: string) =>
+  text.replace(
+    new RegExp(`(${query})`, "gi"),
+    `<mark class="bg-yellow-200">$1</mark>`
+  )
 ---
+<Layout title={`Search results for ${query || "Website"}`}>
+  <section class="mx-auto max-w-7xl px-6 min-[540px]:px-12 sm:px-16 lg:px-20 py-4 sm:py-10 my-10 font-inter">
+    <h1 class="text-xl sm:text-2xl lg:text-3xl font-semibold mb-2">Search Results</h1>
 
-<Layout title={`Search results for "${query}"`} description="Search results">
-  <main class="container px-6 py-16">
-    <h1 class="text-3xl font-bold mb-6">
-      Search results for “{query}”
-    </h1>
-
-    {query === "" && (
-      <p class="text-gray-600">Please enter a search term.</p>
+    {query ? (
+      <p class="text-sm sm:text-base text-gray-600 mb-8">
+        Showing results for <strong>"{query}"</strong>
+      </p>
+    ) : (
+      <p class="text-gray-600 mb-8">
+        Please enter a search term.
+      </p>
     )}
 
     {query && results.length === 0 && (
-      <p class="text-gray-600">No results found.</p>
+      <div class="border rounded-lg p-6 text-gray-600">
+        No results found. Try another keyword.
+      </div>
+    )}
+
+    <ul class="space-y-6">
+      {results.map(item => (
+        <li class="border-b pb-4 border-gray-400">
+          <a
+            href={item.url}
+            class="text-base sm:text-lg font-medium text-blue-700 hover:underline"
+          >
+         {(item.title)}
+          </a>
+          <p class="text-sm sm:text-base text-gray-600 mt-1">
+            <span set:html={highlight(item.description)} />
+          </p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Layout>
+
+
+
+
+
+<!-- ---
+export const prerender = false;
+import Layout from "../../layouts/Layout.astro"
+
+// Read query from URL
+const query = Astro.url.searchParams.get("q")?.trim() || ""
+
+// Example searchable data (REPLACE with CMS later)
+const pages = [
+  {
+    title: "Admissions",
+    description: "Admission process, eligibility, and important dates.",
+    url: "/admission",
+    keywords: ["apply", "admission", "enroll"]
+  },
+  {
+    title: "Fee Structure",
+    description: "Detailed fee structure for all classes.",
+    url: "/fees",
+    keywords: ["fees", "payment", "charges"]
+  },
+  {
+    title: "Curriculum",
+    description: "Academic curriculum and learning framework.",
+    url: "/curriculum",
+    keywords: ["subjects", "syllabus", "curriculum"]
+  },
+  {
+    title: "Results",
+    description: "Academic results and achievements.",
+    url: "/results",
+    keywords: ["results", "marks", "scores"]
+  },
+]
+
+// Search logic
+const results =
+  query.length > 0
+    ? pages.filter((page) =>
+        (
+          page.title +
+          page.description +
+          page.keywords.join(" ")
+        )
+          .toLowerCase()
+          .includes(query.toLowerCase())
+      )
+    : []
+---
+<Layout title={`Search results for "${query}"`}>
+  <section class="max-w-4xl mx-auto px-5 py-14 font-inter">
+    <h1 class="text-2xl font-semibold mb-2">
+      Search Results
+    </h1>
+
+    {query ? (
+      <p class="text-gray-600 mb-8">
+        Showing results for <span class="font-medium">"{query}"</span>
+      </p>
+    ) : (
+      <p class="text-gray-600 mb-8">
+        Please enter a search term.
+      </p>
+    )}
+
+    {query && results.length === 0 && (
+      <div class="rounded-lg border border-gray-200 p-6 text-gray-600">
+        No results found. Try a different keyword.
+      </div>
     )}
 
     <ul class="space-y-6">
@@ -29,13 +519,17 @@ const results = searchIndex.filter((item) =>
         <li class="border-b pb-4">
           <a
             href={item.url}
-            class="text-xl font-semibold text-primarydark hover:underline"
+            class="text-lg font-medium text-blue-700 hover:underline"
           >
             {item.title}
           </a>
-          <p class="text-gray-600 mt-1">{item.description}</p>
+          <p class="text-gray-600 mt-1">
+            {item.description}
+          </p>
         </li>
       ))}
     </ul>
-  </main>
-</Layout>
+  </section>
+</Layout> -->
+
+

@@ -2,7 +2,7 @@ import { Target, Utensils, Shield, BookOpen } from "lucide-react"
 
 const DayBoardingFacility = () => {
   return (
-    <section id="foundation-coaching" className="py-4 sm:py-10 my-10 bg-white">
+    <section id="day-boarding-facility" className="py-4 sm:py-10 my-10 bg-white">
       <div className="container mx-auto max-w-7xl px-6 min-[540px]:px-12 sm:px-16 xl:px-0">
         <div className="flex flex-col md:flex-row-reverse md:gap-20">
           

@@ -26,7 +26,7 @@ const AdmissionsCTA = () => {
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="/admission#"
+                href="/admission/admission-process"
                 className="inline-flex items-center gap-2 rounded-lg bg-yellow-400 px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white shadow-lg hover:bg-yellow-300"
               >
                 Apply for Admissions
@@ -34,7 +34,7 @@ const AdmissionsCTA = () => {
               </a>
 
               <a
-                href="/campus"
+                href="/contact#enquiry"
                 className="hidden md:block rounded-lg border border-white/40 px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white hover:bg-white/10"
               >
                 Enquire Now

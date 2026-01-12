@@ -74,7 +74,7 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <section id="contact-form" className="bg-linear-to-r from-blue-950 via-blue-900 to-blue-950 my-10 py-12 md:py-20 overflow-hidden">
+    <section id="enquiry" className="bg-linear-to-r from-blue-950 via-blue-900 to-blue-950 my-10 py-12 md:py-20 overflow-hidden">
       <div className="container mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 xl:px-0">
         <div className="grid grid-cols-1 gap-8 xl:gap-12 lg:grid-cols-2">
           <div className="text-start">
@@ -261,7 +261,7 @@ const ContactForm: React.FC = () => {
               <div className="mt-8 text-center font-inter text-gray-600 text-sm">
                 <p className="mt-2">
                   By submitting this form, you agree to our{" "}
-                  <a href="/privacy" className="text-blue-600 hover:underline font-medium">
+                  <a href="/privacy-policy" className="text-blue-600 hover:underline font-medium">
                     Privacy Policy
                   </a>{" "}
                   and consent to be contacted regarding your inquiry.

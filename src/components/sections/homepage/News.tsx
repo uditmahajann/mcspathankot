@@ -116,7 +116,7 @@ const News = ({ news }: Props) => {
         </div>
 
         <div className="mt-8 sm:mt-12 flex items-center justify-center">
-          <CtaButton text="View All Highlights" href="" />
+          <CtaButton text="View All Highlights" href="bulletin/upcoming-events" />
         </div>
 
       </div>

@@ -40,7 +40,7 @@ const AlumniConnect = () => {
               </a>
 
               <a
-                href="/campus"
+                href="/achievements#alumni-success"
                 className="hidden md:block rounded-lg border border-white/40 px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white hover:bg-white/10"
               >
                 Explore Alumni Success
