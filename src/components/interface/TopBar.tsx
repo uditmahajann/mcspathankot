@@ -1,6 +1,6 @@
 import type React from "react";
 import { Phone, Mail, Facebook, Instagram, Youtube, Twitter } from "lucide-react";
-import SearchButton from "./SearchButton";
+// import SearchButton from "./SearchButton";
 
 const TopBar: React.FC = () => {
   // Hardcoded contact info
@@ -69,7 +69,7 @@ const TopBar: React.FC = () => {
               ))}
             </div>
           </div>|
-          <SearchButton />
+          {/* <SearchButton /> */}
 
         </div>
       </div>
