@@ -50,7 +50,7 @@ const AlumniSpotlight: React.FC<Props> = ({ alumni }) => {
         <div className="relative w-full md:w-1/2 rounded-2xl overflow-hidden shadow-lg">
           <img
             src={alum.image.asset.url}
-            className="w-full h-72 md:h-90 object-cover"
+            className="aspect-5/4 w-full h-auto object-fill"
             loading="lazy"
           />
           <div className="absolute inset-0 bg-black/20" />

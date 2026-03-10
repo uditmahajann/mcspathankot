@@ -57,7 +57,7 @@ const FeeStructure: React.FC<FeeStructureProps> = ({ feeCategories }) => {
             </span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
-            Detailed breakdown of all applicable fees for the academic year 2024-25
+            Detailed breakdown of all applicable fees for the academic year 2026-27
           </p>
         </div>
 
@@ -78,19 +78,19 @@ const FeeStructure: React.FC<FeeStructureProps> = ({ feeCategories }) => {
               <tr className="even:bg-white odd:bg-gray-100 hover:bg-blue-50 font-inter">
                 <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-left">1</td>
                 <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-left">Registration Fee</td>
-                <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">₹1000</td>
-                <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">One time payable and Non-refundable</td>
+                <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">₹2500</td>
+                <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">One time payable and non-refundable</td>
               </tr>
               <tr className="even:bg-white odd:bg-gray-100 hover:bg-blue-50 font-inter">
                 <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-left">2</td>
                 <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-left">Admission Fee</td>
-                <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">₹4000</td>
-                <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">Payable at the time of admission and Non-Refundable</td>
+                <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">₹7500</td>
+                <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">Payable at the time of admission and non-Refundable</td>
               </tr>
               <tr className="even:bg-white odd:bg-gray-100 hover:bg-blue-50 font-inter">
                 <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-left">3</td>
                 <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-left">Prospectus Fee</td>
-                <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">₹100</td>
+                <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">₹500</td>
                 <td className="px-4.5 py-3.5 sm:px-6 sm:py-4 whitespace-nowrap text-sm text-gray-500 text-center">Non-Refundable</td>
               </tr>
             </tbody>

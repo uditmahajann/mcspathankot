@@ -20,7 +20,7 @@ const News = ({ news }: Props) => {
 
   return (
     <section className="relative bg-white py-4 sm:py-10 my-10">
-      <div className="mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 xl:px-0">
+      <div className="mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 xl:px-6">
 
         {/* Section Header */}
         <div className="text-center mb-6">
@@ -64,7 +64,7 @@ const News = ({ news }: Props) => {
                   })}
                 </span>
 
-                <h3 className="mt-2 font-raleway text-2xl sm:text-3xl font-bold text-white">
+                <h3 className="mt-2 text-2xl sm:text-3xl font-bold text-white">
                   {featured.title}
                 </h3>
 
@@ -87,7 +87,7 @@ const News = ({ news }: Props) => {
                 href={`/news/${item.slug}`}
                 className="group flex flex-row overflow-hidden bg-white transition"
               >
-                <div className="h-full w-28 xl:w-36 shrink-0 overflow-hidden">
+                <div className=" h-full w-28 xl:w-36 shrink-0 overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
@@ -95,17 +95,17 @@ const News = ({ news }: Props) => {
                   />
                 </div>
 
-                <div className="flex-1 px-4 py-3 font-inter">
-                  <span className="text-sm font-medium text-blue-800">
+                <div className="flex-1 px-3 py-3 font-inter">
+                  <span className="text-base font-medium text-blue-800">
                     {new Date(item.date).toLocaleDateString("en-IN", {
                     month: "long",
                     year: "numeric",
                   })}</span>
                   
-                  <h4 className="mt-2 font-semibold text-gray-900 group-hover:underline line-clamp-1">
+                  <h4 className="mt-2 text-lg font-semibold text-gray-900 group-hover:underline line-clamp-2">
                     {item.title}
                   </h4>
-                  <p className="mt-1 text-sm text-gray-600 line-clamp-2">
+                  <p className="mt-1 text-gray-600 line-clamp-3">
                     {item.description}
                   </p>
                 </div>
@@ -115,7 +115,7 @@ const News = ({ news }: Props) => {
 
         </div>
 
-        <div className="mt-8 sm:mt-12 flex items-center justify-center">
+        <div className="mt-8 sm:mt-10 flex items-center justify-center">
           <CtaButton text="View All Highlights" href="bulletin/upcoming-events" />
         </div>
 

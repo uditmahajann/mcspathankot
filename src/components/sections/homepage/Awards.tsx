@@ -62,7 +62,7 @@ const INTERVAL = 3000; // 5 seconds (calm, premium)
               <img
                 src={award.image}
                 alt={award.name}
-                className="h-full w-full object-cover rounded-2xl"
+                className="aspect-3/2 h-auto w-full object-cover rounded-2xl"
               />
             </div>
 

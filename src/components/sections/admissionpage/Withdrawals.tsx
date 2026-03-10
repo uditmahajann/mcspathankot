@@ -90,7 +90,7 @@ const Withdrawals: React.FC = () => {
         <div className="bg-white rounded-xl lg:rounded-2xl shadow-lg overflow-hidden border border-gray-100">
           <div className="bg-primarydark p-5">
             <h3 className="mb-1 text-xl font-poppins font-bold text-white tracking-wide">Withdrawal Policy</h3>
-            <p className="text-blue-100 text-sm sm:text-base font-inter">Important guidelines regarding student withdrawals</p>
+            <p className="text-blue-100 text-sm sm:text-base font-inter">The following guidelines govern the withdrawal of students from the school and are intended to ensure a smooth administrative process:</p>
           </div>
           <div className="p-6">
             <ul className="space-y-4">

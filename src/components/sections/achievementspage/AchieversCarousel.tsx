@@ -116,7 +116,7 @@ const StudentAchieversGrid = ({ achievements }: Props) => {
                 <img
                   src={achiever.image.asset.url}
                   alt={achiever.personName}
-                  className="w-full h-64 object-cover"
+                  className="aspect-5/4 w-full h-auto object-fill"
                   loading="lazy"
                 />
 

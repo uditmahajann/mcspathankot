@@ -38,7 +38,7 @@ const AwardsGrid: React.FC<AwardsGridProps> = ({ awards }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {awards.map((award) => (
 
             <div
@@ -49,7 +49,7 @@ const AwardsGrid: React.FC<AwardsGridProps> = ({ awards }) => {
                 <img
                   src={urlFor(award.image).width(600).auto("format").url()}
                   alt={award.name}
-                  className="w-full h-60 object-cover"
+                  className="aspect-4/3 h-auto w-full object-cover"
                 />
 
               )}
