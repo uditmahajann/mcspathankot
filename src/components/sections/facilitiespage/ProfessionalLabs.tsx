@@ -7,42 +7,42 @@ const labs = [
     title: "Physics Lab",
     image: "/Images/Facility/physicslab.JPG",
     desc:
-      "A hands-on environment for learning mechanics, motion, electricity, optics, and energy.",
+      "Explore mechanics, motion, electricity, optics, and energy through hands-on experiments.",
   },
   {
     id: "chemistry",
     title: "Chemistry Lab",
     image: "/Images/Facility/chemistrylab.JPG",
     desc:
-      "A fully equipped space designed for safe exploration of reactions, compounds, and chemical behaviour.",
+      "Safely investigate chemical reactions, compounds, and molecular behavior.",
   },
   {
     id: "biology",
     title: "Biology Lab",
     image: "/Images/Facility/biolab.JPG",
     desc:
-      "A discovery-based learning space to study life systems from cells to ecosystems.",
+      "Discover life systems from cells to ecosystems in an interactive environment.",
   },
   {
     id: "math",
     title: "Mathematics Lab",
     image: "/Images/Facility/mathslab.png",
     desc:
-      "A space for hands-on mathematical thinking through puzzles, models, and logic activities.",
+      "Engage in puzzles, models, and logic activities to build strong analytical skills.",
   },
   {
     id: "computer",
     title: "Computers Lab",
     image: "/Images/Facility/computerlab.jpeg",
     desc:
-      "A modern digital workspace where students build foundational and advanced computing skills.",
+      "Develop foundational and advanced computing skills with modern digital resources.",
   },
   {
     id: "geography",
     title: "Geography Lab",
     image: "/Images/Facility/geolab.JPG",
     desc:
-      "An interactive learning space where students explore maps, globes & geography.",
+      "Learn maps, globes, and spatial analysis in an interactive, discovery-based space.",
   },
 ];
 
@@ -64,7 +64,7 @@ const ProfessionalLabs = () => {
             </span>
           </h2>
           <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
-            Our professional laboratories provide hands-on learning experiences from qualified experts and state-of-the-art equipment.
+            Our state-of-the-art laboratories provide hands-on, experiential learning guided by qualified educators, fostering curiosity & practical understanding.
           </p>
         </div>
 

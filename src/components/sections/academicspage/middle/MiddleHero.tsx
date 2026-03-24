@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="mt-4 text-lg text-gray-700 max-w-2xl">
-          Our middle school bridges guided exploration and growing independence that inspire confidence and academic excellence.
+          At MCS Middle School, we bridge guided exploration with growing independence, inspiring confidence, curiosity & academic excellence.
         </p>
       </div>
     </section>

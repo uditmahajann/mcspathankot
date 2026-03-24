@@ -82,11 +82,11 @@ const SafetyCareCreative: React.FC = () => {
                 </h2>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
-                  The Middle Wing provides a caring environment where students transition smoothly into adolescence with confidence. Our teachers and mentors work closely with every learner, offering academic guidance and personal support when it matters most.
+                  The Middle Wing offers a nurturing space where students transition into adolescence with assurance and curiosity. Teachers and mentors provide tailored academic guidance and personal support, helping each learner navigate this pivotal stage.
                 </p>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
-                  Safety extends beyond the classroom — from digital awareness sessions to emotional wellness programs, we nurture responsibility, balance, and empathy in every student as they discover who they are and what they can become.
+                  Safety and well-being extend beyond the classroom — from digital-awareness sessions to emotional wellness programs — nurturing balance, empathy, and self-awareness as students discover their strengths and potential.
                 </p>
               </div>
 

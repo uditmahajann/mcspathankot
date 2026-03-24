@@ -19,9 +19,7 @@ const DayBoardingFacility = () => {
               </h2>
             </div>
             <p className="text-gray-900 mb-8 font-inter text-base sm:text-lg">
-              Our Day-Boarding program offers the perfect balance between school and home life. Students benefit from
-              extended hours at school with supervised study time, nutritious meals, and participation in various
-              activities, while returning home to their families each evening.
+              Our Day-Boarding program offers a seamless balance between school and home life. Students benefit from extended hours at school with structured study, nutritious meals, and enrichment activities before returning home.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -29,7 +27,7 @@ const DayBoardingFacility = () => {
                 <Target className="w-6 h-6 text-emerald-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Holistic Development</h4>
                 <p className="text-gray-700 font-inter mt-2">
-                  Access to sports & enrichment programs for all-round growth.
+                  Access to sports, arts & cultural programs for all-round growth.
                 </p>
               </div>
 
@@ -37,20 +35,20 @@ const DayBoardingFacility = () => {
                 <Utensils className="w-6 h-6 text-rose-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Nutritious Meals</h4>
                 <p className="text-gray-700 font-inter mt-2">
-                  Healthy, balanced meals to keep students energized and focused.
+                  Healthy, balanced meals to support focus and energy.
                 </p>
               </div>
 
               <div className="bg-yellow-50 p-4 rounded-lg">
                 <Shield className="w-6 h-6 text-yellow-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Safe Environment</h4>
-                <p className="text-gray-700 font-inter mt-2">Continuous supervision ensuring safety & a caring atmosphere.</p>
+                <p className="text-gray-700 font-inter mt-2">Continuous supervision ensures a secure and caring atmosphere.</p>
               </div>
 
               <div className="bg-purple-100/60 p-4 rounded-lg">
                 <BookOpen className="w-6 h-6 text-purple-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Extended Learning Hours</h4>
-                <p className="text-gray-700 font-inter mt-2">Structured academic support beyond school hours.</p>
+                <p className="text-gray-700 font-inter mt-2">Structured academic support beyond regular school hours.</p>
               </div>
             </div>
           </div>

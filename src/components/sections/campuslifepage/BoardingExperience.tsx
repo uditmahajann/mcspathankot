@@ -27,8 +27,7 @@ const BoardingExperience = () => {
             <div className="bg-blue-50 rounded-xl p-8 mb-8">
               <h3 className="text-xl sm:text-2xl font-poppins font-semibold text-primarydark mb-3 tracking-wide">A Home Away From Home</h3>
               <p className="text-gray-700 mb-6 font-inter">
-                Our boarding facilities provide a comfortable, secure, and supportive environment where students develop
-                independence while being guided by experienced house parents and mentors who are available 24/7.
+                At Montessori Cambridge School, our boarding program offers more than accommodation—it provides a nurturing environment where students cultivate independence, responsibility, and lifelong friendships. Guided by experienced house parents and mentors available 24/7, every student thrives in a safe, supportive, and structured setting.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">

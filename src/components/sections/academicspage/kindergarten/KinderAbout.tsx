@@ -15,17 +15,15 @@ const AboutKindergarten: React.FC = () => {
           </span>
 
           <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl font-raleway font-extrabold text-gray-900 leading-tight mb-5">
-            Where curiosity blooms <br /> and learning feels like play
+            Where curiosity blooms <br />and learning is a delight
           </h2>
 
           <p className="text-base min-[540px]:text-lg text-gray-700 mb-4">
-            Our Kindergarten nurtures every child’s natural sense of wonder through play, discovery, and gentle guidance. 
-            We believe learning should spark joy — where children explore, imagine, and express freely in a caring, secure environment.
+            At our Kindergarten, we cultivate each child’s innate sense of wonder through playful exploration, inspired discovery & thoughtful guidance. We believe that learning should be joyful — a space where children can imagine, create, and express themselves freely within a nurturing and secure environment.
           </p>
 
           <p className="text-base min-[540px]:text-lg text-gray-700 mb-4">
-            With a focus on curiosity, creativity, and confidence, we lay the foundation for a lifelong love of learning — 
-            helping every child grow happy, independent, and ready for the world ahead.
+            By fostering curiosity, creativity, and confidence, we lay the foundations for a lifelong love of learning — supporting every child to flourish happily, independently, and fully prepared to embrace the world ahead.
           </p>
         </div>
 

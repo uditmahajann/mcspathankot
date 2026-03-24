@@ -15,15 +15,15 @@ const AboutKindergarten: React.FC = () => {
           </span>
 
           <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl font-raleway font-extrabold text-gray-900 leading-tight mb-5">
-            Where discovery turns<br /> into purpose
+            Where discovery blossoms<br /> into purpose
           </h2>
 
           <p className="text-base min-[540px]:text-lg text-gray-700 mb-4">
-            At MCS Primary, children begin to transition from playful exploration to purposeful learning. Our classrooms encourage curiosity, independence, and creativity — helping each child build strong foundations in literacy, numeracy, and communication.
+            In the Foundational Years, children transition from playful exploration to purposeful learning. Our classrooms nurture curiosity, independence, and creativity, laying strong foundations in literacy, numeracy, and communication.
           </p>
 
           <p className="text-base min-[540px]:text-lg text-gray-700 mb-4">
-            Through joyful, hands-on experiences, students develop confidence, empathy, and collaboration — learning to think, express, and question with growing awareness of the world around them.
+            Through hands-on, joyful experiences, students cultivate confidence, empathy, and collaboration — learning to think critically, express themselves clearly, and question thoughtfully, all while growing in awareness of the world around them.
           </p>
         </div>
 

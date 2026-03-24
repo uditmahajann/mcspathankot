@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="mt-4 text-lg text-gray-700 max-w-2xl">
-          Children at MCS Primary learn with curiosity and purpose — developing essential skills through joyful experiences.
+          At MCS Primary, children learn with curiosity and intention — developing essential skills through joyful, meaningful experiences.
         </p>
       </div>
     </section>

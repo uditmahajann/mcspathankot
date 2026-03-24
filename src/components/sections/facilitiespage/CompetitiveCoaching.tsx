@@ -19,9 +19,7 @@ const CompetitiveCoaching = () => {
               </h2>
             </div>
             <p className="text-gray-900 mb-8 font-inter text-base sm:text-lg">
-              Our Competitive Coaching program is designed to prepare students for various national and international
-              competitions, entrance exams, and Olympiads. We provide specialized training that goes beyond the regular
-              curriculum to develop advanced problem-solving skills and competitive edge.
+              Our Competitive Coaching program is meticulously designed to equip students for a wide range of national and international competitions, entrance examinations, and Olympiads. By providing specialized training that extends beyond the standard curriculum, we foster advanced problem-solving abilities and a distinct competitive advantage.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -29,7 +27,7 @@ const CompetitiveCoaching = () => {
                 <TrendingUp className="w-6 h-6 text-emerald-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Advanced Curriculum</h4>
                 <p className="text-gray-700 font-inter mt-2">
-                  Specialized study material and advanced concepts for competitive exams.
+                  Specialized study materials and in-depth concepts tailored specifically for competitive examinations.
                 </p>
               </div>
 
@@ -37,20 +35,20 @@ const CompetitiveCoaching = () => {
                 <Users className="w-6 h-6 text-rose-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Expert Mentors</h4>
                 <p className="text-gray-700 font-inter mt-2">
-                  Guidance from experienced faculty having record in competitive exams.
+                  Guidance & mentorship from experienced faculty members with proven success in competitive exams.
                 </p>
               </div>
 
               <div className="bg-yellow-50 p-4 rounded-lg">
                 <BarChart className="w-6 h-6 text-yellow-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Regular Assessments</h4>
-                <p className="text-gray-700 font-inter mt-2">Regular mock tests and performance analysis to track progress.</p>
+                <p className="text-gray-700 font-inter mt-2">Frequent mock tests & comprehensive performance analyses to monitor progress & identify areas for improvement.</p>
               </div>
 
               <div className="bg-purple-100/60 p-4 rounded-lg">
                 <CheckCircle2 className="w-6 h-6 text-purple-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Personalized Feedback</h4>
-                <p className="text-gray-700 font-inter mt-2">Individual attention and customized improvement plans.</p>
+                <p className="text-gray-700 font-inter mt-2">Focused individual attention with customized improvement plans to maximize each student’s potential.</p>
               </div>
             </div>
 
@@ -61,19 +59,19 @@ const CompetitiveCoaching = () => {
               <ul className="grid grid-cols-2 gap-x-1 md:gap-x-4 gap-y-2">
                 <li className="flex items-center gap-2 text-gray-700 font-outfit">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Mathematics Olympiad
+                  Mathematics Olympiads
                 </li>
                 <li className="flex items-center gap-2 text-gray-700 font-outfit">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Science Olympiad
+                  Science Olympiads
                 </li>
                 <li className="flex items-center gap-2 text-gray-700 font-outfit">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  NTSE
+                  NTSE Examination
                 </li>
                 <li className="flex items-center gap-2 text-gray-700 font-outfit">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  JEE/NEET
+                  JEE/NEET Entrance
                 </li>
                 <li className="flex items-center gap-2 text-gray-700 font-outfit">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>

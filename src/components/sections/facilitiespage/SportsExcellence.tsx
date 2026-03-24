@@ -8,9 +8,7 @@ const SmartClasses = () => {
              <div className="lg:w-1/2">
               <h3 className="text-2xl min-[540px]:text-3xl font-playpen font-medium text-yellow-400 leading-normal">Sports Excellence Program</h3>
               <p className="mt-6 text-gray-100 font-inter">
-                  Our Sports Excellence Program is designed to identify and nurture
-                  sporting talent through specialized coaching, regular training,
-                  and participation in competitive events at various levels.
+                  Our Sports Excellence Program is designed to identify, nurture, and elevate sporting talent. Through specialized coaching, structured training, and participation in competitions at regional, state, and national levels, students develop not only athletic skills but also leadership, teamwork, and sportsmanship.
               </p>
 
               <div className="mt-10 space-y-3 sm:space-y-6">
@@ -20,7 +18,7 @@ const SmartClasses = () => {
                       </div>
                       <div>
                       <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Professional Coaching</h4>
-                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">Experienced coaches for advanced training & representation.</p>
+                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">Experienced mentors guide advanced training and competitive representation.</p>
                       </div>
             </div>
                   <div className="flex items-center gap-3">
@@ -29,7 +27,7 @@ const SmartClasses = () => {
                       </div>
                       <div>
                       <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Structured Training</h4>
-                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">Systematic programs focusing on technique, fitness & mental preparation.</p>
+                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">Systematic programs focusing on technique, fitness, and mental preparedness.</p>
                       </div>
             </div>
                   <div className="flex items-center gap-3">
@@ -38,7 +36,7 @@ const SmartClasses = () => {
                       </div>
                       <div>
                       <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Team Building</h4>
-                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">Activities designed to develop leadership, teamwork & sportsmanship.</p>
+                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">Activities designed to cultivate leadership, collaboration, and fair play.</p>
                       </div>
                   </div>
               </div>

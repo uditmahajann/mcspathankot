@@ -46,21 +46,12 @@ const SafetyCareCreative: React.FC = () => {
       }}
     >
 
-      <div className="rrelative mx-auto max-w-7xl px-6 min-[540px]:px-12 py-15 sm:py-25 lg:py-35">
+      <div className="rrelative mx-auto max-w-7xl px-6 min-[540px]:px-12 py-15 sm:py-25">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
-            Where Learning Meets{" "}
-            <span className="relative inline-block">
-              Creativity
-              {/* Spark Doodle */}
-              <img
-                src="/Images/Doodles/SparkGreen.png"
-                alt="Spark"
-                className="absolute w-8 sm:w-12 -top-6 -right-9 sm:-right-12"
-              />
-            </span>
-          </h2>
+          <h2 className="max-w-3xl text-2xl min-[540px]:text-3xl lg:text-4xl text-gray-900 font-playpen font-medium inline-block relative leading-normal">
+            A nurturing haven where imagination & growth flourish
+            </h2>
           <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             A nurturing environment where children feel safe to explore, express, and grow — blending care with creativity.
           </p>
@@ -75,11 +66,11 @@ const SafetyCareCreative: React.FC = () => {
                 </h2>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
-                  In the Primary Wing, we create an environment where safety and creativity go hand in hand. Our classrooms are warm, structured, and inclusive — spaces where children feel comfortable expressing themselves and exploring new ideas freely.
+                  Our classrooms are warm, structured, and inclusive — thoughtfully designed spaces where children feel confident to express themselves and freely explore new ideas.
                 </p>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
-                  Teachers act as mentors, guiding both academic and emotional growth. From active learning corners to thoughtful routines, every detail helps young learners build curiosity, confidence, and a deep sense of belonging.
+                  Teachers serve as mentors, guiding both academic and emotional growth. From interactive learning corners to carefully considered daily routines, every element supports young learners in cultivating curiosity, confidence, and a profound sense of belonging.
                 </p>
               </div>
 

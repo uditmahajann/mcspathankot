@@ -8,8 +8,7 @@ const SmartClasses = () => {
           <div className="lg:w-1/2">
             <h3 className="text-2xl min-[540px]:text-3xl font-playpen font-medium text-yellow-400 leading-normal">Smart Classrooms</h3>
             <p className="mt-6 text-gray-100 font-inter">
-              Our smart classrooms are equipped with state-of-the-art technology that combines traditional teaching methods with newer technology to
-              create an immersive and interactive learning environment enhancing student engagement and comprehension
+              At Montessori Cambridge School, our smart classrooms seamlessly blend traditional pedagogy with cutting-edge technology to create an immersive, interactive learning environment. This integration enhances overall student engagement, deepens understanding, and fosters collaboration.
             </p>
 
             <div className="mt-10 space-y-3 sm:space-y-6">

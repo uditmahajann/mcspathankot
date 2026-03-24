@@ -41,7 +41,7 @@ const TransportFacility = () => {
             <div className="lg:w-1/2">
               <h3 className="text-2xl min-[540px]:text-3xl font-playpen font-medium text-yellow-400 leading-normal">Transport Facilities</h3>
               <p className="mt-6 text-gray-100 font-inter">
-                Our transport system ensures a safe and reliable school commute for students through a fleet of GPS-enabled school buses with real-time tracking, route updates, and modern fleet monitoring systems.
+                Our transport system ensures a safe, reliable, and comfortable commute for all students through a fleet of modern school buses with real-time tracking.
               </p>
 
               <div className="mt-10 space-y-3 sm:space-y-6">
@@ -52,7 +52,7 @@ const TransportFacility = () => {
                   <div>
                     <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Live GPS Tracking</h4>
                     <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">
-                     Real-time bus location ensuring timely and safe travel.
+                     Real-time bus location for timely and secure travel.
                     </p>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const TransportFacility = () => {
                   <div>
                     <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Extensive Route Coverage</h4>
                     <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">
-                     We cover a wide network across the city with well-planned routes.
+                     Well-planned routes connecting students across the city.
                     </p>
                   </div>
                 </div>

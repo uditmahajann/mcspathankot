@@ -19,11 +19,11 @@ const AboutKindergarten: React.FC = () => {
           </h2>
 
           <p className="text-base min-[540px]:text-lg text-gray-700 mb-4">
-            The Middle Wing at MCS empowers learners to think critically, explore deeply, and express themselves with clarity. Here, children move beyond foundational learning and begin to make meaningful connections across subjects and ideas.
+            The Middle Wing empowers learners to think critically, explore deeply, and express themselves with clarity. Students move beyond foundational learning, making meaningful connections across subjects and ideas.
           </p>
 
           <p className="text-base min-[540px]:text-lg text-gray-700 mb-4">
-            Our holistic approach combines academics with co-curricular experiences, fostering resilience, teamwork, and self-discipline. Students develop a sense of responsibility — learning to take initiative, solve problems, and grow into confident, compassionate individuals.
+            Our holistic approach blends rigorous academics with co-curricular experiences, fostering resilience, teamwork & self-discipline. Learners develop responsibility, initiative, and problem-solving skills — growing into confident, compassionate individuals.
           </p>
         </div>
 

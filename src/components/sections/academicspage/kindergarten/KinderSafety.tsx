@@ -46,22 +46,14 @@ const SafetyCareCreative: React.FC = () => {
       }}
     >
 
-      <div className="relative mx-auto max-w-7xl px-6 min-[540px]:px-12 py-15 sm:py-25 lg:py-35">
+      <div className="relative mx-auto max-w-7xl px-6 min-[540px]:px-12 py-15 sm:py-25">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
-            Where Safety Meets{" "}
-            <span className="relative inline-block">
-              Care
-              <img
-                src="/Images/Doodles/SparkGreen.png"
-                alt="Spark"
-                className="absolute w-8 sm:w-12 -top-6 -right-9 sm:-right-12"
-              />
-            </span>
-          </h2>
+          <h2 className="max-w-3xl text-2xl min-[540px]:text-3xl lg:text-4xl text-gray-900 font-playpen font-medium inline-block relative leading-normal">
+            A sanctuary of care, confidence and joyful learning
+            </h2>
           <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
-            With caring teachers, health routines, and a secure campus, we make sure children feel safe, loved, and free to learn joyfully.
+            With devoted teachers, meticulous health routines, and a secure, thoughtfully designed campus, we ensure that every child feels safe, cherished, and free to explore.
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -70,20 +62,15 @@ const SafetyCareCreative: React.FC = () => {
             <div className="relative rounded-3xl shadow-2xl bg-lime-100 overflow-hidden">
               <div className="p-8 sm:p-12 xl:p-16">
                 <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 tracking-wide leading-normal">
-                  Safety & Care designed for little learners
+                  Safety & Care, Tailored for Little Learners
                 </h2>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
-                  At our kindergarten, every child’s safety, comfort, and well-being come first.
-                  We follow a protection-first approach focused on prevention, care, and clear
-                  communication between teachers and families.
+                  At our Kindergarten, a child’s well-being is our highest priority. We embrace a protection-first approach, guided by prevention, attentive care, and open, transparent communication with families.
                 </p>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
-                  Our classrooms and play areas are designed to be secure, hygienic & child-friendly —
-                  allowing children to explore, learn & grow with confidence. Our staff
-                  is carefully trained to handle early-years care with warmth and attentiveness, ensuring
-                  that children feel supported and valued every day.
+                  Our classrooms and play spaces are crafted to be secure, hygienic, and child-friendly — inviting children to learn, discover & grow with confidence. Each member of our staff is trained in early-years care with warmth and attentiveness, ensuring that every child feels valued, supported, and nurtured each day.
                 </p>
               </div>
 

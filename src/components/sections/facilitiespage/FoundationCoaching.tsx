@@ -19,9 +19,7 @@ const FoundationCoaching = () => {
               </h2>
             </div>
             <p className="text-gray-900 mb-8 font-inter text-base sm:text-lg">
-              Our Foundation Coaching program is designed to build strong academic fundamentals in students from an
-              early age. We focus on developing critical thinking, problem-solving abilities, and a deep understanding
-              of core concepts that serve as building blocks for advanced learning.
+              Our Foundation Coaching program is thoughtfully crafted to establish robust academic fundamentals from an early stage. Emphasizing critical thinking, problem-solving, and a profound grasp of core concepts, we prepare students with the essential skills that form the cornerstone of advanced learning.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -29,7 +27,7 @@ const FoundationCoaching = () => {
                 <Target className="w-6 h-6 text-emerald-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Personalized Learning</h4>
                 <p className="text-gray-700 font-inter mt-2">
-                  Customized learning approaches based on individual student needs.
+                  Tailored instructional approaches designed to meet each student’s unique learning style and pace, ensuring optimal engagement and growth.
                 </p>
               </div>
 
@@ -37,20 +35,20 @@ const FoundationCoaching = () => {
                 <Brain className="w-6 h-6 text-rose-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Cognitive Development</h4>
                 <p className="text-gray-700 font-inter mt-2">
-                  Activities to enhance memory, cognitive processing & attention.
+                  Targeted activities to strengthen memory retention, cognitive processing, and sustained attention, nurturing sharper and more agile minds.
                 </p>
               </div>
 
               <div className="bg-yellow-50 p-4 rounded-lg">
                 <Lightbulb className="w-6 h-6 text-yellow-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Conceptual Clarity</h4>
-                <p className="text-gray-700 font-inter mt-2">Focus on understanding concepts rather than rote memorization.</p>
+                <p className="text-gray-700 font-inter mt-2">A deliberate focus on deep understanding rather than rote memorization, enabling students to internalize and apply knowledge confidently.</p>
               </div>
 
               <div className="bg-purple-100/60 p-4 rounded-lg">
                 <Search className="w-6 h-6 text-purple-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Analytical Thinking Skills</h4>
-                <p className="text-gray-700 font-inter mt-2">Encourages logical reasoning and problem-solving mindset.</p>
+                <p className="text-gray-700 font-inter mt-2">Cultivating logical reasoning and a problem-solving mindset that empowers learners to approach challenges with confidence and creativity.</p>
               </div>
             </div>
 
@@ -60,8 +58,7 @@ const FoundationCoaching = () => {
                 Our Approach
               </h4>
               <p className="text-gray-700 mt-2 font-outfit">
-                We employ a blend of traditional and modern teaching methodologies, incorporating hands-on activities,
-                visual learning, and technology-aided instruction to make learning engaging and effective.
+                We combine the best of traditional wisdom and modern pedagogy, incorporating hands-on activities, visual aids, and technology-enhanced instruction. This blend ensures that learning is not only effective but also engaging and inspiring for every child.
               </p>
             </div>
           </div>

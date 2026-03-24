@@ -60,11 +60,11 @@ const SafetyCareCreative: React.FC = () => {
                 </h2>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
-                  The Senior Secondary Wing provides a secure, encouraging space where students prepare for life beyond school. Here, safety means both physical well-being and emotional steadiness — supported by mentors who truly understand each student’s journey.
+                  The Senior Secondary Wing provides a secure, nurturing space where students prepare for life beyond school. Safety extends to both physical well-being and emotional stability, supported by mentors who understand each student’s unique journey.
                 </p>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
-                  Through personalized academic planning, we help students manage stress, stay goal-focused, and grow with confidence. A caring community ensures they graduate not just prepared — but genuinely ready for the world.
+                  Through personalized academic planning, stress-management guidance, and goal-focused mentorship, students develop resilience, organization, and self-assurance. Our caring community ensures graduates leave not only prepared, but truly ready to navigate the world with confidence and purpose.
                 </p>
               </div>
 

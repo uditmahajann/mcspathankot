@@ -18,9 +18,7 @@ const BoardingFacility = () => {
               </h2>
             </div>
             <p className="text-gray-900 mb-8 font-inter text-base sm:text-lg">
-              Our residential boarding facility provides a safe, nurturing, and structured environment where students
-              can focus on their academic and personal growth. With comfortable accommodations, nutritious meals, and
-              round-the-clock supervision, we ensure that students feel at home while they pursue excellence.
+              Our residential program provides a nurturing and structured environment where students focus on their academic and personal growth while feeling at home.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -43,13 +41,13 @@ const BoardingFacility = () => {
               <div className="bg-yellow-50 p-4 rounded-lg">
                 <Shield className="w-6 h-6 text-yellow-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">24/7 Security</h4>
-                <p className="text-gray-700 font-inter mt-2">Comprehensive security measures for safety.</p>
+                <p className="text-gray-700 font-inter mt-2">Comprehensive safety measures ensuring peace of mind.</p>
               </div>
 
               <div className="bg-purple-100/60 p-4 rounded-lg">
                 <BookOpen className="w-6 h-6 text-purple-500 shrink-0 mb-2" />
                 <h4 className="font-poppins font-semibold text-base text-gray-900 tracking-wide">Supervised Study</h4>
-                <p className="text-gray-700 font-inter mt-2">Dedicated time for academics with revision.</p>
+                <p className="text-gray-700 font-inter mt-2">Dedicated academic sessions and revision time.</p>
               </div>
             </div>
           </div>
