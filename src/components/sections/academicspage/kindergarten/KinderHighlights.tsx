@@ -10,25 +10,39 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    src: "/Images/Sample/Kidsdance.jpg",
-    alt: "Kids running in fancy dress race",
-    title: "Sports Day Fun",
+    src: "/Images/Kinder/kinderhighlights1.jpg",
+    alt: "",
+    title: "Highlight1",
     caption:
-      "Tiny racers, big smiles — our annual sports day is packed with joy and teamwork.",
+      "",
   },
   {
-    src: "/Images/Sample/Kidsplay.jpg",
-    alt: "Children painting together",
-    title: "Creative Studio",
+    src: "/Images/Kinder/kinderhighlights2.JPG",
+    alt: "",
+    title: "Highlight2",
     caption:
-      "Hands-on art and sensory play to develop fine motor skills and imagination.",
+      "",
   },
   {
-    src: "/Images/Sample/Kidsdance.jpg",
-    alt: "Children gardening",
-    title: "Nature Time",
+    src: "/Images/Kinder/kinderhighlights3.jpg",
+    alt: "",
+    title: "Highlight3",
     caption:
-      "Gardening & outdoor exploration to build curiosity about the natural world.",
+      "",
+  },
+  {
+    src: "/Images/Kinder/kinderhighlights4.jpg",
+    alt: "",
+    title: "Highlight4",
+    caption:
+      "",
+  },
+  {
+    src: "/Images/Kinder/kinderhighlights5.jpg",
+    alt: "",
+    title: "Highlight5",
+    caption:
+      "",
   },
 ];
 
@@ -51,7 +65,7 @@ const KindergartenCarousel: React.FC = () => {
   // Optional autoplay
   useEffect(() => {
     if (timerRef.current) window.clearTimeout(timerRef.current);
-    timerRef.current = window.setTimeout(() => next(), 7000);
+    timerRef.current = window.setTimeout(() => next(), 3000);
     return () => {
       if (timerRef.current) window.clearTimeout(timerRef.current);
     };

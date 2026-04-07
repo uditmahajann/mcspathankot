@@ -204,7 +204,7 @@ const Careers = ({ careers }: { careers: CareerOpening[] }) => {
                 muted
                 playsInline
               >
-                <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767545220/smartclassclip_cpwl0r.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775515566/careers_ztpckx.mp4" type="video/mp4" />
               </video>
             </div>
           </div>

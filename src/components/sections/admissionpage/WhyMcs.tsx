@@ -26,8 +26,8 @@ const WhyChooseUs = () => {
           <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-10">
             <div className="md:w-1/2">
               <div className="relative h-full rounded-lg sm:rounded-2xl overflow-hidden">
-                <video className="w-full h-full object-cover" autoPlay loop muted playsInline preload="metadata">
-                  <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767545220/smartclassclip_cpwl0r.mp4" type="video/mp4" />
+                <video className="w-full h-full object-cover aspect-video" autoPlay loop muted playsInline preload="metadata">
+                  <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775517503/whymcs1_alcnzf.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
           <div className="flex flex-col md:flex-row-reverse items-center gap-6 sm:gap-10">
             <div className="md:w-1/2">
               <div className="relative h-full rounded-lg sm:rounded-2xl overflow-hidden">
-                <video className="w-full h-full object-cover" autoPlay loop muted playsInline preload="metadata">
+                <video className="w-full h-full object-cover aspect-video" autoPlay loop muted playsInline preload="metadata">
                   <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767545220/smartclassclip_cpwl0r.mp4" type="video/mp4" />
                 </video>
               </div>
@@ -68,7 +68,7 @@ const WhyChooseUs = () => {
           <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-10">
             <div className="md:w-1/2">
               <div className="relative h-full rounded-lg sm:rounded-2xl overflow-hidden">
-                <video className="w-full h-full object-cover" autoPlay loop muted playsInline preload="metadata">
+                <video className="w-full h-full object-cover aspect-video" autoPlay loop muted playsInline preload="metadata">
                   <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767545220/smartclassclip_cpwl0r.mp4" type="video/mp4" />
                 </video>
               </div>
@@ -89,7 +89,7 @@ const WhyChooseUs = () => {
           <div className="flex flex-col md:flex-row-reverse items-center gap-6 sm:gap-10">
             <div className="md:w-1/2">
               <div className="relative h-full rounded-lg sm:rounded-2xl overflow-hidden">
-                <video className="w-full h-full object-cover" autoPlay loop muted playsInline preload="metadata">
+                <video className="w-full h-full object-cover aspect-video" autoPlay loop muted playsInline preload="metadata">
                   <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767545220/smartclassclip_cpwl0r.mp4" type="video/mp4" />
                 </video>
               </div>
@@ -110,7 +110,7 @@ const WhyChooseUs = () => {
           <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-10">
             <div className="md:w-1/2">
               <div className="relative h-full rounded-lg sm:rounded-2xl overflow-hidden">
-                <video className="w-full h-full object-cover" autoPlay loop muted playsInline preload="metadata">
+                <video className="w-full h-full object-cover aspect-video" autoPlay loop muted playsInline preload="metadata">
                   <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767545220/smartclassclip_cpwl0r.mp4" type="video/mp4" />
                 </video>
               </div>

@@ -6,7 +6,7 @@ const CareersHero: React.FC = () => {
       <div
         className="relative min-h-[60vh] md:min-h-[65vh] flex items-center"
         style={{
-          backgroundImage: `url('/Images/Heros/samplehero.JPG')`,
+          backgroundImage: `url('/Images/Heros/careerhero.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed", // parallax-like

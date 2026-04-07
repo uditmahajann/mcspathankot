@@ -6,7 +6,7 @@ const PressReleaseHero: React.FC = () => {
       <div
         className="relative min-h-[60vh] md:min-h-[65vh] flex items-center"
         style={{
-          backgroundImage: `url('/Images/Heros/mediahero.jpeg')`,
+          backgroundImage: `url('/Images/Heros/presshero.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed", // parallax-like

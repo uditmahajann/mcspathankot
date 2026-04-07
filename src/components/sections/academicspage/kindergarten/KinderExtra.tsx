@@ -6,7 +6,7 @@ const ENRICHMENTS = [
     title: "Sports Education & Gym Activities",
     description:
       "Fun fitness sessions designed to build coordination, teamwork, and confidence through movement.",
-    image: "/Images/Heros/abouthero.JPG",
+    image: "/Images/Kinder/kinderextra1.jpg",
     bg: "",
   },
   {
@@ -22,7 +22,7 @@ const ENRICHMENTS = [
     title: "Gardening & Nature Study",
     description:
       "Our tiny botanists water plants, dig soil, and discover how nature grows — learning care and patience.",
-    image: "/Images/Heros/abouthero.JPG",
+    image: "/Images/Kinder/kinderextra2.jpg",
     bg: "",
   },
   {
@@ -38,7 +38,7 @@ const ENRICHMENTS = [
     title: "Mindfulness & Circle Time",
     description:
       "Calm reflection, gratitude, and gentle breathing help little ones build emotional balance and focus.",
-    image: "/Images/Heros/abouthero.JPG",
+    image: "/Images/Kinder/kinderextra3.jpg",
     bg: "",
   },
   {

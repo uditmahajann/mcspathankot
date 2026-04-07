@@ -1,39 +1,6 @@
 import { Route, Timer, Users, LocateFixed, ShieldCheck } from "lucide-react"
 
 const TransportFacility = () => {
-  const facilities = [
-    {
-      name: "Olympic-Size Swimming Pool",
-      description: "Temperature-controlled pool with professional lanes and diving boards.",
-      image: "/Images/Campus/NewHostel.JPG",
-    },
-    {
-      name: "Indoor Sports Complex",
-      description: "Multi-purpose courts for basketball, volleyball, badminton, and more.",
-      image: "/Images/Campus/NewHostel.JPG",
-    },
-    {
-      name: "Football Ground",
-      description: "FIFA-standard football field with natural grass and proper drainage system.",
-      image: "/Images/Campus/NewHostel.JPG",
-    },
-    {
-      name: "Cricket Stadium",
-      description: "Professional cricket ground with practice nets and pavilion.",
-      image: "/Images/Campus/NewHostel.JPG",
-    },
-    {
-      name: "Tennis Courts",
-      description: "Multiple tennis courts with different surfaces for training and matches.",
-      image: "/Images/Campus/NewHostel.JPG",
-    },
-    {
-      name: "Modern Gymnasium",
-      description: "Fully equipped gym with cardio and strength training equipment.",
-      image: "/Images/Campus/NewHostel.JPG",
-    },
-  ]
-
   return (
     <section id="transport-facility" className="bg-linear-to-r from-blue-950 via-blue-900 to-blue-950 my-10 py-12 md:py-20 overflow-hidden">
       <div className="container mx-auto max-w-7xl px-6 min-[540px]:px-12 sm:px-16 xl:px-0">
@@ -86,7 +53,7 @@ const TransportFacility = () => {
             <div className="lg:w-1/2">
             <div className="relative h-full rounded-lg sm:rounded-2xl overflow-hidden">
               <video className="w-full h-full object-cover" autoPlay loop muted playsInline preload="metadata">
-                <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767545220/smartclassclip_cpwl0r.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1774345171/transport_b3hxmc.mp4" type="video/mp4" />
               </video>
             </div>
           </div>

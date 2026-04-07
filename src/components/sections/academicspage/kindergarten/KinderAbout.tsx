@@ -15,7 +15,7 @@ const AboutKindergarten: React.FC = () => {
           </span>
 
           <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl font-raleway font-extrabold text-gray-900 leading-tight mb-5">
-            Where curiosity blooms <br />and learning is a delight
+            Where curiosity blossoms <br />and learning is a delight
           </h2>
 
           <p className="text-base min-[540px]:text-lg text-gray-700 mb-4">
