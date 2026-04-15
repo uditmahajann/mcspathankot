@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@import "@fontsource/poppins";
+
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/raleway";
+@import "@fontsource-variable/outfit";
+@import "@fontsource-variable/playpen-sans";
+@import "@fontsource-variable/lora";
+
+
 @theme {
 
     --font-playpen: 'Playpen Sans Variable', cursive;

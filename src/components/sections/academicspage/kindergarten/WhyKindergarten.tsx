@@ -97,7 +97,7 @@ const WhyKindergarten: React.FC = () => {
               >
                 
                 {/* Video Section */}
-                <div className="relative h-60 w-full overflow-hidden bg-gray-100">
+                <div className="relative h-70 w-full overflow-hidden bg-gray-100">
                   <video
                     src={p.video}
                     className="w-full h-full object-cover"

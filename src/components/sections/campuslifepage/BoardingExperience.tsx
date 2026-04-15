@@ -49,10 +49,9 @@ const BoardingExperience = () => {
 
             {/* Weekend Activities */}
             <div className="bg-linear-to-r from-primary to-primarydark rounded-xl p-8 text-white">
-              <h3 className="text-xl sm:text-2xl font-poppins font-semibold mb-3 tracking-wide">Weekend Activities</h3>
+              <h3 className="text-xl sm:text-2xl font-poppins font-semibold mb-3 tracking-wide">Weekend Enrichment</h3>
               <p className="text-blue-50 mb-6 font-inter">
-                Weekends at MCS are filled with enriching activities that balance recreation, learning, and personal
-                development.
+                Weekends at MCS combine recreation, learning, and personal growth:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -80,9 +79,10 @@ const BoardingExperience = () => {
                 "/Images/Facility/hostel.JPG",
                 "/Images/Facility/refectory.JPG",
                 "/Images/Facility/moviehall.JPG",
-                "/Images/Facility/competitive.JPG",
-                "/Images/Facility/competitive.JPG",
                 "/Images/Facility/gym.JPG",
+                "/Images/Facility/competitive.JPG",
+                "/Images/Facility/personality.JPG",
+                
               ].map((src, idx) => (
                 <div key={idx} className="overflow-hidden rounded-lg shadow-md group">
                   <img

@@ -6,7 +6,7 @@ const ENRICHMENTS = [
     title: "Sports Education & Gym Activities",
     description:
       "Fun fitness sessions designed to build coordination, teamwork, and confidence through movement.",
-    image: "/Images/Heros/abouthero.JPG",
+    image: "/Images/Middle/middleextra1.JPG",
     bg: "",
   },
   {
@@ -22,7 +22,7 @@ const ENRICHMENTS = [
     title: "Music, Rhythm & Dance",
     description:
       "Children move to beats, sing songs, and learn rhythm — building confidence and joy through music.",
-    image: "/Images/Heros/abouthero.JPG",
+    image: "/Images/Middle/middleextra2.jpg",
     bg: "",
   },
   {
@@ -38,7 +38,7 @@ const ENRICHMENTS = [
     title: "Storytelling & Puppet Theatre",
     description:
       "Interactive storytelling that sparks imagination, builds language, and teaches life lessons with fun.",
-    image: "/Images/Heros/abouthero.JPG",
+    image: "/Images/Middle/middleextra3.jpg",
     bg: "",
   },
   {

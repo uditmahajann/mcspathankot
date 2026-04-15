@@ -205,7 +205,7 @@ export default function EventsActivities({ events }: { events: Event[] }) {
                 >
                   {/* Video Section */}
                   <div
-                    className="relative w-full lg:w-1/2 rounded-xl shadow-md overflow-hidden cursor-pointer"
+                    className="relative w-full lg:w-1/2 rounded-xl shadow-md overflow-hidden cursor-pointer aspect-4/3"
                     onClick={() => handlePlayVideo(videoId)}
                   >
                     <video

@@ -68,34 +68,39 @@ const Vision: React.FC = () => {
       </div>
 
 
-      <div className="my-10 py-12 bg-linear-to-r from-blue-950 via-blue-900 to-blue-950">
+      <div className="my-10 py-12 md:py-20 bg-linear-to-r from-blue-950 via-blue-900 to-blue-950">
         <div className="mx-auto max-w-7xl px-5 min-[540px]:px-12 sm:px-16 lg:px-20 xl:px-0">
           {/* Core Philosophy */}
           <div className="relative">
-            <div className="flex flex-col md:flex-row items-center gap-6 xl:gap-12">
+            <div className="flex flex-col md:flex-row items-center gap-6">
               <div className="md:w-1/3 flex justify-center">
                 <div className="relative">
                   <img
                     src="/Images/About/vivekananda.png"
                     alt="Swami Vivekananda"
-                    className="relative w-60 lg:w-75"
+                    className="relative w-60 lg:w-90"
                   />
                 </div>
               </div>
               <div className="md:w-2/3 text-center">
                 <div className="text-center mb-6 sm:mb-8">
-                  <h2 className="text-xl sm:text-2xl font-poppins font-medium text-yellow-400 leading-normal tracking-wide">
+                  <h2 className="text-2xl min-[540px]:text-3xl font-playpen font-medium text-yellow-400 leading-normal">
                     Our Core Philosophy
                   </h2>
                 </div>
-                <blockquote className="text-xl sm:text-2xl font-playpen font-medium text-white mb-4">
+                <blockquote className="text-xl sm:text-2xl font-playpen font-medium text-white mb-2">
                   "Arise, awake, and stop not until the goal is reached"
                 </blockquote>
+                <p className="text-gray-300 font-inter italic text-base sm:text-lg mb-8">
+                  — Swami Vivekananda
+                </p>
+                <p className="text-gray-300 font-inter text-base sm:text-lg mb-6">
+                  At Montessori Cambridge School, our philosophy of education draws deep inspiration from the timeless teachings of Swami Vivekananda, whose words continue to motivate generations toward purposeful action and self-realisation. Guided by this enduring principle, we strive to cultivate in our students a spirit of perseverance, self-belief, and purposeful ambition. Education at MCS is designed not only to impart knowledge, but also to awaken the inner strength and character that enable young minds to face challenges with courage and conviction. 
+                </p>
                 <p className="text-gray-300 font-inter text-base sm:text-lg">
-                  At MCS, we bring our mission and vision to life by embodying the teachings of Swami Vivekananda. His
-                  words inspire us to nurture each student's growth with purpose and resilience. By fostering
-                  self-confidence and determination, we empower individuals to overcome challenges, solve problems, and
-                  realize their full potential.
+                  By nurturing confidence, resilience, and clarity of thought, we encourage every learner to develop the determination required to overcome obstacles, think independently, and solve problems with wisdom and creativity.
+In doing so, MCS seeks to empower each student to realise their fullest potential—growing into individuals who pursue excellence with dedication and contribute meaningfully to the world around them.
+
                 </p>
               </div>
             </div>
@@ -110,32 +115,32 @@ const Vision: React.FC = () => {
           {
             icon: <BookOpen className="w-8 h-8 text-purple-400" />,
             title: "Academic Excellence",
-            desc: "Deliver a strong, concept-rich curriculum that promotes deep understanding, analytical thinking and love for learning.",
+            desc: "We deliver a rigorous, concept-driven curriculum that encourages deep understanding, critical thinking & intellectual curiosity. Our approach inspires students to move beyond memorisation, developing analytical abilities & a genuine passion for learning.",
           },
           {
             icon: <Globe2 className="w-8 h-8 text-lime-400" />,
             title: "Global Citizenship",
-            desc: "Cultivate awareness of cultures, issues and perspectives so learners grow into respectful, responsible world citizens.",
+            desc: "We cultivate awareness and appreciation of diverse cultures, perspectives, and global challenges. Through this understanding, students grow into respectful, compassionate, and responsible citizens who contribute thoughtfully to the wider world.",
           },
           {
             icon: <Lightbulb className="w-8 h-8 text-yellow-400" />,
             title: "Innovation & Inquiry",
-            desc: "Encourage questioning, experimentation and problem-solving through projects, research and hands-on learning.",
+            desc: "Curiosity lies at the heart of discovery. At MCS, students are encouraged to question, explore, and experiment through research, collaborative projects, and hands-on learning experiences that nurture creativity and problem-solving skills.",
           },
           {
             icon: <HeartHandshake className="w-8 h-8 text-rose-400" />,
             title: "Values & Character",
-            desc: "Embed empathy, integrity, respect and resilience through daily interactions, service programs and reflective practices.",
+            desc: "Integrity, empathy, respect & resilience form the foundation of our community. These values are woven into everyday school life through meaningful interactions, service initiatives & reflective practices shaping responsible & ethical individuals.",
           },
           {
             icon: <Users className="w-8 h-8 text-teal-400" />,
             title: "Holistic Growth",
-            desc: "Balance academics with sports, arts, leadership and wellness to support physical, emotional and creative development.",
+            desc: "Education at MCS extends far beyond the classroom. By balancing academic pursuits with sports, arts, leadership opportunities, and wellness programmes, we support the physical, emotional, and creative development of every learner.",
           },
           {
             icon: <Star className="w-8 h-8 text-fuchsia-400" />,
             title: "Personalised Guidance",
-            desc: "Offer mentorship, feedback and differentiated support so every learner feels known, encouraged and guided.",
+            desc: "We recognise the individuality of each student. Through mentorship, constructive feedback, and differentiated support, we ensure that every learner feels valued, understood, and guided on their unique educational journey.",
           },
         ].map((item, idx) => (
           <div

@@ -1,46 +1,30 @@
 import React from "react";
-import {
-  Users,
-  ShieldCheck,
-  Bandage,
-  Thermometer,
-  CheckCircle,
-  Truck,
-  Clock,
-} from "lucide-react";
 
 const tiles = [
   {
     id: "health",
-    title: "Personal Mentorship",
+    title: "Academic Support",
     desc: "Temperature & wellness checks with clear guidance for parents.",
-    img: "/Images/Sample/Kidsplay.jpg",
+    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776243000/middlesafety1_hnjcvn.mp4",
   },
   {
     id: "med",
-    title: "Academic Support",
+    title: "Creative Expression",
     desc: "Supervised medical room with trained staff to care for children safely.",
-    img: "/Images/Sample/Kidsplay.jpg",
+    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776242993/middlesafety2_zxjlzc.mp4",
   },
   {
     id: "staff",
     title: "Digital Awareness",
     desc: "All staff complete regular safety training and child-protection checks.",
-    img: "/Images/Sample/Kidsplay.jpg",
+    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776243811/middlesafety3_fpcurw.mp4",
   },
   {
     id: "security",
-    title: "Wellbeing & Confidence",
+    title: "Confidence Building",
     desc: "Controlled access and monitored play areas ensure child safety.",
-    img: "/Images/Sample/Kidsplay.jpg",
+    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776242994/middlesafety4_lstbnc.mp4",
   },
-];
-
-const timeline = [
-  { id: "drill", title: "Monthly drills & practice", Icon: CheckCircle },
-  { id: "training", title: "Quarterly staff training", Icon: Users },
-  { id: "meals", title: "Daily hygiene routines", Icon: Clock },
-  { id: "transport", title: "Transport & driver checks", Icon: Truck },
 ];
 
 const SafetyCareCreative: React.FC = () => {
@@ -49,79 +33,213 @@ const SafetyCareCreative: React.FC = () => {
       id="safety-care"
       className="relative bg-cover bg-center bg-no-repeat flex items-center overflow-hidden"
       style={{
-        backgroundImage: `url('/Images/Academics/middlesafety.png')`, // replace with your image path
+        backgroundImage: `url('/Images/Academics/middlesafety.png')`,
       }}
     >
-
       <div className="relative mx-auto max-w-7xl px-6 min-[540px]:px-12 py-15 sm:py-25 lg:py-35">
+        
         {/* Header */}
         <div className="text-center mb-6 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
-            Personal Guidance &{" "}
-            <span className="relative inline-block">
-              Growth
-              {/* Spark Doodle */}
-              <img
-                src="/Images/Doodles/SparkGreen.png"
-                alt="Spark"
-                className="absolute w-8 sm:w-12 -top-6 -right-9 sm:-right-12"
-              />
-            </span>
+          <h2 className="max-w-3xl text-2xl min-[540px]:text-3xl lg:text-4xl text-gray-900 font-playpen font-medium inline-block leading-normal">
+            A supportive environment for confident & responsible pre-teens
           </h2>
           <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             A supportive environment where pre-teens gain confidence, responsibility, and a deeper love for learning.
           </p>
         </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* LEFT STRIPE */}
-          <div className="lg:col-span-6">
+          
+          {/* LEFT */}
+          <div className="lg:col-span-6 xl:col-span-5">
             <div className="relative rounded-3xl shadow-2xl bg-pink-200 overflow-hidden">
-              <div className="p-8 sm:p-12 lg:p-16">
-                <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 tracking-wide leading-normal">
+              <div className="p-8 sm:p-12">
+                <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 leading-normal">
                   A Sense of Belonging in Growing Years
                 </h2>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
-                  The Middle Wing offers a nurturing space where students transition into adolescence with assurance and curiosity. Teachers and mentors provide tailored academic guidance and personal support, helping each learner navigate this pivotal stage.
+                  The Middle Wing offers a nurturing and supportive space where students transition into adolescence with assurance and curiosity. Teachers and mentors provide tailored academic guidance and personal support, helping each learner navigate this pivotal stage.
                 </p>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
                   Safety and well-being extend beyond the classroom — from digital-awareness sessions to emotional wellness programs — nurturing balance, empathy, and self-awareness as students discover their strengths and potential.
                 </p>
               </div>
-
             </div>
           </div>
 
-          {/* RIGHT GRID — overlay version */}
-          <div className="lg:col-span-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* RIGHT GRID */}
+          <div className="lg:col-span-6 xl:col-span-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {tiles.map((t) => (
                 <article
                   key={t.id}
-                  className="relative rounded-2xl overflow-hidden shadow-lg group h-64"
+                  className="relative rounded-2xl overflow-hidden shadow-lg group h-70"
                 >
-                  <img
-                    src={t.img}
-                    alt={t.title}
+                  
+                  {/* VIDEO */}
+                  <video
+                    src={t.video}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
                   />
+
+                  {/* OVERLAY */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
+
+                  {/* TEXT */}
                   <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
                     <h3 className="text-lg font-poppins font-semibold tracking-wide">
                       {t.title}
                     </h3>
                   </div>
+
                 </article>
               ))}
             </div>
           </div>
 
         </div>
-
       </div>
     </section>
   );
 };
 
 export default SafetyCareCreative;
+
+
+
+
+
+
+// import React from "react";
+// import {
+//   Users,
+//   ShieldCheck,
+//   Bandage,
+//   Thermometer,
+//   CheckCircle,
+//   Truck,
+//   Clock,
+// } from "lucide-react";
+
+// const tiles = [
+//   {
+//     id: "health",
+//     title: "Personal Mentorship",
+//     desc: "Temperature & wellness checks with clear guidance for parents.",
+//     img: "/Images/Sample/Kidsplay.jpg",
+//   },
+//   {
+//     id: "med",
+//     title: "Academic Support",
+//     desc: "Supervised medical room with trained staff to care for children safely.",
+//     img: "/Images/Sample/Kidsplay.jpg",
+//   },
+//   {
+//     id: "staff",
+//     title: "Digital Awareness",
+//     desc: "All staff complete regular safety training and child-protection checks.",
+//     img: "/Images/Sample/Kidsplay.jpg",
+//   },
+//   {
+//     id: "security",
+//     title: "Wellbeing & Confidence",
+//     desc: "Controlled access and monitored play areas ensure child safety.",
+//     img: "/Images/Sample/Kidsplay.jpg",
+//   },
+// ];
+
+// const timeline = [
+//   { id: "drill", title: "Monthly drills & practice", Icon: CheckCircle },
+//   { id: "training", title: "Quarterly staff training", Icon: Users },
+//   { id: "meals", title: "Daily hygiene routines", Icon: Clock },
+//   { id: "transport", title: "Transport & driver checks", Icon: Truck },
+// ];
+
+// const SafetyCareCreative: React.FC = () => {
+//   return (
+//     <section
+//       id="safety-care"
+//       className="relative bg-cover bg-center bg-no-repeat flex items-center overflow-hidden"
+//       style={{
+//         backgroundImage: `url('/Images/Academics/middlesafety.png')`, // replace with your image path
+//       }}
+//     >
+
+//       <div className="relative mx-auto max-w-7xl px-6 min-[540px]:px-12 py-15 sm:py-25 lg:py-35">
+//         {/* Header */}
+//         <div className="text-center mb-6 sm:mb-12 lg:mb-16">
+//           <h2 className="text-2xl min-[540px]:text-3xl md:text-4xl text-gray-900 font-playpen font-medium leading-normal">
+//             Personal Guidance &{" "}
+//             <span className="relative inline-block">
+//               Growth
+//               {/* Spark Doodle */}
+//               <img
+//                 src="/Images/Doodles/SparkGreen.png"
+//                 alt="Spark"
+//                 className="absolute w-8 sm:w-12 -top-6 -right-9 sm:-right-12"
+//               />
+//             </span>
+//           </h2>
+//           <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
+//             A supportive environment where pre-teens gain confidence, responsibility, and a deeper love for learning.
+//           </p>
+//         </div>
+//         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+//           {/* LEFT STRIPE */}
+//           <div className="lg:col-span-6">
+//             <div className="relative rounded-3xl shadow-2xl bg-pink-200 overflow-hidden">
+//               <div className="p-8 sm:p-12 lg:p-16">
+//                 <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 tracking-wide leading-normal">
+//                   A Sense of Belonging in Growing Years
+//                 </h2>
+
+//                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
+//                   The Middle Wing offers a nurturing space where students transition into adolescence with assurance and curiosity. Teachers and mentors provide tailored academic guidance and personal support, helping each learner navigate this pivotal stage.
+//                 </p>
+
+//                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
+//                   Safety and well-being extend beyond the classroom — from digital-awareness sessions to emotional wellness programs — nurturing balance, empathy, and self-awareness as students discover their strengths and potential.
+//                 </p>
+//               </div>
+
+//             </div>
+//           </div>
+
+//           {/* RIGHT GRID — overlay version */}
+//           <div className="lg:col-span-6">
+//             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+//               {tiles.map((t) => (
+//                 <article
+//                   key={t.id}
+//                   className="relative rounded-2xl overflow-hidden shadow-lg group h-64"
+//                 >
+//                   <img
+//                     src={t.img}
+//                     alt={t.title}
+//                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+//                   />
+//                   <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
+//                   <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
+//                     <h3 className="text-lg font-poppins font-semibold tracking-wide">
+//                       {t.title}
+//                     </h3>
+//                   </div>
+//                 </article>
+//               ))}
+//             </div>
+//           </div>
+
+//         </div>
+
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default SafetyCareCreative;

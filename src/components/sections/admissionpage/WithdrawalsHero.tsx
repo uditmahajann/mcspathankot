@@ -4,7 +4,7 @@ const WithdrawalsHero: React.FC = () => {
   return (
     <section className="relative text-white">
       <div
-        className="relative min-h-[60vh] md:min-h-[65vh] flex items-center"
+        className="relative min-h-[60vh] md:min-h-[70vh] flex items-center"
         style={{
           backgroundImage: `url('/Images/Heros/withdrawalhero.jpg')`,
           backgroundSize: "cover",

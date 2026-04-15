@@ -109,9 +109,9 @@ const ApplyOnline: React.FC = () => {
             <p className="mt-4 text-base sm:text-lg lg:text-base xl:text-lg text-gray-200 mx-auto">
               Fill & Submit the application form to apply online for admission at Montessori Cambridge School. This online application helps us understand your child’s academic background and admission preferences. Once submitted, our admissions team will review the details and guide you through the next steps, including interaction, documentation, and confirmation.
             </p>
-            <div className="hidden lg:block w-full my-8 sm:my-12">
+            <div className="hidden lg:block w-full my-8 sm:my-12 aspect-4/3">
               <video
-                className="w-full h-full shadow-lg rounded-xl"
+                className="w-full h-full shadow-lg rounded-xl object-cover"
                 autoPlay
                 loop
                 muted

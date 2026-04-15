@@ -18,7 +18,7 @@ const SmartClasses = () => {
                       </div>
                       <div>
                       <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Professional Coaching</h4>
-                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">Experienced mentors guide advanced training and competitive representation.</p>
+                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1 max-w-md">Experienced mentors guide advanced training and competitive representation.</p>
                       </div>
             </div>
                   <div className="flex items-center gap-3">
@@ -27,7 +27,7 @@ const SmartClasses = () => {
                       </div>
                       <div>
                       <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Structured Training</h4>
-                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">Systematic programs focusing on technique, fitness, and mental preparedness.</p>
+                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1 max-w-md">Systematic programs focusing on technique, fitness, and mental preparedness.</p>
                       </div>
             </div>
                   <div className="flex items-center gap-3">
@@ -36,7 +36,7 @@ const SmartClasses = () => {
                       </div>
                       <div>
                       <h4 className="font-poppins font-semibold text-base text-white tracking-wider">Team Building</h4>
-                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1">Activities designed to cultivate leadership, collaboration, and fair play.</p>
+                      <p className="hidden sm:block text-sm text-blue-300 font-inter mt-1 max-w-md">Activities designed to cultivate leadership, collaboration, and fair play.</p>
                       </div>
                   </div>
               </div>

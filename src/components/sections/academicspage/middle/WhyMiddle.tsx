@@ -6,7 +6,7 @@ type Pillar = {
   icon: React.ComponentType<any>;
   title: string;
   summary: string;
-  image: string;
+  video: string;
   accent?: string;
 };
 
@@ -17,7 +17,7 @@ const PILLARS: Pillar[] = [
     title: "STEM & Innovation Focus",
     summary:
       "Projects and experiments nurture critical thinking, problem-solving & creativity.",
-    image: "/Images/Sample/Kidsdance.jpg",
+    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776095892/middlewhy1_rpmmoi.mp4",
     accent: "from-green-300 to-emerald-400",
   },
   {
@@ -26,7 +26,7 @@ const PILLARS: Pillar[] = [
     title: "Creative Expression",
     summary:
       "Art, craft, and performance weave joy and imagination into everyday lessons.",
-    image: "/Images/Sample/Kidsdance.jpg",
+    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776095892/middlewhy2_rh8lc5.mp4",
     accent: "from-yellow-300 to-amber-400",
   },
   {
@@ -35,7 +35,7 @@ const PILLARS: Pillar[] = [
     title: "Mentorship-driven Teaching",
     summary:
       "Personal attention and guidance help students adapt through growing academic challenges.",
-    image: "/Images/Sample/Kidsdance.jpg",
+    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776095892/middlewhy3_tzgwy4.mp4",
     accent: "from-sky-300 to-indigo-400",
   },
   {
@@ -44,7 +44,7 @@ const PILLARS: Pillar[] = [
     title: "Social Responsibility",
     summary:
       "Programs encourage care for the environment and the community, during the early adolescence.",
-    image: "/Images/Sample/Kidsdance.jpg",
+    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776098044/middlewhy4_mwouak.mp4",
     accent: "from-pink-300 to-rose-400",
   },
   {
@@ -53,23 +53,23 @@ const PILLARS: Pillar[] = [
     title: "Interdisciplinary Learning",
     summary:
       "Subjects connect to real-life experiences, helping students see the bigger picture.",
-    image: "/Images/Sample/Kidsdance.jpg",
+    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776096611/middlewhy5_rkk76n.mp4",
     accent: "from-violet-300 to-purple-500",
   },
 ];
 
 const WhyKindergarten: React.FC = () => {
   return (
-    <section
-      className="relative py-20 sm:py-25 bg-fuchsia-200"
-    >
-      {/* Monkey image positioned absolutely */}
+    <section className="relative py-20 sm:py-25 bg-fuchsia-200">
+      
+      {/* Decorative Image */}
       <img
         src="/Images/Academics/middlewhy.png"
-        className=" absolute w-full lg:w-[80%] bottom-0 right-0 z-20 pointer-events-none select-none"
+        className="absolute w-full lg:w-[80%] bottom-0 right-0 z-20 pointer-events-none select-none"
       />
 
       <div className="relative z-20 mx-auto max-w-7xl px-6 min-[540px]:px-12">
+        
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 xl:mb-16 max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
@@ -80,49 +80,54 @@ const WhyKindergarten: React.FC = () => {
           </p>
         </div>
 
-        {/* Cards grid */}
+        {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-20">
           {PILLARS.map((p) => {
             const Icon = p.icon;
+
             return (
               <article
                 key={p.id}
                 className="relative bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-2xl transition transform hover:-translate-y-1"
-                aria-labelledby={`pillar-${p.id}`}
               >
-                {/* Image top */}
-                <div className="h-60 w-full bg-gray-100 overflow-hidden">
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    className="w-full h-full object-cover object-center"
-                    loading="lazy"
+                
+                {/* VIDEO */}
+                <div className="relative h-70 w-full overflow-hidden bg-gray-100">
+                  <video
+                    src={p.video}
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
                   />
+
+                  {/* Optional overlay */}
+                  <div className="absolute inset-0 bg-black/10" />
                 </div>
 
+                {/* Content */}
                 <div className="p-5">
-                  {/* chip + icon */}
                   <div className="flex items-start gap-4">
+                    
                     <div
                       className={`flex h-12 w-12 rounded-lg items-center justify-center text-white shrink-0 bg-linear-to-br ${p.accent}`}
-                      aria-hidden
                     >
                       <Icon className="h-6 w-6" />
                     </div>
 
                     <div className="flex-1">
-                      <h3
-                        id={`pillar-${p.id}`}
-                        className="text-lg font-poppins font-semibold text-gray-900 tracking-wide"
-                      >
+                      <h3 className="text-lg font-poppins font-semibold text-gray-900 tracking-wide">
                         {p.title}
                       </h3>
                       <p className="mt-2 font-inter text-gray-700">
                         {p.summary}
                       </p>
                     </div>
+
                   </div>
                 </div>
+
               </article>
             );
           })}
@@ -133,3 +138,150 @@ const WhyKindergarten: React.FC = () => {
 };
 
 export default WhyKindergarten;
+
+
+
+
+
+
+
+
+
+
+
+
+// import type React from "react";
+// import { Sun, Play, Users, HeartHandshake, BookOpen } from "lucide-react";
+
+// type Pillar = {
+//   id: string;
+//   icon: React.ComponentType<any>;
+//   title: string;
+//   summary: string;
+//   image: string;
+//   accent?: string;
+// };
+
+// const PILLARS: Pillar[] = [
+//   {
+//     id: "montessori",
+//     icon: Sun,
+//     title: "STEM & Innovation Focus",
+//     summary:
+//       "Projects and experiments nurture critical thinking, problem-solving & creativity.",
+//     image: "/Images/Sample/Kidsdance.jpg",
+//     accent: "from-green-300 to-emerald-400",
+//   },
+//   {
+//     id: "playbased",
+//     icon: Play,
+//     title: "Creative Expression",
+//     summary:
+//       "Art, craft, and performance weave joy and imagination into everyday lessons.",
+//     image: "/Images/Sample/Kidsdance.jpg",
+//     accent: "from-yellow-300 to-amber-400",
+//   },
+//   {
+//     id: "teachers",
+//     icon: Users,
+//     title: "Mentorship-driven Teaching",
+//     summary:
+//       "Personal attention and guidance help students adapt through growing academic challenges.",
+//     image: "/Images/Sample/Kidsdance.jpg",
+//     accent: "from-sky-300 to-indigo-400",
+//   },
+//   {
+//     id: "wellbeing",
+//     icon: HeartHandshake,
+//     title: "Social Responsibility",
+//     summary:
+//       "Programs encourage care for the environment and the community, during the early adolescence.",
+//     image: "/Images/Sample/Kidsdance.jpg",
+//     accent: "from-pink-300 to-rose-400",
+//   },
+//   {
+//     id: "curriculum",
+//     icon: BookOpen,
+//     title: "Interdisciplinary Learning",
+//     summary:
+//       "Subjects connect to real-life experiences, helping students see the bigger picture.",
+//     image: "/Images/Sample/Kidsdance.jpg",
+//     accent: "from-violet-300 to-purple-500",
+//   },
+// ];
+
+// const WhyKindergarten: React.FC = () => {
+//   return (
+//     <section
+//       className="relative py-20 sm:py-25 bg-fuchsia-200"
+//     >
+//       {/* Monkey image positioned absolutely */}
+//       <img
+//         src="/Images/Academics/middlewhy.png"
+//         className=" absolute w-full lg:w-[80%] bottom-0 right-0 z-20 pointer-events-none select-none"
+//       />
+
+//       <div className="relative z-20 mx-auto max-w-7xl px-6 min-[540px]:px-12">
+//         {/* Header */}
+//         <div className="text-center mb-8 sm:mb-12 xl:mb-16 max-w-4xl mx-auto">
+//           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
+//             Why Our Middle Wing?
+//           </h2>
+//           <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 max-w-4xl mx-auto">
+//             At Middle Wing, we empower learners to think independently, explore deeply, and collaborate meaningfully — bridging curiosity with confidence.
+//           </p>
+//         </div>
+
+//         {/* Cards grid */}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-20">
+//           {PILLARS.map((p) => {
+//             const Icon = p.icon;
+//             return (
+//               <article
+//                 key={p.id}
+//                 className="relative bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-2xl transition transform hover:-translate-y-1"
+//                 aria-labelledby={`pillar-${p.id}`}
+//               >
+//                 {/* Image top */}
+//                 <div className="h-60 w-full bg-gray-100 overflow-hidden">
+//                   <img
+//                     src={p.image}
+//                     alt={p.title}
+//                     className="w-full h-full object-cover object-center"
+//                     loading="lazy"
+//                   />
+//                 </div>
+
+//                 <div className="p-5">
+//                   {/* chip + icon */}
+//                   <div className="flex items-start gap-4">
+//                     <div
+//                       className={`flex h-12 w-12 rounded-lg items-center justify-center text-white shrink-0 bg-linear-to-br ${p.accent}`}
+//                       aria-hidden
+//                     >
+//                       <Icon className="h-6 w-6" />
+//                     </div>
+
+//                     <div className="flex-1">
+//                       <h3
+//                         id={`pillar-${p.id}`}
+//                         className="text-lg font-poppins font-semibold text-gray-900 tracking-wide"
+//                       >
+//                         {p.title}
+//                       </h3>
+//                       <p className="mt-2 font-inter text-gray-700">
+//                         {p.summary}
+//                       </p>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </article>
+//             );
+//           })}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default WhyKindergarten;

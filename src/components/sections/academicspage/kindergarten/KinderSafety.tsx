@@ -51,10 +51,10 @@ const SafetyCareCreative: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* LEFT */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 xl:col-span-5">
             <div className="relative rounded-3xl shadow-2xl bg-lime-100 overflow-hidden">
-              <div className="p-8 sm:p-12 xl:p-16">
-                <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 tracking-wide leading-normal">
+              <div className="p-8 sm:p-12">
+                <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 leading-normal">
                   Safety & Care, Tailored for Little Learners
                 </h2>
 
@@ -70,12 +70,12 @@ const SafetyCareCreative: React.FC = () => {
           </div>
 
           {/* RIGHT GRID */}
-          <div className="lg:col-span-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="lg:col-span-6 xl:col-span-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {tiles.map((t) => (
                 <article
                   key={t.id}
-                  className="relative rounded-2xl overflow-hidden shadow-lg group h-64"
+                  className="relative rounded-2xl overflow-hidden shadow-lg group h-70"
                 >
                   {/* VIDEO */}
                   <video

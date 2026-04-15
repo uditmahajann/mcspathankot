@@ -10,21 +10,35 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    src: "/Images/Sample/Kidsdance.jpg",
+    src: "/Images/Senior/seniorhighlights1.jpg",
     alt: "Kids running in fancy dress race",
     title: "Sports Day Fun",
     caption:
       "Tiny racers, big smiles — our annual sports day is packed with joy and teamwork.",
   },
   {
-    src: "/Images/Sample/Kidsplay.jpg",
+    src: "/Images/Senior/seniorhighlights2.jpg",
     alt: "Children painting together",
     title: "Creative Studio",
     caption:
       "Hands-on art and sensory play to develop fine motor skills and imagination.",
   },
   {
-    src: "/Images/Sample/Kidsdance.jpg",
+    src: "/Images/Senior/seniorhighlights3.jpg",
+    alt: "Children gardening",
+    title: "Nature Time",
+    caption:
+      "Gardening & outdoor exploration to build curiosity about the natural world.",
+  },
+  {
+    src: "/Images/Senior/seniorhighlights4.JPG",
+    alt: "Children gardening",
+    title: "Nature Time",
+    caption:
+      "Gardening & outdoor exploration to build curiosity about the natural world.",
+  },
+  {
+    src: "/Images/Senior/seniorhighlights5.jpg",
     alt: "Children gardening",
     title: "Nature Time",
     caption:
@@ -51,7 +65,7 @@ const KindergartenCarousel: React.FC = () => {
   // Optional autoplay
   useEffect(() => {
     if (timerRef.current) window.clearTimeout(timerRef.current);
-    timerRef.current = window.setTimeout(() => next(), 7000);
+    timerRef.current = window.setTimeout(() => next(), 3000);
     return () => {
       if (timerRef.current) window.clearTimeout(timerRef.current);
     };
@@ -60,7 +74,7 @@ const KindergartenCarousel: React.FC = () => {
   return (
     <section
       id="why-kindergarten"
-      className="relative py-20 lg:py-0 lg:pb-35 overflow-hidden bg-sky-200"
+      className="relative py-20 lg:py-0 lg:pb-35 overflow-hidden bg-green-100"
     >
       <img
         src="/Images/Academics/seniorright.png"
@@ -77,7 +91,7 @@ const KindergartenCarousel: React.FC = () => {
 
       <div className="relative w-full px-5 min-[540px]:px-8 lg:px-12 lg:pt-25">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-12">
+        <div className="text-center mb-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-playpen font-medium">
             Senior-Secondary Wing Highlights
           </h2>

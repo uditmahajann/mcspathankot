@@ -3,19 +3,19 @@ import React from "react";
 const tiles = [
   {
     id: "health",
-    title: "Joyful Classrooms",
+    title: "Confident Learning",
     desc: "Spaces that invite exploration, collaboration, and curiosity-driven learning.",
     video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775524415/primarysafety1_gbydlf.mp4",
   },
   {
     id: "med",
-    title: "Student Mentorship",
+    title: "Creative Mentorship",
     desc: "Teachers personally guide emotional, social, and academic growth.",
     video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775524415/primarysafety2_y7mujl.mp4",
   },
   {
     id: "staff",
-    title: "Active Learning Corners",
+    title: "Joyful Classrooms",
     desc: "Creative, hands-on areas that make learning exciting and meaningful.",
     video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775522145/primarywhy5_t1dme6.mp4",
   },
@@ -40,7 +40,7 @@ const SafetyCareCreative: React.FC = () => {
         
         {/* Header */}
         <div className="text-center mb-6 sm:mb-12 lg:mb-16">
-          <h2 className="max-w-3xl text-2xl min-[540px]:text-3xl lg:text-4xl text-gray-900 font-playpen font-medium leading-normal">
+          <h2 className="max-w-3xl text-2xl min-[540px]:text-3xl lg:text-4xl text-gray-900 font-playpen font-medium inline-block leading-normal">
             A nurturing haven where imagination & growth flourish
           </h2>
           <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
@@ -51,15 +51,15 @@ const SafetyCareCreative: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* LEFT */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 xl:col-span-5">
             <div className="relative rounded-3xl shadow-2xl bg-fuchsia-100 overflow-hidden">
-              <div className="p-8 sm:p-12 lg:p-16">
-                <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 tracking-wide leading-normal">
+              <div className="p-8 sm:p-12">
+                <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-gray-900 tracking leading-normal">
                   Confidence & Curiosity in Every Classroom
                 </h2>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
-                  Our classrooms are warm, structured, and inclusive — thoughtfully designed spaces where children feel confident to express themselves and freely explore new ideas.
+                  Our classrooms are warm, structured, and inclusive — thoughtfully designed spaces where children feel confident to express themselves and freely explore new ideas, discover, and grow through meaningful experiences.
                 </p>
 
                 <p className="mt-4 font-inter text-base sm:text-lg text-gray-700">
@@ -70,14 +70,13 @@ const SafetyCareCreative: React.FC = () => {
           </div>
 
           {/* RIGHT GRID */}
-          <div className="lg:col-span-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="lg:col-span-6 xl:col-span-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {tiles.map((t) => (
                 <article
                   key={t.id}
-                  className="relative rounded-2xl overflow-hidden shadow-lg group h-64"
+                  className="relative rounded-2xl overflow-hidden shadow-lg group h-70"
                 >
-                  
                   {/* VIDEO */}
                   <video
                     src={t.video}
@@ -97,7 +96,6 @@ const SafetyCareCreative: React.FC = () => {
                       {t.title}
                     </h3>
                   </div>
-
                 </article>
               ))}
             </div>
@@ -110,6 +108,11 @@ const SafetyCareCreative: React.FC = () => {
 };
 
 export default SafetyCareCreative;
+
+
+
+
+
 
 
 

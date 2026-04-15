@@ -57,6 +57,16 @@ const PressRelease = ({
 
   const shortVideos = [
     {
+      title: "Principal Mrs. Rashmi Ahluwalia & Vice Chairman Mr. Akash Mahajan",
+      source: "MERA PUNJAB FW",
+      link: "https://www.youtube.com/embed/qKse6FY1cDc?si=wBT_OWp8dkk_hU3f",
+    },
+    {
+      title: "Principal Mrs. Rashmi Ahluwalia | Media Interview",
+      source: "MERA PUNJAB FW",
+      link: "https://www.youtube.com/embed/P77fQIX2mno?si=mDc1pmR4zzgrtTRs",
+    },
+    {
       title: "Montessori Cambridge School Pathankot, Vice Chairman's Message",
       source: "MERA PUNJAB FW",
       link: "https://www.youtube.com/embed/hu_DD5rMl8c?si=UAlnyE-IcmVN3M13",
@@ -71,6 +81,7 @@ const PressRelease = ({
       source: "NTV24 NETWORK",
       link: "https://www.youtube.com/embed/r-gxEi1nk4Q?si=UhLcL88q2HafSn3F",
     },
+    
   ];
 
   // ---------- New state for requested features ----------
@@ -133,13 +144,13 @@ const PressRelease = ({
               <button
                 key={i}
                 onClick={() => setActiveImageIdx(i)}
-                className="rounded-lg sm:rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition focus:outline-none cursor-pointer"
+                className="transition focus:outline-none cursor-pointer"
                 aria-label={`Open ${item.title}`}
               >
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-48 object-cover"
+                  className="w-auto h-60 rounded-lg sm:rounded-xl shadow-sm hover:shadow-lg aspect-4/3 object-fit"
                 />
               </button>
             ))}
@@ -148,7 +159,51 @@ const PressRelease = ({
       </section>
 
       {/* Short Videos Section (with public embeds) */}
-      <section className="pb-16 lg:pb-20">
+
+<section className="pb-16 lg:pb-20">
+  <h2 className="text-xl sm:text-2xl text-gray-900 font-poppins font-semibold mb-6 sm:mb-10">
+    Featured Media Coverage
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {shortVideos.map((video, i) => (
+      <div
+        key={i}
+        className="group relative rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+      >
+        {/* Video */}
+        <div className="relative aspect-video w-full overflow-hidden">
+          <iframe
+            src={video.link}
+            title={video.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full transition-transform duration-500 group-hover:scale-[1.02]"
+          />
+
+          {/* Overlay Gradient */}
+          <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-60 transition" />
+        </div>
+
+        {/* Content */}
+        <div className="p-4 sm:p-5">
+          <p className="text-base sm:text-lg font-poppins font-semibold text-gray-900 leading-snug line-clamp-2">
+            {video.title}
+          </p>
+
+          <p className="mt-2 text-sm text-primarydark font-inter font-semibold">
+            {video.source}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+
+
+
+      {/* <section className="pb-16 lg:pb-20">
         <h2 className="text-xl sm:text-2xl text-gray-900 font-poppins font-semibold mb-4 sm:mb-8">Featured Media Coverage</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {shortVideos.map((video, i) => (
@@ -173,7 +228,7 @@ const PressRelease = ({
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Press Highlights (paginated) */}
       <section className="pb-16 lg:pb-20 bg-white">

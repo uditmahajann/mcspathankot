@@ -84,15 +84,15 @@ const ContactForm: React.FC = () => {
             <p className="mt-4 text-base sm:text-lg text-gray-200 mx-auto">
               Have any question, feedback, suggestion or complaint to share with us? Use the form below to reach out to Montessori Cambridge School. Whether you’re seeking information, sharing feedback, or raising a concern, our team will review your message and respond at the earliest. We value open communication and are committed to assisting you with clarity and care.
             </p>
-            <div className="hidden lg:block w-full my-8 sm:my-12">
+            <div className="hidden lg:block w-full my-8 sm:my-12 aspect-4/3">
               <video
-                className="w-full h-full shadow-lg rounded-xl"
+                className="w-full h-full shadow-lg rounded-xl object-cover"
                 autoPlay
                 loop
                 muted
                 playsInline
               >
-                <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767545220/smartclassclip_cpwl0r.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776251883/contact_zyviak.mp4" type="video/mp4" />
               </video>
             </div>
           </div>

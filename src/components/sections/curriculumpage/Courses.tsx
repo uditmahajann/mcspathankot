@@ -21,10 +21,10 @@ type GradeGroup = "I-V" | "VI-VIII" | "IX-X" | "XI-XII";
 const Courses = ({ courseGroups }: { courseGroups: CourseGroup[] }) => {
 
   const tabs: { label: string; value: GradeGroup }[] = [
-  { label: "Grade I–V", value: "I-V" },
-  { label: "Grade VI–VIII", value: "VI-VIII" },
-  { label: "Grade IX–X", value: "IX-X" },
-  { label: "Grade XI–XII", value: "XI-XII" },
+  { label: "Foundation Stage", value: "I-V" },
+  { label: "Preparatory Stage", value: "VI-VIII" },
+  { label: "Middle Stage", value: "IX-X" },
+  { label: "Secondary Stage", value: "XI-XII" },
 ];
 
 

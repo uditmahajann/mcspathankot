@@ -10,21 +10,35 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    src: "/Images/Sample/Kidsdance.jpg",
+    src: "/Images/Secondary/secondaryhighlights1.jpg",
     alt: "Kids running in fancy dress race",
     title: "Sports Day Fun",
     caption:
       "Tiny racers, big smiles — our annual sports day is packed with joy and teamwork.",
   },
   {
-    src: "/Images/Sample/Kidsplay.jpg",
+    src: "/Images/Secondary/secondaryhighlights2.JPG",
     alt: "Children painting together",
     title: "Creative Studio",
     caption:
       "Hands-on art and sensory play to develop fine motor skills and imagination.",
   },
   {
-    src: "/Images/Sample/Kidsdance.jpg",
+    src: "/Images/Secondary/secondaryhighlights3.JPG",
+    alt: "Children gardening",
+    title: "Nature Time",
+    caption:
+      "Gardening & outdoor exploration to build curiosity about the natural world.",
+  },
+  {
+    src: "/Images/Secondary/secondaryhighlights4.jpg",
+    alt: "Children gardening",
+    title: "Nature Time",
+    caption:
+      "Gardening & outdoor exploration to build curiosity about the natural world.",
+  },
+  {
+    src: "/Images/Secondary/secondaryhighlights5.JPG",
     alt: "Children gardening",
     title: "Nature Time",
     caption:
@@ -51,7 +65,7 @@ const KindergartenCarousel: React.FC = () => {
   // Optional autoplay
   useEffect(() => {
     if (timerRef.current) window.clearTimeout(timerRef.current);
-    timerRef.current = window.setTimeout(() => next(), 7000);
+    timerRef.current = window.setTimeout(() => next(), 3000);
     return () => {
       if (timerRef.current) window.clearTimeout(timerRef.current);
     };
