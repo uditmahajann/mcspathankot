@@ -112,7 +112,7 @@ const Infrastructure: React.FC = () => {
         {/* Banner Image */}
         <div className="relative overflow-hidden rounded-xl sm:rounded-2xl mb-8 sm:mb-12 lg:mb-20 shadow-2xl">
           <img
-            src="/Images/About/campus.JPG"
+            src="/Images/Facility/campus.JPG"
             alt="MCS Campus Overview"
             className="h-100 sm:h-140 w-full object-cover"
           />

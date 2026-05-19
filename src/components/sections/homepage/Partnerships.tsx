@@ -3,6 +3,26 @@ import CtaButton from "../../interface/CtaButton"
 
 const partners = [
   {
+    name: "NTA",
+    logo: "/Images/Logos/ntalogo.png",
+    alt: "National Testing Agency",
+  },
+  {
+    name: "TCS",
+    logo: "/Images/Logos/tcslogo.png",
+    alt: "Tata Consultancy Services",
+  },
+  {
+    name: "TATA",
+    logo: "/Images/Logos/tatalogo.jpg",
+    alt: "Tata Building India",
+  },
+  {
+    name: "EduNext",
+    logo: "/Images/Logos/edunextlogo.png",
+    alt: "EduNext",
+  },
+  {
     name: "SOF",
     logo: "/Images/Logos/Sof.jpg",
     alt: "SOF Logo",
@@ -37,11 +57,7 @@ const partners = [
     logo: "/Images/Logos/Ipn.png",
     alt: "IPN Logo",
   },
-  {
-    name: "StudentExc",
-    logo: "/Images/Logos/Studentexchange.png",
-    alt: "Student Exchange Logo",
-  },
+  
 ]
 
 const Partnerships: React.FC = () => {
@@ -75,7 +91,7 @@ const Partnerships: React.FC = () => {
             {partners.map((partner) => (
               <div
                 key={partner.name}
-                className="p-1 sm:p-3 flex items-center justify-center shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="p-1 sm:p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 style={{ minWidth: 90, minHeight: 60 }}
               >
                 <img

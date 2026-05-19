@@ -21,21 +21,20 @@ const principles = [
 
 const SportsMentorship = () => {
   return (
-    <section className="py-16 my-10 bg-white">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <section className="py-25 lg:py-36 bg-[#0a0a0a] text-white">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
 
         {/* LEFT — HEADLINE */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-raleway font-extrabold uppercase tracking-tight text-gray-900 leading-tight">
-            MENTORSHIP THAT BUILDS<br />
-            **ARTISTS — AND HUMANS.**
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-poppins font-semibold leading-tight">
+            Mentorship that builds Artists
           </h2>
         </div>
 
         {/* RIGHT — DESCRIPTION */}
         <div>
-          <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-xl">
-             Behind every performance is a mentor who teaches more than rhythm, expression, 
+          <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-xl">
+          Behind every performance is a mentor who teaches more than rhythm, expression, 
           or technique. We help students build confidence, empathy, stage discipline, 
           and collaboration — qualities that last long after the curtain falls.
           </p>

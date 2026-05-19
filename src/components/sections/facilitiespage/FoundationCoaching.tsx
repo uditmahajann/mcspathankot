@@ -117,3 +117,187 @@ const FoundationCoaching = () => {
 }
 
 export default FoundationCoaching
+
+
+
+
+
+// import {
+//   Brain,
+//   Lightbulb,
+//   Search,
+//   Target,
+// } from "lucide-react";
+
+// const pillars = [
+//   {
+//     icon: Target,
+//     title: "Personalized Learning",
+//     desc: "Tailored guidance aligned with every learner’s pace and strengths.",
+//   },
+//   {
+//     icon: Brain,
+//     title: "Cognitive Development",
+//     desc: "Activities that strengthen memory, focus, reasoning, and mental agility.",
+//   },
+//   {
+//     icon: Lightbulb,
+//     title: "Conceptual Clarity",
+//     desc: "Deep understanding-focused learning beyond memorization.",
+//   },
+//   {
+//     icon: Search,
+//     title: "Analytical Thinking",
+//     desc: "Encouraging students to question, explore, and solve creatively.",
+//   },
+// ];
+
+// const FoundationCoaching = () => {
+//   return (
+//     <section
+//       id="foundation-coaching"
+//       className="relative overflow-hidden bg-[#f7f4ef] py-20 sm:py-28"
+//     >
+//       {/* Background Glow */}
+//       <div className="absolute top-0 right-0 h-[400px] w-[400px] rounded-full bg-blue-100 blur-3xl opacity-60" />
+
+//       <div className="relative z-10 mx-auto max-w-7xl px-6 min-[540px]:px-12">
+//         {/* TOP */}
+//         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
+//           {/* LEFT CONTENT */}
+//           <div className="lg:col-span-5">
+//             <p className="text-sm tracking-[0.35em] uppercase text-blue-600">
+//               Foundation Coaching
+//             </p>
+
+//             <h2 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-poppins font-semibold leading-[0.95] text-gray-900">
+//               Building Strong Academic Foundations.
+//             </h2>
+
+//             <p className="mt-8 text-lg text-gray-700 leading-relaxed">
+//               Our Foundation Coaching programme nurtures conceptual clarity,
+//               confidence, analytical thinking, and intellectual curiosity from
+//               an early stage through structured and engaging learning
+//               experiences.
+//             </p>
+
+//             <p className="mt-5 text-lg text-gray-700 leading-relaxed">
+//               By combining personalized instruction with inquiry-driven
+//               exploration, we help students develop meaningful understanding and
+//               lifelong learning habits.
+//             </p>
+//           </div>
+
+//           {/* RIGHT VISUAL COMPOSITION */}
+//           <div className="lg:col-span-7">
+//             <div className="grid grid-cols-2 gap-5">
+//               {/* Main Image */}
+//               <div className="overflow-hidden rounded-[2rem] aspect-[4/5] shadow-2xl">
+//                 <img
+//                   src="/Images/Facility/foundation.JPG"
+//                   alt=""
+//                   className="h-full w-full object-cover"
+//                 />
+//               </div>
+
+//               {/* Stacked */}
+//               <div className="space-y-5 mt-14">
+//                 <div className="overflow-hidden rounded-[2rem] aspect-square shadow-2xl">
+//                   <img
+//                     src="/Images/Facility/foundation1.JPG"
+//                     alt=""
+//                     className="h-full w-full object-cover"
+//                   />
+//                 </div>
+
+//                 <div className="overflow-hidden rounded-[2rem] aspect-[5/4] shadow-2xl">
+//                   <video
+//                     src="/Videos/foundation.mp4"
+//                     autoPlay
+//                     muted
+//                     loop
+//                     playsInline
+//                     className="h-full w-full object-cover"
+//                   />
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* PILLARS */}
+//         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+//           {pillars.map((item, index) => {
+//             const Icon = item.icon;
+
+//             return (
+//               <div
+//                 key={index}
+//                 className="group rounded-[2rem] bg-white/80 backdrop-blur-xl border border-black/5 p-7 hover:-translate-y-1 hover:shadow-2xl transition duration-500"
+//               >
+//                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+//                   <Icon className="h-7 w-7" />
+//                 </div>
+
+//                 <h3 className="mt-6 text-2xl font-poppins font-semibold text-gray-900 leading-tight">
+//                   {item.title}
+//                 </h3>
+
+//                 <p className="mt-4 text-gray-600 leading-relaxed">
+//                   {item.desc}
+//                 </p>
+//               </div>
+//             );
+//           })}
+//         </div>
+
+//         {/* BOTTOM FEATURE STRIP */}
+//         <div className="mt-20 grid grid-cols-1 lg:grid-cols-3 gap-6">
+//           {[
+//             {
+//               title: "Laying the Academic Bedrock",
+//               image: "/Images/Facility/foundation1.JPG",
+//             },
+//             {
+//               title: "Learning Beyond Books",
+//               image: "/Images/Facility/foundation2.JPG",
+//             },
+//             {
+//               title: "Technology-Enabled Learning",
+//               image: "/Images/Facility/foundation3.JPG",
+//             },
+//           ].map((item, index) => (
+//             <div
+//               key={index}
+//               className="group relative overflow-hidden rounded-[2rem] aspect-[4/3]"
+//             >
+//               <img
+//                 src={item.image}
+//                 alt=""
+//                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+//               />
+
+//               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+//               <div className="absolute bottom-0 left-0 p-7">
+//                 <h3 className="text-2xl font-poppins font-semibold text-white leading-tight">
+//                   {item.title}
+//                 </h3>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default FoundationCoaching;
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@ const HistoryHero: React.FC = () => {
   return (
     <section className="relative text-white">
       <div
-        className="relative min-h-[65vh] md:min-h-[70vh] flex items-center"
+        className="relative min-h-[65vh] md:min-h-[75vh] flex items-center"
         style={{
           backgroundImage: `url('/Images/Heros/abouthero.JPG')`,
           backgroundSize: "cover",

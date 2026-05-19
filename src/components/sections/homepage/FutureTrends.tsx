@@ -60,7 +60,7 @@ const FutureTrends: React.FC = () => {
       title: "SEL- Social & Emotional Learning",
       description:
         "We prioritize well-being alongside academics...",
-      videoPath: "/Videos/sel.mp4",
+      videoPath: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1778691548/future3_ik6o0b.mp4",
     },
     {
       number: "3",
@@ -74,7 +74,7 @@ const FutureTrends: React.FC = () => {
       title: "Sports & Physical Development",
       description:
         "With world-class facilities and expert coaching...",
-      videoPath: "/Videos/sports.mp4",
+      videoPath: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1778684327/trends4_caeejc.mp4",
     },
     {
       number: "5",
