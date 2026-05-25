@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import HomePopup from "../components/elements/Popup";
 import Hero from "../components/sections/homepage/Hero";
 import News from "../components/sections/homepage/News";
 import InstaReels from "../components/sections/homepage/InstaReels";
@@ -17,6 +18,38 @@ import { newsListingQuery } from "../lib/queries/news";
 import { instaReelsQuery } from "../lib/queries/instaReels";
 import { awardsQuery } from "../lib/queries/awards";
 import { bannersByCategoryQuery } from "../lib/queries/banner";
+
+const popupData = [
+  {
+    id: "sports",
+
+    title: "CBSE Basketball Cluster XVIII",
+
+    description:
+      "We feel immense pleasure to invite your school for the participation in CBSE BASKETBALL Cluster XVIII (Boys & Girls) from June 23 to June 28, 2026.",
+
+    image: "/Images/CampusLife/update1.jpg",
+
+    buttonText: "See Details",
+
+    buttonLink: "/announcement",
+  },
+
+//   {
+//     id: "performing-arts",
+
+//     title: "Performing Arts Showcase",
+
+//     description:
+//       "Experience music, theatre, dance, and creativity through our annual student showcase.",
+
+//     video: "/Videos/showcase.mp4",
+
+//     buttonText: "Explore Event",
+
+//     buttonLink: "/campus-life/performing-arts",
+//   },
+];
 
 const news = await client.fetch(newsListingQuery);
 const instaReels = await client.fetch(instaReelsQuery);
@@ -50,6 +83,7 @@ const normalize = (items: any[]) =>
 	pubDate={new Date()}
 >
 	<main class="w-full">
+		<HomePopup popups={popupData} client:load/>
 		<Hero client:load/>
 		<News news={news} />
 		<InstaReels reels={instaReels} client:load/>

@@ -45,7 +45,7 @@ const Achievements: React.FC<Props> = ({
                 />
               </span>
             </span>{" "}
-            2024-25
+            2025-26
           </h2>
           <p className="mt-2 text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             Celebrating the outstanding talents and achievements of our students across academics, arts, sports & co-curricular excellence.

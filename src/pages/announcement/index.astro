@@ -1,0 +1,53 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ImportantDocuments from "../../components/sections/announcementpage/DocumentLinks";
+import AnnouncementHero from "../../components/sections/announcementpage/AnnouncementHero";
+import { BookOpen, FileBadge, ShieldCheck } from "lucide-react";
+
+const documents = [
+	{
+		title: "Invitation Letter",
+
+		description: "Official invitation for schools participating in the CBSE Basketball Cluster XVIII 2026-2027, including event details and participation guidelines.",
+
+		file: "/Documents/Invitation-Letter.docx",
+
+		icon: FileBadge,
+	},
+
+	{
+		title: "Event Instructions",
+
+		description: "Important instructions regarding reporting, registration process and event coordination for schools/teams participating in the CBSE Basketball Cluster XVIII 2026-2027",
+
+		file: "/Documents/Instructions.docx",
+
+		icon: BookOpen,
+	},
+
+	{
+		title: "Event Rules",
+
+		description: "CBSE Basketball Cluster XVIII 2026-2027 detailed rules, tournament regulations, discipline guidelines, and important policies for all participants and teams.",
+
+		file: "/Documents/Rules.docx",
+
+		icon: ShieldCheck,
+	},
+];
+---
+
+<Layout
+	title="MCS Pathankot Announcements & Highlights | Montessori Cambridge School | Top Boarding School in Pathankot, Punjab and North India region."
+	description="Never miss an important update from MCS regarding events, admissions, academics, and campus activities."
+	pubDate={new Date()}
+>
+	<main class="w-full">
+		<AnnouncementHero/>
+		<ImportantDocuments
+			title="CBSE Basketball Cluster XVIII (Boys & Girls)"
+			subtitle="We feel immense pleasure to invite your school for the participation in CBSE BASKETBALL Cluster XVIII (Boys & Girls) from June 23 to June 28, 2026. The tournament (GIRLS) will begin with the opening ceremony on June 23, 2026. The tournament (BOYS) will begin with the opening ceremony on June 26, 2026. The participating teams are requested to bring one school flag and banner bearing the name of their school for ceremonies."
+			documents={documents}
+		/>
+	</main>
+</Layout>

@@ -36,7 +36,7 @@ const Hero = () => {
       <div
         className="
           absolute top-0 left-0 h-full w-[95%] z-10 pointer-events-none
-          bg-linear-to-r from-black via-black to-transparent
+          bg-linear-to-r from-black via-blue-950 to-transparent
         "
         style={{
           WebkitMaskImage: 'linear-gradient(to right, black 25%, transparent 100%)',
@@ -45,7 +45,7 @@ const Hero = () => {
       />
 
       {/* Hero Content */}
-      <div className="relative z-10 flex h-full py-12 sm:py-22">
+      <div className="relative z-10 flex h-full pt-10 pb-12 sm:pb-20 sm:pt-15">
         <div className="max-w-7xl px-6 sm:px-12 lg:px-20 xl:px-30 text-white">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -66,7 +66,7 @@ const Hero = () => {
                   Montessori Cambridge School
                 </h2>
                 <span className="hidden sm:block text-base lg:text-lg font-inter text-white/70">
-                  A Legacy of Excellence Since 1998
+                  A Legacy of Excellence Since 1997
                 </span>
               </div>
             </div>

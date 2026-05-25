@@ -7,6 +7,7 @@ const TopBar: React.FC = () => {
   const phone1 = "98765-70911";
   const phone2 = "98765-70912";
   const email = "mcspathankot1@gmail.com";
+  const grievance = "mcsgrivience1997@gmail.com";
 
   // Social links with brand hover styles
   const socialLinks = [
@@ -42,6 +43,13 @@ const TopBar: React.FC = () => {
           >
             <Phone className="h-3.5 w-3.5 sm:h-5 sm:w-5 mr-2 fill-amber-300 stroke-0" />
             <span>{phone2}</span>
+          </a>|
+          <a
+            href={`mailto:${grievance}`}
+            className="hidden sm:flex items-center hover:underline"
+          >
+            For Grievance Redressal: <Mail className="h-3.5 w-3.5 sm:h-5 sm:w-5 mx-2 text-amber-300" />
+            <span>{grievance}</span>
           </a>
 
         </div>
