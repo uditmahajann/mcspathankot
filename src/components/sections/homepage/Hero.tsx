@@ -36,7 +36,7 @@ const Hero = () => {
       <div
         className="
           absolute top-0 left-0 h-full w-[95%] z-10 pointer-events-none
-          bg-linear-to-r from-black via-blue-950 to-transparent
+          bg-linear-to-r from-black via-black to-transparent
         "
         style={{
           WebkitMaskImage: 'linear-gradient(to right, black 25%, transparent 100%)',

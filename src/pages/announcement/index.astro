@@ -2,13 +2,13 @@
 import Layout from "../../layouts/Layout.astro";
 import ImportantDocuments from "../../components/sections/announcementpage/DocumentLinks";
 import AnnouncementHero from "../../components/sections/announcementpage/AnnouncementHero";
-import { BookOpen, FileBadge, ShieldCheck } from "lucide-react";
+import { BookOpen, FileBadge, ShieldCheck, Scale } from "lucide-react";
 
 const documents = [
 	{
 		title: "Invitation Letter",
 
-		description: "Official invitation for schools participating in the CBSE Basketball Cluster XVIII 2026-2027, including event details and participation guidelines.",
+		description: "Official invitation for schools participating in the CBSE Basketball Cluster XVIII 2026-2027.",
 
 		file: "/Documents/Invitation-Letter.docx",
 
@@ -18,7 +18,7 @@ const documents = [
 	{
 		title: "Event Instructions",
 
-		description: "Important instructions regarding reporting, registration process and event coordination for schools/teams participating in the CBSE Basketball Cluster XVIII 2026-2027",
+		description: "Important instructions regarding registration process for all the teams/schools participating in the tournament.",
 
 		file: "/Documents/Instructions.docx",
 
@@ -28,9 +28,18 @@ const documents = [
 	{
 		title: "Event Rules",
 
-		description: "CBSE Basketball Cluster XVIII 2026-2027 detailed rules, tournament regulations, discipline guidelines, and important policies for all participants and teams.",
+		description: "Detailed rules, tournament regulations, discipline guidelines & important policies for all participants.",
 
 		file: "/Documents/Rules.docx",
+
+		icon: Scale,
+	},
+	{
+		title: "Confirmation Slip",
+
+		description: "Official confirmation slip for confirming participation in the CBSE Basketball Cluster XVIII Championship.",
+
+		file: "/Documents/Confirmation-Slip.docx",
 
 		icon: ShieldCheck,
 	},
