@@ -53,14 +53,14 @@ const FutureTrends: React.FC = () => {
       title: "STEAM Learning",
       description:
         "We integrate Science, Technology, Engineering, Arts, and Math into a unified, hands-on curriculum...",
-      videoPath: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775512970/future1_xrlghk.mp4",
+      videoPath: "https://res.cloudinary.com/dchtltm22/video/upload/v1781781960/future1_vmdhzx.mp4",
     },
     {
       number: "2",
       title: "SEL- Social & Emotional Learning",
       description:
         "We prioritize well-being alongside academics...",
-      videoPath: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1778691548/future3_ik6o0b.mp4",
+      videoPath: "https://res.cloudinary.com/dchtltm22/video/upload/v1781781961/future3_xb9lf7.mp4",
     },
     {
       number: "3",
@@ -74,14 +74,14 @@ const FutureTrends: React.FC = () => {
       title: "Sports & Physical Development",
       description:
         "With world-class facilities and expert coaching...",
-      videoPath: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1778684327/trends4_caeejc.mp4",
+      videoPath: "https://res.cloudinary.com/dchtltm22/video/upload/v1781781960/future4_ndj5jk.mp4",
     },
     {
       number: "5",
       title: "Beyond Academics",
       description:
         "Students explore music, drama, debate, and leadership...",
-      videoPath: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775512982/future6_me1bxx.mp4",
+      videoPath: "https://res.cloudinary.com/dchtltm22/video/upload/v1781781960/future6_sxcrkc.mp4",
     },
   ]
 

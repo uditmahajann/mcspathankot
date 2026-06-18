@@ -27,7 +27,7 @@ const Hero = () => {
           loop
           playsInline
         >
-          <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775517503/admission_nxdzhh.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dchtltm22/video/upload/v1781782054/admission_kjt7tk.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-blue-950/30" />
       </div>
