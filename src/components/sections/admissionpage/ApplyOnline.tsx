@@ -117,7 +117,7 @@ const ApplyOnline: React.FC = () => {
                 muted
                 playsInline
               >
-                <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775517503/admission_nxdzhh.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781985283/admission_wbd0c9.mp4" type="video/mp4" />
               </video>
             </div>
           </div>

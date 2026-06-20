@@ -17,7 +17,7 @@ const PILLARS: Pillar[] = [
     title: "Montessori-led Discovery",
     summary:
       "Hands-on materials and thoughtful environments help children focus, build independence & enjoy learning.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775493485/kinderwhy1_blicqk.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984416/kinderwhy1_noj6vb.mp4",
     accent: "from-green-300 to-emerald-400",
   },
   {
@@ -26,7 +26,7 @@ const PILLARS: Pillar[] = [
     title: "Play-based & Intentional",
     summary:
       "Purposeful play builds language, motor, and social-emotional skills through fun, engaging activities.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775493485/kinderwhy2_magvud.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984414/kinderwhy2_kijbq6.mp4",
     accent: "from-yellow-300 to-amber-400",
   },
   {
@@ -35,7 +35,7 @@ const PILLARS: Pillar[] = [
     title: "Experienced, Caring Teachers",
     summary:
       "Warm, trained educators who observe, extend and celebrate every child’s small wins every day.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775493485/kinderwhy3_uf8iqf.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984414/kinderwhy3_nioiql.mp4",
     accent: "from-sky-300 to-indigo-400",
   },
   {
@@ -44,7 +44,7 @@ const PILLARS: Pillar[] = [
     title: "Nurturing & Safe Environment",
     summary:
       "A secure, caring space with steady routines where children feel safe to explore and grow.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775493485/kinderwhy4_dsfieb.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984415/kinderwhy4_hv4xkq.mp4",
     accent: "from-pink-300 to-rose-400",
   },
   {
@@ -53,7 +53,7 @@ const PILLARS: Pillar[] = [
     title: "Enriched Early Curriculum",
     summary:
       "A balanced blend of language, art, music, and nature-based learning prepares kids for the next stage.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775493485/kinderwhy5_jjth4w.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984416/kinderwhy5_kmgvka.mp4",
     accent: "from-violet-300 to-purple-500",
   },
 ];

@@ -5,25 +5,25 @@ const tiles = [
     id: "health",
     title: "Confident Learning",
     desc: "Spaces that invite exploration, collaboration, and curiosity-driven learning.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775524415/primarysafety1_gbydlf.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984685/primarysafety1_lp4axh.mp4",
   },
   {
     id: "med",
     title: "Creative Mentorship",
     desc: "Teachers personally guide emotional, social, and academic growth.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775524415/primarysafety2_y7mujl.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984696/primarysafety2_cyk61p.mp4",
   },
   {
     id: "staff",
     title: "Joyful Classrooms",
     desc: "Creative, hands-on areas that make learning exciting and meaningful.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775522145/primarywhy5_t1dme6.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984686/primarywhy5_fjeszv.mp4",
   },
   {
     id: "security",
     title: "Safe, Happy Environment",
     desc: "A warm, respectful culture where every child feels valued and heard.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775524425/primarysafety4_nf9tna.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984685/primarysafety4_ndb7pb.mp4",
   },
 ];
 

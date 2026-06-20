@@ -57,7 +57,7 @@ const SmartClasses = () => {
           <div className="lg:w-1/2">
             <div className="relative h-full rounded-lg sm:rounded-2xl overflow-hidden">
               <video className="w-full h-full object-cover" autoPlay loop muted playsInline preload="metadata">
-                <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1767545220/smartclassclip_cpwl0r.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781981381/smartclassclip_l1x9iv.mp4" type="video/mp4" />
               </video>
             </div>
           </div>

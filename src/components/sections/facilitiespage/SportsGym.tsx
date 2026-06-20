@@ -4,33 +4,33 @@ import { ArrowRight } from "lucide-react";
 const SportsGym = () => {
   const facilities = [
     {
-      name: "Olympic-Size Swimming Pool",
-      description: "Temperature-controlled pool with professional lanes and diving boards.",
+      name: "Swimming Pool",
+      description: "Large indoor swimming pool with dedicated lanes designed for year-round training.",
       image: "/Images/Facility/swimmingpool.JPG",
     },
     {
-      name: "Indoor Sports Complex",
-      description: "Multi-purpose courts for basketball, volleyball, badminton, and more.",
-      image: "/Images/Heros/samplehero.JPG",
+      name: "Dedicated Courts",
+      description: "Multiple outdoor courts dedicated for basketball, volleyball, badminton & other sports activities.",
+      image: "/Images/Facility/basketball.jpeg",
     },
     {
       name: "Football Ground",
-      description: "FIFA-standard football field with natural grass and proper drainage system.",
-      image: "/Images/Heros/samplehero.JPG",
+      description: "Spacious football fields with a well-maintained playing surface and dedicated goalposts.",
+      image: "/Images/Facility/football.jpg",
     },
     {
-      name: "Cricket Stadium",
-      description: "Professional cricket ground with practice nets and pavilion.",
-      image: "/Images/Heros/samplehero.JPG",
+      name: "Cricketing Nets",
+      description: "Dedicated Cricket practice facility equipped for batting, bowling, and fielding sessions.",
+      image: "/Images/Facility/cricket.jpg",
     },
     {
-      name: "Tennis Courts",
-      description: "Multiple tennis courts with different surfaces for training and matches.",
-      image: "/Images/Heros/samplehero.JPG",
+      name: "Roller Skating Arena",
+      description: "Safe and spacious skating area designed for recreational and competitive skating.",
+      image: "/Images/Facility/skating.jpg",
     },
     {
       name: "Modern Gymnasium",
-      description: "Fully equipped gym with cardio and strength training equipment.",
+      description: "Fully equipped gymnasium with cardio and strength training equipment.",
       image: "/Images/Facility/gym.JPG",
     },
   ]

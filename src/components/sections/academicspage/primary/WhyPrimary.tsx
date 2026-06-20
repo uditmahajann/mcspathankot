@@ -17,7 +17,7 @@ const PILLARS: Pillar[] = [
     title: "Inquiry-based Learning",
     summary:
       "Children ask questions, explore ideas, and learn through discovery and dialogue.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775522147/primarywhy1_c8clka.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984685/primarywhy1_gfuvgl.mp4",
     accent: "from-green-300 to-emerald-400",
   },
   {
@@ -26,7 +26,7 @@ const PILLARS: Pillar[] = [
     title: "Creative Expression",
     summary:
       "Art, craft, and performance weave joy and imagination into everyday lessons.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775522144/primarywhy2_rfoiyf.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984686/primarywhy2_xi4mvg.mp4",
     accent: "from-yellow-300 to-amber-400",
   },
   {
@@ -35,7 +35,7 @@ const PILLARS: Pillar[] = [
     title: "Holistic Growth & Values",
     summary:
       "Life skills, ethics, and wellness programs shape kindness, empathy, and independence.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775522146/primarywhy3_sajknu.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984687/primarywhy3_dxnuvt.mp4",
     accent: "from-sky-300 to-indigo-400",
   },
   {
@@ -44,7 +44,7 @@ const PILLARS: Pillar[] = [
     title: "Caring Educators",
     summary:
       "Teachers guide each child’s progress with empathy, ensuring no learner is left behind.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775522143/primarywhy4_gta7gb.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984685/primarywhy4_ztrlc2.mp4",
     accent: "from-pink-300 to-rose-400",
   },
   {
@@ -53,7 +53,7 @@ const PILLARS: Pillar[] = [
     title: "Strong Academic Foundation",
     summary:
       "Focused attention on reading, writing, and mathematical thinking builds confidence early on.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775522145/primarywhy5_t1dme6.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984686/primarywhy5_fjeszv.mp4",
     accent: "from-violet-300 to-purple-500",
   },
 ];

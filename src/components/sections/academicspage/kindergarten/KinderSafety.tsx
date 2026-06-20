@@ -5,25 +5,25 @@ const tiles = [
     id: "health",
     title: "Guided Class Learning",
     desc: "Temperature & wellness checks with clear guidance for parents.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775495786/kindersafety1_rshhzy.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984414/kindersafety1_dv1e2s.mp4",
   },
   {
     id: "med",
     title: "Safe Outdoor Play Area",
     desc: "Supervised medical room with trained staff to care for children safely.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775495785/kindersafety2_sbr8ai.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984414/kindersafety2_yef6fy.mp4",
   },
   {
     id: "staff",
     title: "Supervised Fun Activities",
     desc: "All staff complete regular safety training and child-protection checks.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775495897/kindersafety3_iidzcv.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984414/kindersafety3_i4s8r6.mp4",
   },
   {
     id: "security",
     title: "Structured Playtime",
     desc: "Controlled access and monitored play areas ensure child safety.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775495813/kindersafety4_kkboun.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984414/kindersafety4_bj4zly.mp4",
   },
 ];
 

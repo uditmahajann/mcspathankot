@@ -5,25 +5,25 @@ const tiles = [
     id: "health",
     title: "Academic Support",
     desc: "Temperature & wellness checks with clear guidance for parents.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776243000/middlesafety1_hnjcvn.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984977/middlesafety1_hpfqb1.mp4",
   },
   {
     id: "med",
     title: "Creative Expression",
     desc: "Supervised medical room with trained staff to care for children safely.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776242993/middlesafety2_zxjlzc.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984977/middlesafety2_dg94gu.mp4",
   },
   {
     id: "staff",
     title: "Digital Awareness",
     desc: "All staff complete regular safety training and child-protection checks.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776243811/middlesafety3_fpcurw.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984976/middlesafety3_tyzinb.mp4",
   },
   {
     id: "security",
     title: "Confidence Building",
     desc: "Controlled access and monitored play areas ensure child safety.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776242994/middlesafety4_lstbnc.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984979/middlesafety4_dxa87j.mp4",
   },
 ];
 

@@ -17,7 +17,7 @@ const PILLARS: Pillar[] = [
     title: "STEM & Innovation Focus",
     summary:
       "Projects and experiments nurture critical thinking, problem-solving & creativity.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776095892/middlewhy1_rpmmoi.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984979/middlewhy1_puy6lm.mp4",
     accent: "from-green-300 to-emerald-400",
   },
   {
@@ -26,7 +26,7 @@ const PILLARS: Pillar[] = [
     title: "Creative Expression",
     summary:
       "Art, craft, and performance weave joy and imagination into everyday lessons.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776095892/middlewhy2_rh8lc5.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984978/middlewhy2_lrnql2.mp4",
     accent: "from-yellow-300 to-amber-400",
   },
   {
@@ -35,7 +35,7 @@ const PILLARS: Pillar[] = [
     title: "Mentorship-driven Teaching",
     summary:
       "Personal attention and guidance help students adapt through growing academic challenges.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776095892/middlewhy3_tzgwy4.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984979/middlewhy3_quwyaa.mp4",
     accent: "from-sky-300 to-indigo-400",
   },
   {
@@ -44,7 +44,7 @@ const PILLARS: Pillar[] = [
     title: "Social Responsibility",
     summary:
       "Programs encourage care for the environment and the community, during the early adolescence.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776098044/middlewhy4_mwouak.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984978/middlewhy4_mcdf0g.mp4",
     accent: "from-pink-300 to-rose-400",
   },
   {
@@ -53,7 +53,7 @@ const PILLARS: Pillar[] = [
     title: "Interdisciplinary Learning",
     summary:
       "Subjects connect to real-life experiences, helping students see the bigger picture.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776096611/middlewhy5_rkk76n.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984977/middlewhy5_dtwucz.mp4",
     accent: "from-violet-300 to-purple-500",
   },
 ];

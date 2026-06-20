@@ -12,7 +12,7 @@ const ArtsHero = () => {
   return (
           <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-black text-white">
         <video
-          src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775524425/primarysafety4_nf9tna.mp4"
+          src="https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984685/primarysafety4_ndb7pb.mp4"
           autoPlay
           muted
           loop

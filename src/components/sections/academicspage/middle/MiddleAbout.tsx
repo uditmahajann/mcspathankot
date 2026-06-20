@@ -31,7 +31,7 @@ const AboutKindergarten: React.FC = () => {
         <div className="relative flex justify-center">
           <div className="relative h-full rounded-lg sm:rounded-xl shadow-lg overflow-hidden">
               <video className="w-full h-full object-cover aspect-4/3" autoPlay loop muted playsInline preload="metadata">
-                <source src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776095893/middleabout_p63jpa.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781984978/middleabout_r7bmoy.mp4" type="video/mp4" />
               </video>
           </div>
         </div>

@@ -48,7 +48,7 @@ const History: React.FC = () => {
   {/* Card 1 */}
   <div className="relative overflow-hidden group rounded-2xl shadow-lg aspect-4/3">
     <video
-      src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776260800/about6_dmbbcl.mp4"
+      src="https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781985733/about6_o55xmz.mp4"
       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       autoPlay
       muted
@@ -66,7 +66,7 @@ const History: React.FC = () => {
   {/* Card 2 */}
   <div className="relative overflow-hidden group rounded-2xl shadow-lg aspect-4/3">
     <video
-      src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776260250/about3_miprca.mp4"
+      src="https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781985734/about3_gdhcmr.mp4"
       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       autoPlay
       muted
@@ -84,7 +84,7 @@ const History: React.FC = () => {
   {/* Card 3 */}
   <div className="relative overflow-hidden group rounded-2xl shadow-lg aspect-4/3">
     <video
-      src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776260250/about1_rfz2oi.mp4"
+      src="https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781985732/about1_nsrknh.mp4"
       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       autoPlay
       muted
@@ -233,7 +233,7 @@ const History: React.FC = () => {
   {/* Card 1 */}
   <div className="relative overflow-hidden group rounded-2xl shadow-lg aspect-4/3">
     <video
-      src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776260800/about4_ktddyt.mp4"
+      src="https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781985733/about4_qq5qgz.mp4"
       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       autoPlay
       muted
@@ -251,7 +251,7 @@ const History: React.FC = () => {
   {/* Card 2 */}
   <div className="relative overflow-hidden group rounded-2xl shadow-lg aspect-4/3">
     <video
-      src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776260246/about2_jvh1rs.mp4"
+      src="https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781985744/about2_qmqb2s.mp4"
       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       autoPlay
       muted
@@ -269,7 +269,7 @@ const History: React.FC = () => {
   {/* Card 3 */}
   <div className="relative overflow-hidden group rounded-2xl shadow-lg aspect-4/3">
     <video
-      src="https://res.cloudinary.com/dhlzfm5ix/video/upload/v1776260800/about5_tozoyt.mp4"
+      src="https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781985733/about5_yydezb.mp4"
       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       autoPlay
       muted

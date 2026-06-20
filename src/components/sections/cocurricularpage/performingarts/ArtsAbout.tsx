@@ -12,23 +12,23 @@ const artForms = [
   {
     title: "Dance",
     subtitle: "Movement becomes confidence.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1775512982/future6_me1bxx.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781781960/future6_sxcrkc.mp4",
   },
   {
     title: "Drama",
     subtitle: "Every role teaches courage.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1779193033/arttheatre_wfjocz.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781985519/arttheatre_lbc5vu.mp4",
   },
   {
     title: "Music",
     subtitle: "Expression through rhythm & harmony.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1779192688/artmusic_uyinkn.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781985509/artmusic_hxjnng.mp4",
   },
   
   {
     title: "Debate",
     subtitle: "Where ideas find their voice.",
-    video: "https://res.cloudinary.com/dhlzfm5ix/video/upload/v1779194562/artdebate_glajf2.mp4",
+    video: "https://res.cloudinary.com/dchtltm22/video/upload/q_auto/f_auto/v1781985509/artdebate_l6lsvg.mp4",
   },
 ];
 
