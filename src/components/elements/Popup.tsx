@@ -256,9 +256,7 @@ const AnnouncementPopup = ({
                   <a
                     href={popup.buttonLink}
                     className="
-                      group/button
-                      inline-flex
-                      items-center
+                      group/button inline-flex items-center
                       gap-2
                       rounded-full
                       bg-white
