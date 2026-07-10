@@ -1,20 +1,11 @@
-// src/components/global/AnnouncementPopup.tsx
-
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ArrowRight, X } from "lucide-react";
 
 export type PopupItem = {
   id: string;
 
-  title: string;
+  image: string;
 
-  description: string;
-
-  /* MEDIA */
-  image?: string;
-  video?: string;
-
-  /* CTA */
   buttonText?: string;
   buttonLink?: string;
 };
@@ -22,25 +13,55 @@ export type PopupItem = {
 type Props = {
   popups: PopupItem[];
 
-  /* OPTIONAL SETTINGS */
   overlayClose?: boolean;
   escClose?: boolean;
 };
+
+const MOBILE_BREAKPOINT = 768;
 
 const AnnouncementPopup = ({
   popups,
   overlayClose = true,
   escClose = true,
 }: Props) => {
-  const [open, setOpen] = useState(true);
+  const [visiblePopups, setVisiblePopups] = useState(popups);
 
-  /* ESC CLOSE */
+  const [isMobile, setIsMobile] = useState(false);
+
+  /* ----------------------------
+      Detect Mobile
+  ----------------------------- */
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
+    };
+
+    checkScreen();
+
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+  /* ----------------------------
+      Sync Popups
+  ----------------------------- */
+
+  useEffect(() => {
+    setVisiblePopups(popups);
+  }, [popups]);
+
+  /* ----------------------------
+      ESC Close
+  ----------------------------- */
+
   useEffect(() => {
     if (!escClose) return;
 
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        setOpen(false);
+        setVisiblePopups([]);
       }
     };
 
@@ -51,134 +72,224 @@ const AnnouncementPopup = ({
     };
   }, [escClose]);
 
-  /* PREVENT BODY SCROLL */
+  /* ----------------------------
+      Prevent Body Scroll
+  ----------------------------- */
+
   useEffect(() => {
-    if (open) {
+    if (visiblePopups.length > 0) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "";
     }
 
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "";
     };
-  }, [open]);
+  }, [visiblePopups]);
 
-  if (!open || popups.length === 0) return null;
+  /* ----------------------------
+      Close Popup
+  ----------------------------- */
+
+  const closePopup = (id: string) => {
+    setVisiblePopups((prev) => prev.filter((popup) => popup.id !== id));
+  };
+
+  /* ----------------------------
+      Overlay Close
+  ----------------------------- */
+
+  const closeAll = () => {
+    setVisiblePopups([]);
+  };
+
+  /* ----------------------------
+      Mobile:
+      Show only first visible popup
+  ----------------------------- */
+
+  const renderedPopups = useMemo(() => {
+    if (isMobile) {
+      return visiblePopups.slice(0, 1);
+    }
+
+    return visiblePopups;
+  }, [visiblePopups, isMobile]);
+
+  if (renderedPopups.length === 0) return null;
 
   return (
-    <div className="fixed inset-0 z-999 flex items-center justify-center bg-black/75 px-5 py-10">
+    <div className="fixed inset-0 z-999 flex items-center justify-center bg-black/60 px-5 py-10">
 
-      {/* MCS LOGO */}
-      <div className="absolute left-5 top-5 sm:left-10 sm:top-10 z-20 flex items-center gap-3">
-        <img
-          src="/Images/Logos/mcslogofinal.png"
-          alt="MCS Logo"
-          className="h-20 w-20"
-        />
+      {/* Overlay */}
 
-        <div className="hidden sm:block">
-          <h3 className="text-xl font-semibold font-poppins text-white leading-none">
-            Montessori Cambridge School
-          </h3>
-
-          <p className="mt-1 text-base font-inter text-blue-100/80">
-            Pathankot
-          </p>
-        </div>
-      </div>
-      {/* BACKDROP */}
       {overlayClose && (
         <button
-          onClick={() => setOpen(false)}
-          className="absolute inset-0"
+          onClick={closeAll}
+          className="absolute inset-0 cursor-default"
+          aria-label="Close announcements"
         />
       )}
 
-      {/* CLOSE BUTTON */}
-      <button
-        onClick={() => setOpen(false)}
-        className="absolute cursor-pointer right-5 top-5 sm:right-10 sm:top-10 z-20 flex h-12 w-12 items-center justify-center rounded-full border border-white bg-white/10 backdrop-blur-xl text-white transition-all duration-300 hover:bg-white/20"
-      >
-        <X className="h-6 w-6" />
-      </button>
+      {/* Popup Wrapper */}
 
-      {/* POPUPS */}
       <div
-        className={`relative z-10 grid w-full gap-6 sm:mt-20 ${popups.length === 1
-            ? "max-w-xl grid-cols-1"
-            : "max-w-6xl grid-cols-1 lg:grid-cols-2"
-          }`}
+        className={`
+          relative z-10
+          flex
+          flex-wrap
+          items-center
+          justify-center
+          gap-6
+          w-full mt-10
+        `}
       >
-        {popups.map((popup) => (
+        
+        {renderedPopups.map((popup) => (
           <div
             key={popup.id}
-            className="group relative overflow-hidden rounded-4xl border border-white/10 bg-white/10 backdrop-blur-2xl shadow-[0_30px_120px_rgba(0,0,0,0.45)]"
+            className="
+              group
+              relative
+              w-full
+              max-w-110
+              overflow-hidden
+              rounded-2xl
+              border-2
+              border-white/60
+              shadow-[0_30px_80px_rgba(0,0,0,0.45)]
+            "
           >
-            {/* BANNER */}
-            <div className="relative h-140 overflow-hidden">
-              {popup.video ? (
-                <video
-                  src={popup.video}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                />
-              ) : (
-                <img
-                  src={popup.image}
-                  alt={popup.title}
-                  className="absolute inset-0 h-full w-full object-top transition-transform duration-1000 group-hover:scale-105"
-                />
+            {/* Banner */}
+
+            <div className="relative overflow-hidden">
+
+              <img
+                src={popup.image}
+                alt="Announcement"
+                className="
+                  h-full
+                  w-full
+                  object-cover
+                "
+              />
+
+              {/* Top Gradient */}
+
+              {/* <div className="absolute inset-x-0 top-0 h-12 bg-linear-to-b from-black/65 via-black/20 to-transparent" /> */}
+
+              {/* Bottom Gradient */}
+
+              <div className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-black/75 via-black/20 to-transparent" />
+
+              {/* Close */}
+
+              <button
+                onClick={() => closePopup(popup.id)}
+                aria-label="Close announcement"
+                className="
+                  absolute
+                  top-4
+                  right-4
+                  flex
+                  h-11
+                  w-11
+                  items-center
+                  justify-center
+                  rounded-full
+                  border
+                  border-white/15
+                  bg-black/35
+                  text-white
+                  backdrop-blur-xl
+                  transition-all
+                  duration-300
+                  hover:rotate-90
+                  hover:bg-white/20 cursor-pointer
+                "
+              >
+                <X className="h-5 w-5" />
+              </button>
+
+              {/* Announcement Pill */}
+
+              {/* <div className="absolute right-6 top-6">
+
+                <div
+                  className="
+                    inline-flex
+                    items-center
+                    gap-2
+                    rounded-full
+                    border
+                    border-white/15
+                    bg-white/10
+                    px-4
+                    py-2
+                    backdrop-blur-xl
+                  "
+                >
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
+
+                  <span
+                    className="
+                      font-inter
+                      text-sm
+                      font-medium
+                      text-white
+                    "
+                  >
+                    Special Announcement
+                  </span>
+
+                </div>
+
+              </div> */}
+
+              {/* CTA */}
+
+              {popup.buttonLink && (
+
+                <div className="absolute bottom-5 left-5">
+
+                  <a
+                    href={popup.buttonLink}
+                    className="
+                      group/button
+                      inline-flex
+                      items-center
+                      gap-2
+                      rounded-full
+                      bg-white
+                      px-5
+                      py-2.5
+                      text-sm sm:text-base font-inter font-semibold text-blue-950 transition-all duration-300 hover:scale-[1.03]
+                      shadow-xl
+                    "
+                  >
+                    {popup.buttonText || "See Details"}
+
+                    <ArrowRight
+                      className="
+                        h-5
+                        w-5
+                        transition-transform
+                        duration-300
+                        group-hover/button:translate-x-1
+                      "
+                    />
+
+                  </a>
+
+                </div>
+
               )}
 
-              {/* OVERLAY */}
-              <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-black/10" />
-
-              {/* TOP BADGE */}
-              <div className="absolute left-6 top-6">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 backdrop-blur-xl px-4 py-2 text-sm font-inter font-medium text-white">
-                  <div className="h-2 w-2 rounded-full bg-emerald-400" />
-
-                  Special Announcement
-                </div>
-              </div>
-
-              {/* CONTENT */}
-              <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
-                {/* DATE */}
-                {/* <p className="text-sm uppercase tracking-[0.25em] text-cyan-300">
-                  CBSE Cluster XVIII • 2026
-                </p> */}
-
-                {/* TITLE */}
-                <h2 className="mt-4 text-2xl sm:text-3xl font-poppins font-semibold leading-tight text-white">
-                  {popup.title}
-                </h2>
-
-                {/* DESCRIPTION */}
-                <p className="mt-3 max-w-xl text-base sm:text-lg font-inter leading-relaxed text-white/80">
-                  {popup.description}
-                </p>
-
-                {/* CTA */}
-                {popup.buttonLink && (
-                  <div className="mt-6 flex items-center gap-4">
-                    <a
-                      href={popup.buttonLink}
-                      className="group/btn inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm sm:text-base font-inter font-semibold text-blue-950 transition-all duration-300 hover:scale-[1.03]"
-                    >
-                      {popup.buttonText || "See Details"}
-
-                      <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
-                    </a>
-                  </div>
-                )}
-              </div>
             </div>
+
           </div>
+
         ))}
       </div>
     </div>
@@ -186,6 +297,203 @@ const AnnouncementPopup = ({
 };
 
 export default AnnouncementPopup;
+
+
+
+
+
+
+
+
+
+
+
+// // src/components/global/AnnouncementPopup.tsx
+
+// import { useEffect, useState } from "react";
+// import { ArrowRight, X } from "lucide-react";
+
+// export type PopupItem = {
+//   id: string;
+
+//   title: string;
+
+//   description: string;
+
+//   /* MEDIA */
+//   image?: string;
+//   video?: string;
+
+//   /* CTA */
+//   buttonText?: string;
+//   buttonLink?: string;
+// };
+
+// type Props = {
+//   popups: PopupItem[];
+
+//   /* OPTIONAL SETTINGS */
+//   overlayClose?: boolean;
+//   escClose?: boolean;
+// };
+
+// const AnnouncementPopup = ({
+//   popups,
+//   overlayClose = true,
+//   escClose = true,
+// }: Props) => {
+//   const [open, setOpen] = useState(true);
+
+//   /* ESC CLOSE */
+//   useEffect(() => {
+//     if (!escClose) return;
+
+//     const handleEsc = (e: KeyboardEvent) => {
+//       if (e.key === "Escape") {
+//         setOpen(false);
+//       }
+//     };
+
+//     window.addEventListener("keydown", handleEsc);
+
+//     return () => {
+//       window.removeEventListener("keydown", handleEsc);
+//     };
+//   }, [escClose]);
+
+//   /* PREVENT BODY SCROLL */
+//   useEffect(() => {
+//     if (open) {
+//       document.body.style.overflow = "hidden";
+//     } else {
+//       document.body.style.overflow = "auto";
+//     }
+
+//     return () => {
+//       document.body.style.overflow = "auto";
+//     };
+//   }, [open]);
+
+//   if (!open || popups.length === 0) return null;
+
+//   return (
+//     <div className="fixed inset-0 z-999 flex items-center justify-center bg-black/75 px-5 py-10">
+
+//       {/* MCS LOGO */}
+//       <div className="absolute left-5 top-5 sm:left-10 sm:top-10 z-20 flex items-center gap-3">
+//         <img
+//           src="/Images/Logos/mcslogofinal.png"
+//           alt="MCS Logo"
+//           className="h-20 w-20"
+//         />
+
+//         <div className="hidden sm:block">
+//           <h3 className="text-xl font-semibold font-poppins text-white leading-none">
+//             Montessori Cambridge School
+//           </h3>
+
+//           <p className="mt-1 text-base font-inter text-blue-100/80">
+//             Pathankot
+//           </p>
+//         </div>
+//       </div>
+//       {/* BACKDROP */}
+//       {overlayClose && (
+//         <button
+//           onClick={() => setOpen(false)}
+//           className="absolute inset-0"
+//         />
+//       )}
+
+//       {/* CLOSE BUTTON */}
+//       <button
+//         onClick={() => setOpen(false)}
+//         className="absolute cursor-pointer right-5 top-5 sm:right-10 sm:top-10 z-20 flex h-12 w-12 items-center justify-center rounded-full border border-white bg-white/10 backdrop-blur-xl text-white transition-all duration-300 hover:bg-white/20"
+//       >
+//         <X className="h-6 w-6" />
+//       </button>
+
+//       {/* POPUPS */}
+//       <div
+//         className={`relative z-10 grid w-full gap-6 sm:mt-20 ${popups.length === 1
+//             ? "max-w-xl grid-cols-1"
+//             : "max-w-6xl grid-cols-1 lg:grid-cols-2"
+//           }`}
+//       >
+//         {popups.map((popup) => (
+//           <div
+//             key={popup.id}
+//             className="group relative overflow-hidden rounded-4xl border border-white/10 bg-white/10 backdrop-blur-2xl shadow-[0_30px_120px_rgba(0,0,0,0.45)]"
+//           >
+//             {/* BANNER */}
+//             <div className="relative h-140 overflow-hidden">
+//               {popup.video ? (
+//                 <video
+//                   src={popup.video}
+//                   autoPlay
+//                   muted
+//                   loop
+//                   playsInline
+//                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+//                 />
+//               ) : (
+//                 <img
+//                   src={popup.image}
+//                   alt={popup.title}
+//                   className="absolute inset-0 h-full w-full object-top transition-transform duration-1000 group-hover:scale-105"
+//                 />
+//               )}
+
+//               {/* OVERLAY */}
+//               <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-black/10" />
+
+//               {/* TOP BADGE */}
+//               <div className="absolute left-6 top-6">
+//                 <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 backdrop-blur-xl px-4 py-2 text-sm font-inter font-medium text-white">
+//                   <div className="h-2 w-2 rounded-full bg-emerald-400" />
+
+//                   Special Announcement
+//                 </div>
+//               </div>
+
+//               {/* CONTENT */}
+//               <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
+
+//                 {/* TITLE */}
+//                 <h2 className="mt-4 text-2xl sm:text-3xl font-poppins font-semibold leading-tight text-white">
+//                   {popup.title}
+//                 </h2>
+
+//                 {/* DESCRIPTION */}
+//                 <p className="mt-3 max-w-xl text-base sm:text-lg font-inter leading-relaxed text-white/80">
+//                   {popup.description}
+//                 </p>
+
+//                 {/* CTA */}
+//                 {popup.buttonLink && (
+//                   <div className="mt-6 flex items-center gap-4">
+//                     <a
+//                       href={popup.buttonLink}
+//                       className="group/btn inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm sm:text-base font-inter font-semibold text-blue-950 transition-all duration-300 hover:scale-[1.03]"
+//                     >
+//                       {popup.buttonText || "See Details"}
+
+//                       <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
+//                     </a>
+//                   </div>
+//                 )}
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default AnnouncementPopup;
+
+
 
 
 

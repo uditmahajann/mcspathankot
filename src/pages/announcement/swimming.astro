@@ -1,0 +1,63 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ImportantDocuments from "../../components/sections/announcementpage/DocumentLinks";
+import AnnouncementHero from "../../components/sections/announcementpage/SwimmingHero";
+import { BookOpen, FileBadge, ShieldCheck, Scale } from "lucide-react";
+
+const documents = [
+	{
+		title: "Invitation Letter & Details",
+
+		description: "Official invitation for schools participating in the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls) and important instructions for all the teams/schools participating in the tournament.",
+
+		file: "/Documents/INVITATION-LETTER-SWIMMING.pdf",
+
+		icon: FileBadge,
+	},
+
+	// {
+	// 	title: "Event Instructions",
+
+	// 	description: "Important instructions regarding registration process for all the teams/schools participating in the tournament.",
+
+	// 	file: "/Documents/Instructions.docx",
+
+	// 	icon: BookOpen,
+	// },
+
+	// {
+	// 	title: "Event Rules",
+
+	// 	description: "Detailed rules, tournament regulations, discipline guidelines & important policies for all participants.",
+
+	// 	file: "/Documents/Rules.docx",
+
+	// 	icon: Scale,
+	// },
+	// {
+	// 	title: "Confirmation Slip",
+
+	// 	description: "Official confirmation slip for confirming participation in the CBSE Basketball Cluster XVIII Championship.",
+
+	// 	file: "/Documents/Confirmation-Slip.docx",
+
+	// 	icon: ShieldCheck,
+	// },
+];
+---
+
+<Layout
+	title="MCS Pathankot Announcements & Highlights | Montessori Cambridge School | Top Boarding School in Pathankot, Punjab and North India region."
+	description="Never miss an important update from MCS regarding events, admissions, academics, and campus activities."
+	pubDate={new Date()}
+>
+	<main class="w-full">
+		<AnnouncementHero/>
+		<ImportantDocuments
+			title="CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls)"
+			subtitle="We feel immense pleasure to invite your school for the participation in CBSE NORTH ZONE- II SWIMMING CHAMPIONSHIP under 11,14,17,19 (Girls) from July 20 to July 22, 2026. The tournament will begin with the opening ceremony on July 20, 2026. The participating teams are requested to bring one school flag and banner bearing the name of their school for ceremonies. The team officials have to report us on July 19, 2026 before 4.00 pm. Officials’ meeting is compulsory for all team officials."
+			content="Kindly find below the official invitation letter and other relevant documents for your reference, containing the important intructions, event schedule, participation guidelines & rules, and other important information:"
+			documents={documents}
+		/>
+	</main>
+</Layout>

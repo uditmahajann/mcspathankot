@@ -4,7 +4,7 @@ const AnnouncementHero: React.FC = () => {
   return (
     <section className="relative text-white">
       <div
-        className="relative min-h-[60vh] sm:min-h-[65vh] flex items-center"
+        className="relative min-h-[60vh] flex items-center"
         style={{
           backgroundImage: `url('/Images/CampusLife/update1.jpg')`,
           backgroundSize: "cover",
@@ -20,7 +20,7 @@ const AnnouncementHero: React.FC = () => {
             <div className="max-w-md md:max-w-xl lg:max-w-2xl">
               <span className="text-xs md:text-sm tracking-widest uppercase font-semibold text-white/80">Special Announcements</span>
               <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-poppins font-semibold leading-tight">What's
-                <span className="text-emerald-400"> happening</span> at <br className="" />
+                <span className="text-orange-400"> happening</span> at <br className="" />
                 MCS?
               </h1>
               <p className="mt-3 sm:mt-4 text-base md:text-lg text-white/85">
