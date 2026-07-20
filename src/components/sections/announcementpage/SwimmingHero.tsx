@@ -21,7 +21,7 @@ const AnnouncementHero: React.FC = () => {
               <span className="text-xs md:text-sm tracking-widest uppercase font-semibold text-white/80">Special Announcements</span>
               <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-poppins font-semibold leading-tight">Day 1 
                 <span className="text-cyan-400"> Results</span> <br className="" />
-                Announced
+                Coming Soon
               </h1>
               <p className="mt-3 sm:mt-4 text-base md:text-lg text-white/85">
                 Official information and important highlights related to this announcement at Montessori Cambridge School.
