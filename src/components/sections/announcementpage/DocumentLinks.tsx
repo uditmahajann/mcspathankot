@@ -84,7 +84,7 @@ const ImportantDocuments = ({
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm xl:text-base font-inter font-semibold text-white transition-all duration-300 hover:scale-[1.02]"
                   >
-                    View Document
+                    View Details
 
                     <ArrowUpRight className="h-4 w-4 xl:h-6 xl:w-6" />
                   </a>
