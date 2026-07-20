@@ -1,116 +1,87 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import HomePopup from "../components/elements/Popup";
-import Hero from "../components/sections/homepage/Hero";
-import News from "../components/sections/homepage/News";
-import InstaReels from "../components/sections/homepage/InstaReels";
-import Awards from "../components/sections/homepage/Awards";
-// import McsLife from "../components/sections/homepage/McsLife";
-import EduLevels from "../components/sections/homepage/EduLevels";
-import Admission from "../components/sections/homepage/Admission";
-import FutureTrends from "../components/sections/homepage/FutureTrends";
-import Partnerships from "../components/sections/homepage/Partnerships";
-import Achievements from "../components/sections/homepage/Achievements";
-import Alumni from "../components/sections/homepage/Alumni";
+import ImportantDocuments from "../components/sections/announcementpage/DocumentLinks";
+import AnnouncementHero from "../components/sections/announcementpage/SwimmingHero";
+import { BookOpen, FileBadge, ShieldCheck, Scale } from "lucide-react";
 
-import { client } from "../lib/sanity";
-import { newsListingQuery } from "../lib/queries/news";
-import { instaReelsQuery } from "../lib/queries/instaReels";
-import { awardsQuery } from "../lib/queries/awards";
-import { bannersByCategoryQuery } from "../lib/queries/banner";
+const documents = [
+    {
+		title: "Day 1 Final Results",
 
-const popupData = [
+		description: "Official Day 1 results of the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls), including event-wise rankings, timings, medal winners, and final standings.",
+
+		file: "/Documents/DAY1_RESULTS.pdf",
+
+		icon: FileBadge,
+	},
 	{
-    id: "basketball",
-    image: "/Images/Announcements/announcement1.png",
-    buttonText: "View Details",
-    buttonLink: "/announcement/basketball",
-  },
-  {
-    id: "swimming",
-    image: "/Images/Announcements/announcement2.png",
-    buttonText: "View Results (Day1)",
-    buttonLink: "/announcement/swimming",
-  },
-//   {
-//     id: "basketball",
+		title: "Invitation Letter & Details",
 
-//     title: "",
+		description: "Official invitation for schools participating in the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls) and important instructions for all the teams/schools participating in the tournament.",
 
-//     description:
-//       "",
+		file: "/Documents/INVITATION-LETTER-SWIMMING.pdf",
 
-//     image: "/Images/Announcements/announcement1.png",
+		icon: FileBadge,
+	},
+	{
+		title: "Swimming Events List",
 
-//     buttonText: "See Details",
+		description: "Complete list of all swimming events, age categories and race schedule details for teams competing in the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls).",
 
-//     buttonLink: "/announcement",
-//   },
+		file: "/Documents/SWIMMING-EVENT-LIST.pdf",
 
-//   {
-//     id: "swimming",
+		icon: FileBadge,
+	},
 
-//     title: "",
+	// {
+	// 	title: "Event Instructions",
 
-//     description:
-//       "",
+	// 	description: "Important instructions regarding registration process for all the teams/schools participating in the tournament.",
 
-//     image: "/Images/Announcements/announcement1.png",
+	// 	file: "/Documents/Instructions.docx",
 
-//     buttonText: "See Details",
+	// 	icon: BookOpen,
+	// },
 
-//     buttonLink: "/campus-life/performing-arts",
-//   },
+	// {
+	// 	title: "Event Rules",
+
+	// 	description: "Detailed rules, tournament regulations, discipline guidelines & important policies for all participants.",
+
+	// 	file: "/Documents/Rules.docx",
+
+	// 	icon: Scale,
+	// },
+	// {
+	// 	title: "Confirmation Slip",
+
+	// 	description: "Official confirmation slip for confirming participation in the CBSE Basketball Cluster XVIII Championship.",
+
+	// 	file: "/Documents/Confirmation-Slip.docx",
+
+	// 	icon: ShieldCheck,
+	// },
 ];
-
-const news = await client.fetch(newsListingQuery);
-const instaReels = await client.fetch(instaReelsQuery);
-const awards = await client.fetch(awardsQuery);
-
-const classXIIBanners = await client.fetch(bannersByCategoryQuery, {
-	category: "class-xii",
-});
-
-const classXBanners = await client.fetch(bannersByCategoryQuery, {
-	category: "class-x",
-});
-
-const studentBanners = await client.fetch(bannersByCategoryQuery, {
-	category: "student-achievers",
-});
-
-// normalize once
-const normalize = (items: any[]) =>
-	items.map((b: { _id: any; title: any; image: { asset: { url: any; }; }; }) => ({
-		_id: b._id,
-		title: b.title,
-		imageUrl: b.image.asset.url,
-	}));
-
 ---
 
 <Layout
-	title="MCS Pathankot | Montessori Cambridge School | Top Boarding School in Pathankot, Punjab and North India region."
-	description="Montessori Cambridge School is a top boarding school delivering quality education, modern hostels, sports excellence, and all-round student development."
+	title="MCS Pathankot Announcements & Highlights | Montessori Cambridge School | Top Boarding School in Pathankot, Punjab and North India region."
+	description="Never miss an important update from MCS regarding events, admissions, academics, and campus activities."
 	pubDate={new Date()}
 >
 	<main class="w-full">
-		<HomePopup popups={popupData} client:load/>
-		<Hero client:load/>
-		<News news={news} />
-		<InstaReels reels={instaReels} client:load/>
-		<Achievements
-			classXII={normalize(classXIIBanners)}
-			classX={normalize(classXBanners)}
-			students={normalize(studentBanners)}
-			client:load
+		<AnnouncementHero/>
+		<ImportantDocuments
+			title="CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls) – Final Results (Day 1)"
+			subtitle="We are pleased to announce the Day 1 Final Results of the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls). The results include the official standings and performances across all events conducted on Day 1 of the championship."
+			content="Participating schools, coaches, students, and parents are requested to refer to the official results document for detailed event-wise rankings and timings:"
+			documents={documents}
 		/>
-		<Awards awards={awards} client:load/>
-		<EduLevels client:load/>
-		<Admission/>
-		<FutureTrends client:load/>
-		<!-- <McsLife client:load /> -->
-		<Alumni/>
-		<Partnerships/>
 	</main>
 </Layout>
+
+
+
+
+
+
