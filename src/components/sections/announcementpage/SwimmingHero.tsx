@@ -19,7 +19,7 @@ const AnnouncementHero: React.FC = () => {
           <div className="mx-auto max-w-7xl px-6 min-[540px]:px-10 sm:px-12 lg:px-20 xl:px-10">
             <div className="max-w-md md:max-w-xl lg:max-w-2xl">
               <span className="text-xs md:text-sm tracking-widest uppercase font-semibold text-white/80">Special Announcements</span>
-              <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-poppins font-semibold leading-tight">Day 1 
+              <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-poppins font-semibold leading-tight">Day-1 & Day-2 
                 <span className="text-cyan-400"> Results</span> <br className="" />
                 Announced
               </h1>
