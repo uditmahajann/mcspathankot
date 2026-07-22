@@ -15,7 +15,7 @@ const popupData = [
   {
     id: "swimming",
     image: "/Images/Announcements/announcement2.png",
-    buttonText: "View Results (Day1 &Day2)",
+    buttonText: "View Results (Day-1, 2 & 3)",
     buttonLink: "/announcement/swimming",
   },]
 
@@ -39,6 +39,15 @@ const documents = [
 		icon: FileBadge,
 	},
 	{
+		title: "Day 3 Final Results",
+
+		description: "Official Day 3 results of the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls), including event-wise rankings, timings, medal winners, and final standings.",
+
+		file: "/Documents/Day_3.pdf",
+
+		icon: FileBadge,
+	},
+	{
 		title: "Invitation Letter & Details",
 
 		description: "Official invitation for schools participating in the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls) and important instructions for all the teams/schools participating in the tournament.",
@@ -47,15 +56,15 @@ const documents = [
 
 		icon: FileBadge,
 	},
-	{
-		title: "Swimming Events List",
+	// {
+	// 	title: "Swimming Events List",
 
-		description: "Complete list of all swimming events, age categories and race schedule details for teams competing in the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls).",
+	// 	description: "Complete list of all swimming events, age categories and race schedule details for teams competing in the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls).",
 
-		file: "/Documents/SWIMMING-EVENT-LIST.pdf",
+	// 	file: "/Documents/SWIMMING-EVENT-LIST.pdf",
 
-		icon: FileBadge,
-	},
+	// 	icon: FileBadge,
+	// },
 
 	// {
 	// 	title: "Event Instructions",
@@ -97,8 +106,8 @@ const documents = [
 		<HomePopup popups={popupData} client:load/>
 		<AnnouncementHero/>
 		<ImportantDocuments
-			title="CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls) – Final Results (Day-1&2)"
-			subtitle="We are pleased to announce the Day-1 & Day-2 Final Results of the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls). The results include the official standings and performances across all events conducted on Day-1&2 of the championship."
+			title="CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls) – Final Results (Day-1,2,3)"
+			subtitle="We are pleased to announce the Day-1, Day-2 & Day-3 Final Results of the CBSE NORTH ZONE-II Swimming Championship under 11,14,17,19 (Girls). The results include the official standings and performances across all events conducted on Day-1, 2 & 3 of the championship."
 			content="Participating schools, coaches, students, and parents are requested to refer to the official results document for detailed event-wise rankings and timings:"
 			documents={documents}
 		/>
